@@ -34,6 +34,10 @@
 		B8803C8F20EF2F76009717DF /* cloud-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C8920EF2F76009717DF /* cloud-5.png */; };
 		B8803C9120EF30B9009717DF /* ui2.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C9020EF30B9009717DF /* ui2.png */; };
 		B8803C9320EF30BD009717DF /* ui1.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C9220EF30BC009717DF /* ui1.png */; };
+		D0AC2AE320FC7442003A9DE0 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */; };
+		D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE420FC7656003A9DE0 /* Category.storyboard */; };
+		D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */; };
+		D0AC2AE920FC798A003A9DE0 /* Idea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		B8803C8920EF2F76009717DF /* cloud-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-5.png"; sourceTree = "<group>"; };
 		B8803C9020EF30B9009717DF /* ui2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui2.png; sourceTree = "<group>"; };
 		B8803C9220EF30BC009717DF /* ui1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui1.png; sourceTree = "<group>"; };
+		D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		D0AC2AE420FC7656003A9DE0 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Idea.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,10 @@
 				B810A0BE20EDE70600BC80DB /* Assets.xcassets */,
 				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
 				B810A0C320EDE70600BC80DB /* Info.plist */,
+				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
+				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
+				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
+				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -188,13 +200,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */,
 				B834C9D120F3328D00088D85 /* new (1).png in Resources */,
 				B8803C8D20EF2F76009717DF /* like.png in Resources */,
 				B8803C8E20EF2F76009717DF /* comment-white-oval-bubble.png in Resources */,
+				D0AC2AE320FC7442003A9DE0 /* Mypage.storyboard in Resources */,
 				B834C9D020F3328D00088D85 /* calendar-with-spring-binder-and-date-blocks.png in Resources */,
 				B849151A20EF4F7F00E6AF74 /* calendar2.png in Resources */,
 				B810A0C220EDE70600BC80DB /* LaunchScreen.storyboard in Resources */,
 				B8803C9120EF30B9009717DF /* ui2.png in Resources */,
+				D0AC2AE920FC798A003A9DE0 /* Idea.storyboard in Resources */,
 				B8803C8320EF1E3F009717DF /* calendar.png in Resources */,
 				B834C9CA20F32DAA00088D85 /* hearts.png in Resources */,
 				B849151820EF4DA200E6AF74 /* 일정정보.png in Resources */,
@@ -205,6 +220,7 @@
 				B834C9CC20F331C600088D85 /* idea (2).png in Resources */,
 				B834C9D620F3406800088D85 /* moong2.png in Resources */,
 				B8803C8F20EF2F76009717DF /* cloud-5.png in Resources */,
+				D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */,
 				B849151C20EF51E200E6AF74 /* line.png in Resources */,
 				B8803C9320EF30BD009717DF /* ui1.png in Resources */,
 				B810A0BD20EDE70400BC80DB /* Main.storyboard in Resources */,
