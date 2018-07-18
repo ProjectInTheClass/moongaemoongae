@@ -38,6 +38,9 @@
 		B8803C8F20EF2F76009717DF /* cloud-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C8920EF2F76009717DF /* cloud-5.png */; };
 		B8803C9120EF30B9009717DF /* ui2.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C9020EF30B9009717DF /* ui2.png */; };
 		B8803C9320EF30BD009717DF /* ui1.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C9220EF30BC009717DF /* ui1.png */; };
+		B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758120FF05CD00C1F922 /* CommentModel.swift */; };
+		B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */; };
+		B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */; };
 		D0AC2AE320FC7442003A9DE0 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */; };
 		D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE420FC7656003A9DE0 /* Category.storyboard */; };
 		D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */; };
@@ -78,6 +81,9 @@
 		B8803C8920EF2F76009717DF /* cloud-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-5.png"; sourceTree = "<group>"; };
 		B8803C9020EF30B9009717DF /* ui2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui2.png; sourceTree = "<group>"; };
 		B8803C9220EF30BC009717DF /* ui1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ui1.png; sourceTree = "<group>"; };
+		B8B9758120FF05CD00C1F922 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
+		B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		D0AC2AE420FC7656003A9DE0 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 		D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
@@ -150,6 +156,9 @@
 				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
 				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
 				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
+				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
+				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
+				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -253,6 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */,
+				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
+				B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */,
+				B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */,
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
