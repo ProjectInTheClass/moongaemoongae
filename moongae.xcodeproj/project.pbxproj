@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0888CF620FEFA3A00F70112 /* img_line_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0888CF520FEFA3900F70112 /* img_line_1.png */; };
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
@@ -55,7 +54,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0888CF520FEFA3900F70112 /* img_line_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_line_1.png; sourceTree = "<group>"; };
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +146,7 @@
 			children = (
 				B810A0B420EDE70400BC80DB /* moongae */,
 				B810A0B320EDE70400BC80DB /* Products */,
+				B89C4B0720FF30DE00418290 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +188,13 @@
 				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
 			);
 			path = moongae;
+			sourceTree = "<group>";
+		};
+		B89C4B0720FF30DE00418290 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +264,6 @@
 				B834C9D020F3328D00088D85 /* calendar-with-spring-binder-and-date-blocks.png in Resources */,
 				A0D52E4120FC867E00DF5A80 /* btn_bottom.png in Resources */,
 				B849151A20EF4F7F00E6AF74 /* calendar2.png in Resources */,
-				A0888CF620FEFA3A00F70112 /* img_line_1.png in Resources */,
 				B810A0C220EDE70600BC80DB /* LaunchScreen.storyboard in Resources */,
 				A0D52E3D20FC867900DF5A80 /* img_profile_woman_3.png in Resources */,
 				B8803C9120EF30B9009717DF /* ui2.png in Resources */,
