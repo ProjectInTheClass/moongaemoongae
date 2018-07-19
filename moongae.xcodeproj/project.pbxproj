@@ -28,6 +28,10 @@
 		B834C9D220F3328D00088D85 /* folder (1).png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9CF20F3328C00088D85 /* folder (1).png */; };
 		B834C9D420F3333500088D85 /* new (2).png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9D320F3333400088D85 /* new (2).png */; };
 		B834C9D620F3406800088D85 /* moong2.png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9D520F3406800088D85 /* moong2.png */; };
+		B837FAB621005BA4005F4E65 /* MajorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */; };
+		B837FAB821005BBA005F4E65 /* MajorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FAB721005BBA005F4E65 /* MajorCollectionViewController.swift */; };
+		B837FABA21006DEB005F4E65 /* MajorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */; };
+		B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B837FABB21006E0F005F4E65 /* MajorModel.swift */; };
 		B849151820EF4DA200E6AF74 /* 일정정보.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151720EF4DA200E6AF74 /* 일정정보.png */; };
 		B849151A20EF4F7F00E6AF74 /* calendar2.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151920EF4F7E00E6AF74 /* calendar2.png */; };
 		B849151C20EF51E200E6AF74 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151B20EF51E100E6AF74 /* line.png */; };
@@ -77,6 +81,10 @@
 		B834C9CF20F3328C00088D85 /* folder (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder (1).png"; sourceTree = "<group>"; };
 		B834C9D320F3333400088D85 /* new (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new (2).png"; sourceTree = "<group>"; };
 		B834C9D520F3406800088D85 /* moong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moong2.png; sourceTree = "<group>"; };
+		B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorCollectionViewCell.swift; sourceTree = "<group>"; };
+		B837FAB721005BBA005F4E65 /* MajorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorCollectionViewController.swift; sourceTree = "<group>"; };
+		B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorTableViewController.swift; sourceTree = "<group>"; };
+		B837FABB21006E0F005F4E65 /* MajorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorModel.swift; sourceTree = "<group>"; };
 		B849151720EF4DA200E6AF74 /* 일정정보.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "일정정보.png"; sourceTree = "<group>"; };
 		B849151920EF4F7E00E6AF74 /* calendar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar2.png; sourceTree = "<group>"; };
 		B849151B20EF51E100E6AF74 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
@@ -186,6 +194,10 @@
 				D008DCF920FF05A900E64E15 /* UserListModel.swift */,
 				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
 				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
+				B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */,
+				B837FAB721005BBA005F4E65 /* MajorCollectionViewController.swift */,
+				B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */,
+				B837FABB21006E0F005F4E65 /* MajorModel.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -297,10 +309,14 @@
 			files = (
 				D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */,
 				B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */,
+				B837FAB821005BBA005F4E65 /* MajorCollectionViewController.swift in Sources */,
+				B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
 				B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */,
 				B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */,
 				A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */,
+				B837FABA21006DEB005F4E65 /* MajorTableViewController.swift in Sources */,
+				B837FAB621005BA4005F4E65 /* MajorCollectionViewCell.swift in Sources */,
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
