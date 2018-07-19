@@ -10,6 +10,8 @@
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
+		A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */; };
+		A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC932100665100EBE60F /* CommentViewController.swift */; };
 		A0D52E3D20FC867900DF5A80 /* img_profile_woman_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3A20FC867800DF5A80 /* img_profile_woman_3.png */; };
 		A0D52E3E20FC867900DF5A80 /* img_profile_woman_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */; };
 		A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */; };
@@ -57,6 +59,8 @@
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
+		A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
+		A0A6DC932100665100EBE60F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		A0D52E3A20FC867800DF5A80 /* img_profile_woman_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_3.png; sourceTree = "<group>"; };
 		A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_2.png; sourceTree = "<group>"; };
 		A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_1.png; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				D008DCF920FF05A900E64E15 /* UserListModel.swift */,
 				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
 				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
+				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
+				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -296,12 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */,
+				A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */,
 				B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
 				B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */,
 				B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */,
 				A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */,
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
+				A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
