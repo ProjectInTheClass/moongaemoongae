@@ -22,6 +22,7 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var commentCount: UILabel!
+    @IBOutlet weak var btnComment: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

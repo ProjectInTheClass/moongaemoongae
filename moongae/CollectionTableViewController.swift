@@ -16,11 +16,6 @@ class CollectionTableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -53,5 +48,27 @@ class CollectionTableViewController: UITableViewController {
     {
         return 696
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toProjectDetail" {
+            if let destination = segue.destination as? ProjectDetailViewController {
+                let cell = sender as! UITableViewCell
+                let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
+        
+                self.modelProject.selectedIndex = indexPath.row
+                destination.modelProject = self.modelProject
+            }
+        }
+        
+        if segue.identifier == "toComment" {
+            if let destination = segue.destination as? CommentViewController {
+                
+                let btn = sender as! UIButton
+                let cell = btn.superview?.superview as! UITableViewCell
+                
+                self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
+                destination.modelProject = self.modelProject
+            }
+        }
+    }
 }
