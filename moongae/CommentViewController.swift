@@ -12,6 +12,7 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
 
     var modelComment = CommentModel()
     var modelProject = ProjectModel()
+    var modelUser = UserListModel()
     
     @IBOutlet var tableView: UITableView!
     
@@ -43,12 +44,12 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let info = self.modelComment.arrayList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CommentTableViewCell
-        
-        //  let imgtitle = info.userImage
-        //  cell.userImage?.image = UIImage(named: imgtitle)
-        
-        cell.userImage?.image = UIImage(named: info.userImage)
-        cell.userName?.text = info.userName
+
+        // 프로필 화면으로 이동하기 위해 userName, userImage를 Button으로 바꿈.
+        cell.userName.setTitle(info.userName, for: .normal)
+        cell.userImage.setImage(UIImage(named: info.userImage), for: .normal)
+//        cell.userImage?.image = UIImage(named: info.userImage)
+//        cell.userName?.text = info.userName
         cell.contents?.text = info.contents
         cell.writeDate?.text = info.writeDate
         
@@ -59,4 +60,23 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     {
         return 84.0;
     }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 사용자 사진, 이름 클릭 시 프로필 화면으로 이동
+        if segue.identifier == "toUserProfile" {
+            if let destination = segue.destination as? UserProfileViewController {
+                let btn = sender as! UIButton
+                let cell = btn.superview?.superview as! UITableViewCell
+                
+//                self.modelUser.selectedIndex = tableView.indexPath(for: cell)!.row
+                destination.userName = btn.titleLabel?.text
+                destination.modelUser = self.modelUser
+                destination.modelComment = self.modelComment
+            
+            }
+        }
+    }
+    
+    
 }

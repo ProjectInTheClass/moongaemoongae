@@ -46,7 +46,7 @@ class CollectionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 696
+        return 644
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,7 +64,7 @@ class CollectionTableViewController: UITableViewController {
             if let destination = segue.destination as? CommentViewController {
                 
                 let btn = sender as! UIButton
-                let cell = btn.superview?.superview as! UITableViewCell
+                let cell = btn.superview?.superview?.superview as! UITableViewCell
                 
                 self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
                 destination.modelProject = self.modelProject

@@ -27,12 +27,26 @@ class CommentInfo {
 class CommentModel {
     var arrayList:Array<CommentInfo>
   //  let formatter = DateFormatter()
+    var selectedIndex:Int = 0
     
     init() {
         self.arrayList = []
         
-        self.arrayList.append(CommentInfo(title: "작품1", userImage: "img_profile_woman_1.png", userName: "김소연", contents: "우와 개발 어떻게 하신 거에요?", writeDate: "06-22"))
-        self.arrayList.append(CommentInfo(title: "작품2", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
-        self.arrayList.append(CommentInfo(title: "작품3", userImage: "img_profile_woman_3.png", userName: "이재은", contents: "디자인이 너무 예쁘네요", writeDate: "07-17"))
+        self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_1.png", userName: "김소연", contents: "우와 개발 어떻게 하신 거에요?", writeDate: "06-22"))
+        self.arrayList.append(CommentInfo(title: "무덤덤", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_3.png", userName: "이재은", contents: "디자인이 너무 예쁘네요", writeDate: "07-17"))
+    }
+    
+    // title에 대한 댓글 검색.
+    func searchForTitle(title:String) -> CommentInfo {
+        var i:Int = 0
+        for i in 0 ... arrayList.count {
+            if(title == arrayList[i].title){
+                return arrayList[i]
+            }
+        }
+        return arrayList[i]
     }
 }
+
+

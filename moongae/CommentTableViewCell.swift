@@ -12,8 +12,8 @@ class CommentTableViewCell: UITableViewCell {
     
     
     
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userImage: UIButton!
+    @IBOutlet weak var userName: UIButton!
     @IBOutlet weak var contents: UILabel!
     @IBOutlet weak var writeDate: UILabel!
 

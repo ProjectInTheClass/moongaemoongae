@@ -29,8 +29,8 @@ class CommentTableViewController: UITableViewController {
       //  let imgtitle = info.userImage
       //  cell.userImage?.image = UIImage(named: imgtitle)
         
-        cell.userImage?.image = UIImage(named: info.userImage)
-        cell.userName?.text = info.userName
+//        cell.userImage?.image = UIImage(named: info.userImage)
+//        cell.userName?.text = info.userName
         cell.contents?.text = info.contents
         cell.writeDate?.text = info.writeDate
         

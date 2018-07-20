@@ -12,6 +12,7 @@
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
 		A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */; };
 		A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC932100665100EBE60F /* CommentViewController.swift */; };
+		A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */; };
 		A0D52E3D20FC867900DF5A80 /* img_profile_woman_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3A20FC867800DF5A80 /* img_profile_woman_3.png */; };
 		A0D52E3E20FC867900DF5A80 /* img_profile_woman_2.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */; };
 		A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */; };
@@ -65,6 +66,7 @@
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
 		A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		A0A6DC932100665100EBE60F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		A0D52E3A20FC867800DF5A80 /* img_profile_woman_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_3.png; sourceTree = "<group>"; };
 		A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_2.png; sourceTree = "<group>"; };
 		A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_profile_woman_1.png; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				B837FABB21006E0F005F4E65 /* MajorModel.swift */,
 				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
 				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
+				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
+				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
 				B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */,
 				A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */,
