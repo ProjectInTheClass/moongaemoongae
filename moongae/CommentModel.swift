@@ -38,15 +38,27 @@ class CommentModel {
     }
     
     // title에 대한 댓글 검색.
-    func searchForTitle(title:String) -> CommentInfo {
-        var i:Int = 0
-        for i in 0 ... arrayList.count {
+    func searchForTitle(title:String) -> Array<CommentInfo> {
+        var resultList:Array<CommentInfo> = []
+        for i in 0 ... arrayList.count - 1 {
             if(title == arrayList[i].title){
-                return arrayList[i]
+                resultList.append(arrayList[i])
             }
         }
-        return arrayList[i]
+        return resultList
     }
+    
+//    func searchForTitle(title:String) -> CommentModel {
+//        var resultList:Array<CommentInfo> = []
+//        for i in 0 ... arrayList.count {
+//            if(title == arrayList[i].title){
+//                resultList.append(arrayList[i])
+//            }
+//        }
+//        return resultList
+//    }
+    
 }
+
 
 

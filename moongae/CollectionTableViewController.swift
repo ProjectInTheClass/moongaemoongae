@@ -11,6 +11,7 @@ import UIKit
 class CollectionTableViewController: UITableViewController {
 
     var modelProject = ProjectModel()
+    var modelComment = CommentModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,9 +66,14 @@ class CollectionTableViewController: UITableViewController {
                 
                 let btn = sender as! UIButton
                 let cell = btn.superview?.superview?.superview as! UITableViewCell
+                let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
+                let info = self.modelProject.arrayList[indexPath.row]
                 
                 self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
                 destination.modelProject = self.modelProject
+                
+                var comment:Array<CommentInfo> = modelComment.searchForTitle(title: info.title)
+                destination.comment = comment
             }
         }
     }

@@ -13,9 +13,10 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     var modelComment = CommentModel()
     var modelProject = ProjectModel()
     var modelUser = UserListModel()
+//    var comment = CommentModel()
+    var comment:Array<CommentInfo> = []
     
     @IBOutlet var tableView: UITableView!
-    
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSummary: UILabel!
     
@@ -37,12 +38,15 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.modelComment.arrayList.count
+//        return self.modelComment.arrayList.count
+        return self.comment.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let info = self.modelComment.arrayList[indexPath.row]
+//        let info = self.modelComment.arrayList[indexPath.row]
+//        let info = self.comment.arrayList[indexPath.row]
+        let info = self.comment[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CommentTableViewCell
 
         // 프로필 화면으로 이동하기 위해 userName, userImage를 Button으로 바꿈.
