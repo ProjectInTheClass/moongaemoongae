@@ -13,6 +13,7 @@ class UserProfileViewController: UIViewController {
     var modelUser = UserListModel()
     var modelComment = CommentModel()
     var userName:String!
+    var user:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", UserGrade: "",UserEmail:"")
     
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelEmail: UILabel!
@@ -23,18 +24,12 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(userName)
-        print(modelUser.arrayList[0].UserName)
-        
-//        for i in 0 ... 3 {
-//            if (modelUser.arrayList[i].UserName == userName) {
-//                labelName.text = modelUser.arrayList[i].UserName
-//                labelEmail.text = modelUser.arrayList[i].UserEmail
-//                labelGrade.text = modelUser.arrayList[i].UserGrade
-//                labelMajor.text = modelUser.arrayList[i].UserMajor
-//            }
-//        }
-    
+        // 선택한 사용자의 프로필 출력
+        labelName.text = user.UserName
+        labelEmail.text = user.UserEmail
+        labelGrade.text = user.UserGrade + "학년"
+        labelMajor.text = user.UserMajor
+        // --> 사진 설정하는 코드도 추가해야함.
     }
 
     override func didReceiveMemoryWarning() {

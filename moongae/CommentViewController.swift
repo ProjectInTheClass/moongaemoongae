@@ -67,17 +67,16 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // 사용자 사진, 이름 클릭 시 프로필 화면으로 이동
+        // 사용자 이름 클릭 시 프로필 화면으로 이동
         if segue.identifier == "toUserProfile" {
             if let destination = segue.destination as? UserProfileViewController {
-                let btn = sender as! UIButton
-                let cell = btn.superview?.superview as! UITableViewCell
                 
-//                self.modelUser.selectedIndex = tableView.indexPath(for: cell)!.row
-                destination.userName = btn.titleLabel?.text
-                destination.modelUser = self.modelUser
-                destination.modelComment = self.modelComment
-            
+                let btn = sender as! UIButton
+                
+                // 선택한 유저의 이름으로 유저 리스트에서 검색함.
+                let user:UserList = modelUser.searchForName(email:(btn.titleLabel?.text)!)
+//                let user:UserList = modelUser.searchForEmail(email:(btn.titleLabel?.text)!)
+                destination.user = user
             }
         }
     }
