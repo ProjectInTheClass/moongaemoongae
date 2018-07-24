@@ -51,6 +51,8 @@
 		B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758120FF05CD00C1F922 /* CommentModel.swift */; };
 		B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */; };
 		B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */; };
+		B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */; };
+		B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */; };
 		D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCF920FF05A900E64E15 /* UserListModel.swift */; };
 		D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFB20FF0B2A00E64E15 /* UserListController.swift */; };
 		D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */; };
@@ -107,6 +109,8 @@
 		B8B9758120FF05CD00C1F922 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordModel.swift; sourceTree = "<group>"; };
+		B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
 		D008DCF920FF05A900E64E15 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		D008DCFB20FF0B2A00E64E15 /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
 		D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
 				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
 				A0A6DC972106C16100EBE60F /* MajorCollectionSortViewController.swift */,
+				B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */,
+				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 				D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */,
 				A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */,
 				A0A6DC982106C16100EBE60F /* MajorCollectionSortViewController.swift in Sources */,
+				B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */,
 				B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */,
 				B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
@@ -330,6 +337,7 @@
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
 				A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
+				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
