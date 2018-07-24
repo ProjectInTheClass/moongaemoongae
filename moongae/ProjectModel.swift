@@ -8,6 +8,14 @@
 
 import Foundation
 
+enum major : String {
+    case computer = "컴퓨터학과"
+    case informationSecurity = "정보보호학과"
+    case contentsdesign = "콘텐츠디자인학과"
+    case digitalMedia = "디지털미디어학과"
+    case softwareConvergence = "소프트웨어융합학과"
+}
+
 class ProjectInfo {
     let title:String
     let createdDate:String
@@ -66,5 +74,15 @@ class ProjectModel {
         
         let project3 = ProjectInfo(title:"세번째에요", createdDate:"2018-06-22", summary:"소중한 공간 속 소중한 순간들", tags:"자바", project_image:"img_ui_1.png", startDate:"2018-06-22", endDate:"2018-06-22", major:"컴퓨터학과", author:"김소연, 박예빈, 이재은", likeCount:12, commentCount:8, motivation:"바쁜 현대인들을 위해....", environment: "안드로이드 스튜디오....", language: "서버 : java", detail:"jsdfmsdlkfsfsfsdfsdfsdfdsfsdf", benefit: "sadfsadfasdfsdfsadfasddbdlr")
         self.arrayList.append(project3)
+    }
+    
+    func searchMajor(majorName: String) -> Array<ProjectInfo> {
+        var modelProject: Array<ProjectInfo> = []
+        for i in 1 ... arrayList.count {
+            if majorName == arrayList[i-1].major {
+                modelProject.append(arrayList[i-1])
+            }
+        }
+        return modelProject
     }
 }

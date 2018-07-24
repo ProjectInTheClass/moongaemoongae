@@ -52,26 +52,21 @@ class MajorTableViewController: UITableViewController {
         return cell
     }
     
-    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        let cell = sender as! UITableViewCell
-        let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
-        
-        self.modelMajor.selectedIndex = indexPath.row
-        
-        if modelMajor.arrayList[self.modelMajor.selectedIndex] == modelProject.arrayList.major {
+        if segue.identifier == "toDetail" {
+            let cell = sender as! UITableViewCell
+            let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
+            self.modelMajor.selectedIndex = indexPath.row
+            let majorName = modelMajor.arrayList[modelMajor.selectedIndex].major
+            let projectData = segue.destination as! MajorCollectionSortViewController
             
-            let projectData = segue.destination as! MajorCollectionViewController
+            //        let projectData = segue.destination as! MajorCollectionViewController
             
-            if (cell )
-            projectData.modelProject = self.modelProject
+            projectData.modelCollect = modelProject.searchMajor(majorName: majorName)
         }
-
-        
         
     }
-*/
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

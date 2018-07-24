@@ -12,7 +12,8 @@ class MajorCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var project_image: UIImageView!
-   // @IBOutlet weak var major: UILabel!
+    // @IBOutlet weak var major: UILabel!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var commentCount: UILabel!
 }
+
