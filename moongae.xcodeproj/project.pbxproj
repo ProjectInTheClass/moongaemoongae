@@ -51,8 +51,11 @@
 		B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758120FF05CD00C1F922 /* CommentModel.swift */; };
 		B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */; };
 		B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */; };
+		B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD1E5D2107077000A89577 /* SFPatchView.swift */; };
+		B8BD1E6021070B6700A89577 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD1E5F21070B6700A89577 /* Common.swift */; };
 		B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */; };
 		B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */; };
+		CA80EF8C253CF161D3A903FE /* Pods_moongae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102D6DD2D585064ED527A437 /* Pods_moongae.framework */; };
 		D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCF920FF05A900E64E15 /* UserListModel.swift */; };
 		D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFB20FF0B2A00E64E15 /* UserListController.swift */; };
 		D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */; };
@@ -63,6 +66,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102D6DD2D585064ED527A437 /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moongae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.release.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
+		4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 		B8B9758120FF05CD00C1F922 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		B8BD1E5C2107071400A89577 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		B8BD1E5D2107077000A89577 /* SFPatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPatchView.swift; sourceTree = "<group>"; };
+		B8BD1E5F21070B6700A89577 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordModel.swift; sourceTree = "<group>"; };
 		B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
 		D008DCF920FF05A900E64E15 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
@@ -125,12 +134,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA80EF8C253CF161D3A903FE /* Pods_moongae.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31143A90E025466626D70F89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */,
+				1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0888CF720FF011400F70112 /* etc */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +184,8 @@
 				B810A0B420EDE70400BC80DB /* moongae */,
 				B810A0B320EDE70400BC80DB /* Products */,
 				B89C4B0720FF30DE00418290 /* Recovered References */,
+				31143A90E025466626D70F89 /* Pods */,
+				BB434088944C99D281141827 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +234,9 @@
 				A0A6DC972106C16100EBE60F /* MajorCollectionSortViewController.swift */,
 				B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */,
 				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
+				B8BD1E5C2107071400A89577 /* BridgeHeader.h */,
+				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
+				B8BD1E5F21070B6700A89577 /* Common.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -224,6 +248,14 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		BB434088944C99D281141827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				102D6DD2D585064ED527A437 /* Pods_moongae.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B810A0C620EDE70600BC80DB /* Build configuration list for PBXNativeTarget "moongae" */;
 			buildPhases = (
+				E19EC32A002BB0806D285539 /* [CP] Check Pods Manifest.lock */,
 				B810A0AE20EDE70400BC80DB /* Sources */,
 				B810A0AF20EDE70400BC80DB /* Frameworks */,
 				B810A0B020EDE70400BC80DB /* Resources */,
+				2A7B902AB72FCD15583D97EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +351,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A7B902AB72FCD15583D97EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-moongae/Pods-moongae-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloud/DBSphereTagCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/DCPathButton/DCPathButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCPathButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moongae/Pods-moongae-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E19EC32A002BB0806D285539 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moongae-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B810A0AE20EDE70400BC80DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -335,9 +410,11 @@
 				B837FABA21006DEB005F4E65 /* MajorTableViewController.swift in Sources */,
 				B837FAB621005BA4005F4E65 /* MajorCollectionViewCell.swift in Sources */,
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
+				B8BD1E6021070B6700A89577 /* Common.swift in Sources */,
 				A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
+				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
@@ -486,6 +563,7 @@
 		};
 		B810A0C720EDE70600BC80DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +582,7 @@
 		};
 		B810A0C820EDE70600BC80DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

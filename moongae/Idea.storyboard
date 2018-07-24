@@ -212,7 +212,7 @@
         <!--아이디어-->
         <scene sceneID="Cgw-tr-WHy">
             <objects>
-                <viewController id="ZcA-tu-Ik3" customClass="FirstViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZcA-tu-Ik3" customClass="IdeaViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFs-fS-XKm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,6 +234,11 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-zP-MDe">
                                 <rect key="frame" x="-1" y="218" width="376" height="511"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="1000" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="ZBo-Jf-2an" kind="embed" id="JP9-Io-34K"/>
                                 </connections>
@@ -243,6 +248,9 @@
                         <viewLayoutGuide key="safeArea" id="3kt-tW-QCU"/>
                     </view>
                     <navigationItem key="navigationItem" title="아이디어" id="ytq-YU-Xv3"/>
+                    <connections>
+                        <outlet property="sphereView" destination="i5f-zP-MDe" id="2H3-1s-fa3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mi-Si-xqO" sceneMemberID="firstResponder"/>
             </objects>
