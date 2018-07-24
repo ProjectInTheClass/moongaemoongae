@@ -20,7 +20,7 @@ class IdeaViewController: UIViewController {
         
         let btn = UIButton()
        
-        btn.setImage(#imageLiteral(resourceName: "CreateTrip").(resourceName: "cloud-3").withRenderingMode(.alwaysOriginal), for: .normal)
+      //  btn.setImage(#imageLiteral(resourceName: "CreateTrip").(resourceName: "cloud-3").withRenderingMode(.alwaysOriginal), for: .normal)
         btn.frame = CGRect(x: self.ideaView.frame.size.width - 60, y: self.ideaView.frame.size.height - 260, width: 50, height: 50)
         // button.backgroundColor = UIColor.red
         btn.setTitle("자바", for: .normal)
