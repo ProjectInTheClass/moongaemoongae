@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0468517A1EECA8D018C00AA65A732D17 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */; };
+		1CCC627FF1D9B59A95BDC083D417A44A /* DBPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF36EF577CDCAE1703E52CA9983E08A /* DCPathButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22441212279249EF0FBB4904C8A3F82A /* DCPathButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F65B4EDE44AEF2B9ADA2D928FFBB1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20711D00ACCF9B1456070B64A994424 /* CoreGraphics.framework */; };
+		381EA2CDEBB0295ED168FC379DDE64FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
+		451A5CDA9313675199CA45300BF5F2AF /* DBMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6130C1A1FAB60D1AFFAA7621D6F25736 /* DBSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */; };
+		62F6641838755C504E895DAB523CE3E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */; };
+		7192342270E1B0F3BA0AFFA22EB141D9 /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */; };
+		7D08CAE9F0C89438573657473B5DD458 /* Pods-moongae-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */; };
+		7D208420E9DCC45AC5E4009FA92F36C4 /* DCPathButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */; };
+		7DFA729A8C5D561D074658528CF879C4 /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */; };
+		8481D1742DED4C93038E5010A0993AEB /* DBSphereTagCloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904F339BB1D786A74201F9D0B1FAE5B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE43D61A65367DF5D29D2ED61BB14359 /* UIKit.framework */; };
+		9668FE74C738EC8D32F1BE5BDCA24C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
+		9BCC4AFC8EAD117091E87EE762423025 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 577F75169618CA68A76A6C9B67733492 /* selected.caf */; };
+		A1C3A3A4C4F6567D3144A614BC549C02 /* AudioToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8783ADEE02499B0E47C522A6288AFA84 /* AudioToolBox.framework */; };
+		A410090A58F1AB3DCA8ABC48C69F95BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
+		BF9A0015C01A7C62870BD3E93D4ACC72 /* DBSphereTagCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */; };
+		C70D6EF88DE9CEFBC0AE729C7EDFBE50 /* DBSphereView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D00905F491348CC8186D9449116A4A6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4C54B7142D4141F42821D7D430CC40 /* QuartzCore.framework */; };
+		D79CF5917E35A34E6B08F28B2C041274 /* Pods-moongae-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8D0BC91806BEA7711A9E443EED7F79D /* DCPathItemButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31317E5FA528DF31734A7A269EF03291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7764533D6B4098922368C95F6DDDF004;
+			remoteInfo = DCPathButton;
+		};
+		43AECD16BC3855BB09CE539582860EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 516B697CCE233FC7AB8F09F5F237AEEC;
+			remoteInfo = DBSphereTagCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBSphereTagCloud-dummy.m"; sourceTree = "<group>"; };
+		0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCPathButton.xcconfig; sourceTree = "<group>"; };
+		19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathItemButton.h; path = DCPathButton/Classes/DCPathItemButton.h; sourceTree = "<group>"; };
+		1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.caf; path = DCPathButton/Sounds/bloom.caf; sourceTree = "<group>"; };
+		1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DCPathButton.framework; path = DCPathButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		254D00F78EB6692C01DF347213122319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		28D0D62F39A41A6E02054F9CBCC4E97F /* Pods-moongae-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-moongae-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMatrix.h; path = DBSphereTagCloud/DBMatrix.h; sourceTree = "<group>"; };
+		33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = DCPathButton/Classes/DCPathButton.h; sourceTree = "<group>"; };
+		3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_moongae.framework; path = "Pods-moongae.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		387CA8A1992E69318E4EEAFE52B83B77 /* Pods-moongae-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-moongae-resources.sh"; sourceTree = "<group>"; };
+		45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBSphereView.m; path = DBSphereTagCloud/DBSphereView.m; sourceTree = "<group>"; };
+		456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-moongae-umbrella.h"; sourceTree = "<group>"; };
+		45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPoint.h; path = DBSphereTagCloud/DBPoint.h; sourceTree = "<group>"; };
+		469F95093E69F99360934032D9D87DE9 /* Pods-moongae-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-moongae-acknowledgements.plist"; sourceTree = "<group>"; };
+		4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSphereView.h; path = DBSphereTagCloud/DBSphereView.h; sourceTree = "<group>"; };
+		577F75169618CA68A76A6C9B67733492 /* selected.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = selected.caf; path = DCPathButton/Sounds/selected.caf; sourceTree = "<group>"; };
+		58104B107C6251AEC143C528075EF120 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6492CE8B39B6D938A449A40751D088C7 /* DBSphereTagCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBSphereTagCloud.modulemap; sourceTree = "<group>"; };
+		8783ADEE02499B0E47C522A6288AFA84 /* AudioToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolBox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolBox.framework; sourceTree = DEVELOPER_DIR; };
+		925B4C2BE1D8FDB7F6F19AE812705BCA /* Pods-moongae-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-moongae-frameworks.sh"; sourceTree = "<group>"; };
+		9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBSphereTagCloud.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathItemButton.m; path = DCPathButton/Classes/DCPathItemButton.m; sourceTree = "<group>"; };
+		A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
+		A4BCDB1A9BDAB19FFF275B69525F8218 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E2DA4B45F2C60B8D2A067142782172 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = DCPathButton/Classes/DCPathButton.m; sourceTree = "<group>"; };
+		B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCPathButton-dummy.m"; sourceTree = "<group>"; };
+		B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = fold.caf; path = DCPathButton/Sounds/fold.caf; sourceTree = "<group>"; };
+		B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DBSphereTagCloud.framework; path = DBSphereTagCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE43D61A65367DF5D29D2ED61BB14359 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C20711D00ACCF9B1456070B64A994424 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-moongae-dummy.m"; sourceTree = "<group>"; };
+		C74785D4E6ED289066DD7B3FD449AE0B /* DBSphereTagCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-prefix.pch"; sourceTree = "<group>"; };
+		CCB750CEBA931010AB59A51A4055C391 /* DCPathButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-prefix.pch"; sourceTree = "<group>"; };
+		D7BEFAA4B2E65F9F2B99A38F474CC2DB /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
+		E608128E7B39FFA4E25A9D9159DE7AC4 /* DCPathButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DCPathButton.modulemap; sourceTree = "<group>"; };
+		EF4C54B7142D4141F42821D7D430CC40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-umbrella.h"; sourceTree = "<group>"; };
+		F64E69A176580EC68507C1685CFA498E /* Pods-moongae.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-moongae.modulemap"; sourceTree = "<group>"; };
+		F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1086C047DB6A5CC07E266F5864B58F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C3A3A4C4F6567D3144A614BC549C02 /* AudioToolBox.framework in Frameworks */,
+				9668FE74C738EC8D32F1BE5BDCA24C75 /* Foundation.framework in Frameworks */,
+				D00905F491348CC8186D9449116A4A6C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5B329198923ED29E08011AA1DAB4D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381EA2CDEBB0295ED168FC379DDE64FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADABBD305278DC6A452C435543B19202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F65B4EDE44AEF2B9ADA2D928FFBB1C /* CoreGraphics.framework in Frameworks */,
+				A410090A58F1AB3DCA8ABC48C69F95BC /* Foundation.framework in Frameworks */,
+				904F339BB1D786A74201F9D0B1FAE5B4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01560C51D102A5A19BEA72CC3BF02955 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6492CE8B39B6D938A449A40751D088C7 /* DBSphereTagCloud.modulemap */,
+				9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */,
+				07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */,
+				C74785D4E6ED289066DD7B3FD449AE0B /* DBSphereTagCloud-prefix.pch */,
+				F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */,
+				A4E2DA4B45F2C60B8D2A067142782172 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DBSphereTagCloud";
+			sourceTree = "<group>";
+		};
+		0A8140DB1F0DB1CD1657262756A4DA12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D17A4A26EC24749EF4ED532EA152C /* DBSphereTagCloud */,
+				640D768BDF9E284CFE326C62557E4140 /* DCPathButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0B612FD16E7C1BF879E1B09157D211FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */,
+				1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */,
+				3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A61229B7CDBD6DC1E4D31490CCC19FF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C7D17A4A26EC24749EF4ED532EA152C /* DBSphereTagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */,
+				45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */,
+				4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */,
+				45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */,
+				01560C51D102A5A19BEA72CC3BF02955 /* Support Files */,
+			);
+			name = DBSphereTagCloud;
+			path = DBSphereTagCloud;
+			sourceTree = "<group>";
+		};
+		38527E7DB596F1B59CB12FE54FC38656 /* Pods-moongae */ = {
+			isa = PBXGroup;
+			children = (
+				A4BCDB1A9BDAB19FFF275B69525F8218 /* Info.plist */,
+				F64E69A176580EC68507C1685CFA498E /* Pods-moongae.modulemap */,
+				28D0D62F39A41A6E02054F9CBCC4E97F /* Pods-moongae-acknowledgements.markdown */,
+				469F95093E69F99360934032D9D87DE9 /* Pods-moongae-acknowledgements.plist */,
+				C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */,
+				925B4C2BE1D8FDB7F6F19AE812705BCA /* Pods-moongae-frameworks.sh */,
+				387CA8A1992E69318E4EEAFE52B83B77 /* Pods-moongae-resources.sh */,
+				456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */,
+				D7BEFAA4B2E65F9F2B99A38F474CC2DB /* Pods-moongae.debug.xcconfig */,
+				A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */,
+			);
+			name = "Pods-moongae";
+			path = "Target Support Files/Pods-moongae";
+			sourceTree = "<group>";
+		};
+		4609B818B7099607E39D58A306B95261 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38527E7DB596F1B59CB12FE54FC38656 /* Pods-moongae */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A61229B7CDBD6DC1E4D31490CCC19FF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8783ADEE02499B0E47C522A6288AFA84 /* AudioToolBox.framework */,
+				C20711D00ACCF9B1456070B64A994424 /* CoreGraphics.framework */,
+				254D00F78EB6692C01DF347213122319 /* Foundation.framework */,
+				EF4C54B7142D4141F42821D7D430CC40 /* QuartzCore.framework */,
+				BE43D61A65367DF5D29D2ED61BB14359 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		621A2A7C8D127F7F5066CD7A18766714 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */,
+				B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */,
+				577F75169618CA68A76A6C9B67733492 /* selected.caf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		640D768BDF9E284CFE326C62557E4140 /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */,
+				A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */,
+				19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */,
+				A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */,
+				621A2A7C8D127F7F5066CD7A18766714 /* Resources */,
+				B91063BD173BE4E803FF8B84A46D2C9F /* Support Files */,
+			);
+			name = DCPathButton;
+			path = DCPathButton;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				0A8140DB1F0DB1CD1657262756A4DA12 /* Pods */,
+				0B612FD16E7C1BF879E1B09157D211FB /* Products */,
+				4609B818B7099607E39D58A306B95261 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B91063BD173BE4E803FF8B84A46D2C9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E608128E7B39FFA4E25A9D9159DE7AC4 /* DCPathButton.modulemap */,
+				0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */,
+				B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */,
+				CCB750CEBA931010AB59A51A4055C391 /* DCPathButton-prefix.pch */,
+				F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */,
+				58104B107C6251AEC143C528075EF120 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DCPathButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CBD6DE014DDEDFC092B23CECB59FC65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79CF5917E35A34E6B08F28B2C041274 /* Pods-moongae-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880866FF3F0C4EA5883A28BF5C5D7306 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451A5CDA9313675199CA45300BF5F2AF /* DBMatrix.h in Headers */,
+				1CCC627FF1D9B59A95BDC083D417A44A /* DBPoint.h in Headers */,
+				8481D1742DED4C93038E5010A0993AEB /* DBSphereTagCloud-umbrella.h in Headers */,
+				C70D6EF88DE9CEFBC0AE729C7EDFBE50 /* DBSphereView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E946642E5E4063AC62DE033566167E34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22441212279249EF0FBB4904C8A3F82A /* DCPathButton-umbrella.h in Headers */,
+				1FF36EF577CDCAE1703E52CA9983E08A /* DCPathButton.h in Headers */,
+				E8D0BC91806BEA7711A9E443EED7F79D /* DCPathItemButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03EB202C41A49866CFABF573EAC5E909 /* Pods-moongae */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72E471C3F34BAF14142B5CC1F4C1D0DC /* Build configuration list for PBXNativeTarget "Pods-moongae" */;
+			buildPhases = (
+				4F02D63C8938F3A52E72F35E2F10D4EF /* Sources */,
+				4C5B329198923ED29E08011AA1DAB4D2 /* Frameworks */,
+				4CBD6DE014DDEDFC092B23CECB59FC65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31714424CC696244E91EA0DCADE8E508 /* PBXTargetDependency */,
+				EFF8EA4D041AC0891C43F23B4B3B3D7E /* PBXTargetDependency */,
+			);
+			name = "Pods-moongae";
+			productName = "Pods-moongae";
+			productReference = 3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CD4646551ACFBDC7D1E1B606E607C5 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud" */;
+			buildPhases = (
+				F550C41A82049A358D01E8E34157851A /* Sources */,
+				ADABBD305278DC6A452C435543B19202 /* Frameworks */,
+				880866FF3F0C4EA5883A28BF5C5D7306 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBSphereTagCloud;
+			productName = DBSphereTagCloud;
+			productReference = B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7764533D6B4098922368C95F6DDDF004 /* DCPathButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C94E2EFE2B265292BB2E7C8E2352B01 /* Build configuration list for PBXNativeTarget "DCPathButton" */;
+			buildPhases = (
+				D7099659C6BD3342A2D1B8A4816DB983 /* Sources */,
+				1086C047DB6A5CC07E266F5864B58F4A /* Frameworks */,
+				E946642E5E4063AC62DE033566167E34 /* Headers */,
+				7A899AB35A55CF6150A56FE73BBFBB66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCPathButton;
+			productName = DCPathButton;
+			productReference = 1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0B612FD16E7C1BF879E1B09157D211FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */,
+				7764533D6B4098922368C95F6DDDF004 /* DCPathButton */,
+				03EB202C41A49866CFABF573EAC5E909 /* Pods-moongae */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A899AB35A55CF6150A56FE73BBFBB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFA729A8C5D561D074658528CF879C4 /* bloom.caf in Resources */,
+				7192342270E1B0F3BA0AFFA22EB141D9 /* fold.caf in Resources */,
+				9BCC4AFC8EAD117091E87EE762423025 /* selected.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F02D63C8938F3A52E72F35E2F10D4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D08CAE9F0C89438573657473B5DD458 /* Pods-moongae-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7099659C6BD3342A2D1B8A4816DB983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D208420E9DCC45AC5E4009FA92F36C4 /* DCPathButton-dummy.m in Sources */,
+				62F6641838755C504E895DAB523CE3E5 /* DCPathButton.m in Sources */,
+				0468517A1EECA8D018C00AA65A732D17 /* DCPathItemButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F550C41A82049A358D01E8E34157851A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9A0015C01A7C62870BD3E93D4ACC72 /* DBSphereTagCloud-dummy.m in Sources */,
+				6130C1A1FAB60D1AFFAA7621D6F25736 /* DBSphereView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31714424CC696244E91EA0DCADE8E508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DBSphereTagCloud;
+			target = 516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */;
+			targetProxy = 43AECD16BC3855BB09CE539582860EF4 /* PBXContainerItemProxy */;
+		};
+		EFF8EA4D041AC0891C43F23B4B3B3D7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCPathButton;
+			target = 7764533D6B4098922368C95F6DDDF004 /* DCPathButton */;
+			targetProxy = 31317E5FA528DF31734A7A269EF03291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		095F0F5FE184212D12A60A8BF5703467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-moongae/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-moongae/Pods-moongae.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51F075A9DA263D1CBDF60D0CB7F9569E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloud;
+				PRODUCT_NAME = DBSphereTagCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		602FA1C2113F6FA732F68211BD7FD316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloud;
+				PRODUCT_NAME = DBSphereTagCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E04E16A9447A7F6E23A103C6CD5B6E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BEFAA4B2E65F9F2B99A38F474CC2DB /* Pods-moongae.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-moongae/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-moongae/Pods-moongae.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF26FA80D8D63AA0D87904A1C3F4DF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DCPathButton/DCPathButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCPathButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DCPathButton/DCPathButton.modulemap";
+				PRODUCT_MODULE_NAME = DCPathButton;
+				PRODUCT_NAME = DCPathButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B74FAD891E99B8BA45B83C8CBBF52602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DCPathButton/DCPathButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DCPathButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DCPathButton/DCPathButton.modulemap";
+				PRODUCT_MODULE_NAME = DCPathButton;
+				PRODUCT_NAME = DCPathButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72E471C3F34BAF14142B5CC1F4C1D0DC /* Build configuration list for PBXNativeTarget "Pods-moongae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E04E16A9447A7F6E23A103C6CD5B6E2 /* Debug */,
+				095F0F5FE184212D12A60A8BF5703467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C94E2EFE2B265292BB2E7C8E2352B01 /* Build configuration list for PBXNativeTarget "DCPathButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B74FAD891E99B8BA45B83C8CBBF52602 /* Debug */,
+				AF26FA80D8D63AA0D87904A1C3F4DF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CD4646551ACFBDC7D1E1B606E607C5 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F075A9DA263D1CBDF60D0CB7F9569E /* Debug */,
+				602FA1C2113F6FA732F68211BD7FD316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

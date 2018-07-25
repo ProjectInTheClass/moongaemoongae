@@ -1,0 +1,6 @@
+framework module DCPathButton {
+  umbrella header "DCPathButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
