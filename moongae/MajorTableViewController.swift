@@ -42,27 +42,34 @@ class MajorTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let info = self.modelMajor.arrayList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MajorCell", for: indexPath)
 
         // Configure the cell...
         cell.textLabel?.text = info.major
-        cell.detailTextLabel?.text =  String(info.number)
+        cell.detailTextLabel?.text =  String(modelProject.searchProjectNumber(majorName: info.major))
 
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail" {
-            let cell = sender as! UITableViewCell
-            let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
-            self.modelMajor.selectedIndex = indexPath.row
-            let majorName = modelMajor.arrayList[modelMajor.selectedIndex].major
-            let projectData = segue.destination as! MajorCollectionSortViewController
-            
-            //        let projectData = segue.destination as! MajorCollectionViewController
-            
-            projectData.modelCollect = modelProject.searchMajor(majorName: majorName)
+            if let projectData = segue.destination as? MajorCollectionSortViewController {
+                
+                let cell = sender as! UITableViewCell
+                let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
+                self.modelMajor.selectedIndex = indexPath.row
+                let majorName = modelMajor.arrayList[modelMajor.selectedIndex].major
+                
+                projectData.modelCollect = modelProject.searchMajor(majorName: majorName)
+                
+                projectData.title = modelMajor.arrayList[modelMajor.selectedIndex].major
+                
+            }
+        }
+
+          
         }
         
     }
@@ -112,4 +119,3 @@ class MajorTableViewController: UITableViewController {
     }
     */
 
-}

@@ -10,7 +10,6 @@
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
-		A08FFEA0210828C80024B382 /* icon_dea.png in Resources */ = {isa = PBXBuildFile; fileRef = A08FFE9F210828C80024B382 /* icon_dea.png */; };
 		A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */; };
 		A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC932100665100EBE60F /* CommentViewController.swift */; };
 		A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */; };
@@ -20,7 +19,6 @@
 		A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */; };
 		A0D52E4120FC867E00DF5A80 /* btn_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E4020FC867E00DF5A80 /* btn_bottom.png */; };
 		B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B520EDE70400BC80DB /* AppDelegate.swift */; };
-		B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B720EDE70400BC80DB /* FirstViewController.swift */; };
 		B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B920EDE70400BC80DB /* SecondViewController.swift */; };
 		B810A0BD20EDE70400BC80DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BB20EDE70400BC80DB /* Main.storyboard */; };
 		B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BE20EDE70600BC80DB /* Assets.xcassets */; };
@@ -73,7 +71,6 @@
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
-		A08FFE9F210828C80024B382 /* icon_dea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_dea.png; path = ../../../../Downloads/icon_dea.png; sourceTree = "<group>"; };
 		A08FFEA1210828CC0024B382 /* icon_dea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dea.png; sourceTree = "<group>"; };
 		A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		A0A6DC932100665100EBE60F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +82,6 @@
 		A0D52E4020FC867E00DF5A80 /* btn_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bottom.png; sourceTree = "<group>"; };
 		B810A0B220EDE70400BC80DB /* moongae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moongae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810A0B520EDE70400BC80DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B810A0B720EDE70400BC80DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B810A0B920EDE70400BC80DB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B810A0BC20EDE70400BC80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B810A0BE20EDE70600BC80DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,12 +200,10 @@
 		B810A0B420EDE70400BC80DB /* moongae */ = {
 			isa = PBXGroup;
 			children = (
-				A08FFE9F210828C80024B382 /* icon_dea.png */,
 				A0888CF720FF011400F70112 /* etc */,
 				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
 				B8803C9220EF30BC009717DF /* ui1.png */,
 				B8803C9020EF30B9009717DF /* ui2.png */,
-				B810A0B720EDE70400BC80DB /* FirstViewController.swift */,
 				B810A0B920EDE70400BC80DB /* SecondViewController.swift */,
 				B834C9B920F3098300088D85 /* 4ViewController.swift */,
 				B8576C6420F4530200E081F4 /* signupViewController.swift */,
@@ -341,7 +335,6 @@
 				B834C9D220F3328D00088D85 /* folder (1).png in Resources */,
 				B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */,
 				B8803C8C20EF2F76009717DF /* cloud-4.png in Resources */,
-				A08FFEA0210828C80024B382 /* icon_dea.png in Resources */,
 				B834C9CC20F331C600088D85 /* idea (2).png in Resources */,
 				B834C9D620F3406800088D85 /* moong2.png in Resources */,
 				B8803C8F20EF2F76009717DF /* cloud-5.png in Resources */,
@@ -422,7 +415,6 @@
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
 				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
-				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
 				B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */,

@@ -85,4 +85,14 @@ class ProjectModel {
         }
         return modelProject
     }
+    
+    func searchProjectNumber(majorName: String) -> Int {
+        var num = 0
+        for i in 1 ... arrayList.count {
+            if majorName == arrayList[i-1].major {
+                num += 1
+            }
+        }
+        return num
+    }
 }
