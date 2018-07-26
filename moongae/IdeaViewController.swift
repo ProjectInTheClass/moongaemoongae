@@ -45,75 +45,15 @@ class IdeaViewController: UIViewController {
                                  ["무덤덤" as AnyObject, UIImage(named: "cloud1")!],
                                  ["AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!]]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        sphereView = DBSphereView(frame: CGRect(x: -200, y: 200, width: 1000, height: 1000))
-        let array = NSMutableArray(capacity: 0)
-        for i in 0 ..< tag.count {
-            let btn: UIButton = UIButton(type: UIButtonType.system)
-            btn.setTitle(tag[i][0] as? String, for: UIControlState())
-            btn.setTitleColor(UIColor.black, for: .normal);
-            btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 50, right: 0)
-            btn.layer.masksToBounds = true
-            btn.setBackgroundImage(tag[i][1] as? UIImage, for: UIControlState())
-            btn.contentMode = UIViewContentMode.scaleAspectFit
-            btn.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-            btn.layer.cornerRadius = 30
-            btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
-            array.add(btn)
-            sphereView.addSubview(btn)
-        }
-        sphereView.setCloudTags(array as [AnyObject])
-        sphereView.backgroundColor = UIColor.white
-        self.view.addSubview(sphereView)
-    }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @objc func buttonPressed(_ btn: UIButton) {
-        sphereView.timerStop()
-        UIView.animate(withDuration: 1, animations: { () -> Void in
-            btn.transform = CGAffineTransform(scaleX: 3, y: 3)
-        }) { (finished) -> Void in
-            UIView.animate(withDuration: 0.3, animations: { () -> Void in
-                btn.transform = CGAffineTransform(scaleX: 1, y: 1)
-                
-                self.sphereView = DBSphereView(frame: CGRect(x: -200, y: 200, width: 100, height: 100))
-                let array = NSMutableArray(capacity: 0)
-                for i in 0 ..< self.project.count {
-                    let btn: UIButton = UIButton(type: UIButtonType.system)
-                    btn.setTitle(self.project[i][0] as? String, for: UIControlState())
-                    btn.setTitleColor(UIColor.black, for: .normal);
-                    btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-                    btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 50, right: 0)
-                    btn.layer.masksToBounds = true
-                    btn.setBackgroundImage(self.tag[i][1] as? UIImage, for: UIControlState())
-                    btn.contentMode = UIViewContentMode.scaleAspectFit
-                    btn.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-                    btn.layer.cornerRadius = 30
-                    btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
-                    array.add(btn)
-                    self.sphereView.addSubview(btn)
-                }
-                self.sphereView.setCloudTags(array as [AnyObject])
-                self.sphereView.backgroundColor = UIColor.white
-                self.view.addSubview(self.sphereView)
-            }, completion: { (finished) -> Void in
-                self.sphereView.timerStart()
-            })
-        }
-        self.sphereView.timerStart()
-    }
-        
-////        sphereView = DBSphereView(frame: CGRect(x: -200, y: 200, width: 1000, height: 1000))
+    // 원래 코드
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        sphereView = DBSphereView(frame: CGRect(x: -200, y: 200, width: 1000, height: 1000))
 //        let array = NSMutableArray(capacity: 0)
-//        for i in 0 ..< project.count {
+//        for i in 0 ..< tag.count {
 //            let btn: UIButton = UIButton(type: UIButtonType.system)
-//            btn.setTitle(project[i][0] as? String, for: UIControlState())
+//            btn.setTitle(tag[i][0] as? String, for: UIControlState())
 //            btn.setTitleColor(UIColor.black, for: .normal);
 //            btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
 //            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 50, right: 0)
@@ -130,4 +70,86 @@ class IdeaViewController: UIViewController {
 //        sphereView.backgroundColor = UIColor.white
 //        self.view.addSubview(sphereView)
 //    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        sphereView = DBSphereView(frame: CGRect(x: 0, y: 200, width: 1000, height: 1000))
+        let array = NSMutableArray(capacity: 0)
+        for i in 0 ..< tag.count {
+            let btn: UIButton = UIButton(type: UIButtonType.system)
+            btn.setTitle(tag[i][0] as! String, for: UIControlState())
+            btn.setTitleColor(UIColor.black, for: .normal);
+            btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 50, right: 0)
+            btn.layer.masksToBounds = true
+            btn.setBackgroundImage(tag[i][1] as! UIImage, for: UIControlState())
+            btn.contentMode = UIViewContentMode.scaleAspectFit
+            btn.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+            btn.layer.cornerRadius = 30
+            btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+            array.add(btn)
+            sphereView.addSubview(btn)
+        }
+        sphereView.setCloudTags(array as [AnyObject])
+        sphereView.backgroundColor = UIColor.white
+        self.view.addSubview(sphereView)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // 원래 코드
+//    @objc func buttonPressed(_ btn: UIButton) {
+//        sphereView.timerStop()
+//        UIView.animate(withDuration: 0.3, animations: { () -> Void in
+//            btn.transform = CGAffineTransform(scaleX: 2, y: 2)
+//        }) { (finished) -> Void in
+//            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+//                btn.transform = CGAffineTransform(scaleX: 1, y: 1)
+//            }, completion: { (finished) -> Void in
+//                self.sphereView.timerStart()
+//            })
+//        }
+//    }
+    
+    @objc func buttonPressed(_ btn: UIButton) {
+        sphereView.timerStop()
+        UIView.animate(withDuration: 0.3, animations: {() -> Void in
+            btn.transform = CGAffineTransform(scaleX: 4, y: 4)
+            
+            self.sphereView = DBSphereView(frame: CGRect(x: 100, y: 200, width: 300, height: 300))
+            let array = NSMutableArray(capacity: 0)
+            for i in 0 ..< self.project.count {
+                let btn: UIButton = UIButton(type: UIButtonType.system)
+                btn.setTitle((self.project[i][0] as! String), for: UIControlState())
+                btn.setTitleColor(UIColor.red, for: .normal);
+                btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+                btn.titleLabel?.sizeToFit()
+                btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 50, right: 0)
+                btn.layer.masksToBounds = true
+                btn.setBackgroundImage((self.tag[i][1] as! UIImage), for: UIControlState())
+                btn.contentMode = UIViewContentMode.scaleAspectFit
+                btn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+                btn.layer.cornerRadius = 0
+                btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+                array.add(btn)
+                self.sphereView.addSubview(btn)
+            }
+            self.sphereView.setCloudTags(array as [AnyObject])
+//            self.sphereView.backgroundColor = UIColor.white
+            self.view.addSubview(self.sphereView)
+            
+        }) { (finished) -> Void in
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                btn.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { (finished) -> Void in
+                self.sphereView.timerStart()
+            })
+        }
+    }
 }

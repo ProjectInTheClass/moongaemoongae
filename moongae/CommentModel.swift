@@ -11,6 +11,7 @@
 import Foundation
 
 class CommentInfo {
+//    static let CommentInfoSingleton = CommentInfo(title: "", userImage: "", userName: "", contents: "", writeDate: "")
     let title:String
     let userImage:String
     let userName:String
@@ -26,12 +27,15 @@ class CommentInfo {
     }
 }
 
+// Singleton 패턴 이용
 class CommentModel {
+    // static으로 선언
+    static let CommentModelSingleton = CommentModel()
     var arrayList:Array<CommentInfo>
-  //  let formatter = DateFormatter()
     var selectedIndex:Int = 0
     
-    init() {
+    // private로 선언
+    private init() {
         self.arrayList = []
         
         self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_1.png", userName: "김소연", contents: "우와 개발 어떻게 하신 거에요?", writeDate: "06-22"))
@@ -50,15 +54,10 @@ class CommentModel {
         return resultList
     }
     
-//    func searchForTitle(title:String) -> CommentModel {
-//        var resultList:Array<CommentInfo> = []
-//        for i in 0 ... arrayList.count {
-//            if(title == arrayList[i].title){
-//                resultList.append(arrayList[i])
-//            }
-//        }
-//        return resultList
-//    }
+    // 댓글 등록
+    func addComment(title:String, userImage:String, userName:String, contents:String, writeDate:String) -> Void {
+        self.arrayList.append(CommentInfo(title: title, userImage: userImage, userName: userName, contents: contents, writeDate: writeDate))
+    }
     
 }
 
