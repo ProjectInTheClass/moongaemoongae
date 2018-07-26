@@ -10,8 +10,8 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
-    var modelUser = UserListModel()
-//    var modelComment = CommentModel()
+    var modelUser = UserListModel.UserListModelSingleton
+    //    var modelComment = CommentModel()
     var modelComment = CommentModel.CommentModelSingleton
     var userName:String!
     var user:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", UserGrade: "",UserEmail:"")

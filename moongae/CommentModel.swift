@@ -11,7 +11,6 @@
 import Foundation
 
 class CommentInfo {
-//    static let CommentInfoSingleton = CommentInfo(title: "", userImage: "", userName: "", contents: "", writeDate: "")
     let title:String
     let userImage:String
     let userName:String

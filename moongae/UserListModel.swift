@@ -18,10 +18,12 @@ class UserList{
 }
 
 class UserListModel {
+    //singleton
+    static let UserListModelSingleton = UserListModel()
     var arrayList:Array<UserList>
     var selectedIndex:Int = 0
     
-    init() {
+    private init() {
         self.arrayList = []
         self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName: "박예빈", UserMajor: "정보보호학과", UserGrade: "4", UserEmail: "aaaa@naver.com"))
         
@@ -30,7 +32,11 @@ class UserListModel {
         self.arrayList.append(UserList(UserPhoto:"img_profile_woman_3.png", UserName:"이재은", UserMajor:"콘텐츠디자인학과", UserGrade:"4", UserEmail: "cccc@naver.com"))
     }
     
-
+//회원가입 함수
+    func CreateUserAccount(UserPhoto:String, UserName:String, UserMajor:String, UserGrade:String, UserEmail:String) -> Void {
+        self.arrayList.append(UserList(UserPhoto: UserPhoto, UserName: UserName, UserMajor: UserMajor, UserGrade: UserGrade, UserEmail: UserEmail))
+    }
+    
     // email로 user 검색
 //    func searchForEmail(email:String) -> UserList {
 //        var result:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", UserGrade: "",UserEmail:"")
