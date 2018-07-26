@@ -328,7 +328,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRX-xO-SPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-314" y="933"/>
+            <point key="canvasLocation" x="-1242" y="641"/>
         </scene>
         <!--모아보기-->
         <scene sceneID="NZy-Ne-cS2">
@@ -678,6 +678,9 @@
                                         <state key="normal" title="등록">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="CommetAddPressed:" destination="BZ5-Z4-gWh" eventType="touchUpInside" id="Xxk-Ut-OXm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -700,6 +703,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="812"/>
                     <connections>
+                        <outlet property="TextCommentAdd" destination="FPh-cr-jq1" id="P9Z-QE-b65"/>
                         <outlet property="labelSummary" destination="O9D-MY-VG4" id="W9K-Nw-CDC"/>
                         <outlet property="labelTitle" destination="mYx-By-ylt" id="chz-R3-3m0"/>
                         <outlet property="tableView" destination="U8O-pz-YRQ" id="wxf-cv-f2k"/>

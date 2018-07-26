@@ -28,7 +28,6 @@ class CommentInfo {
 
 class CommentModel {
     var arrayList:Array<CommentInfo>
-  //  let formatter = DateFormatter()
     var selectedIndex:Int = 0
     
     init() {
@@ -50,15 +49,10 @@ class CommentModel {
         return resultList
     }
     
-//    func searchForTitle(title:String) -> CommentModel {
-//        var resultList:Array<CommentInfo> = []
-//        for i in 0 ... arrayList.count {
-//            if(title == arrayList[i].title){
-//                resultList.append(arrayList[i])
-//            }
-//        }
-//        return resultList
-//    }
+    // 댓글 등록
+    func addComment(title:String, userImage:String, userName:String, contents:String, writeDate:String) -> Void {
+        self.arrayList.append(CommentInfo(title: title, userImage: userImage, userName: userName, contents: contents, writeDate: writeDate))
+    }
     
 }
 
