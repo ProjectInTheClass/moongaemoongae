@@ -11,6 +11,8 @@ import DBSphereTagCloud
 
 class IdeaViewController: UIViewController {
     
+    @IBOutlet weak var searchView: UITextField!
+    @IBOutlet weak var tagView: UIView!
     @IBOutlet var sphereView: DBSphereView!
     var patchView: SFPatchView!
     var tag: [[AnyObject]] = [["자바" as AnyObject, UIImage(named: "cloud3")!],
@@ -81,7 +83,7 @@ class IdeaViewController: UIViewController {
             btn.setTitle(tag[i][0] as? String, for: UIControlState())
             btn.setTitleColor(UIColor.black, for: .normal);
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 0, right: 0)
+            btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
             btn.layer.masksToBounds = true
             btn.setBackgroundImage(tag[i][1] as? UIImage, for: UIControlState())
             btn.contentMode = UIViewContentMode.scaleAspectFit
@@ -94,6 +96,8 @@ class IdeaViewController: UIViewController {
         sphereView.setCloudTags(array as [AnyObject])
         sphereView.backgroundColor = UIColor.white
         self.view.addSubview(sphereView)
+        self.view.bringSubview(toFront: tagView)
+        self.view.bringSubview(toFront: searchView)
     }
     
     // 원래 코드
@@ -127,7 +131,7 @@ class IdeaViewController: UIViewController {
                 btn.setTitleColor(UIColor.blue, for: .normal);
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
                 btn.titleLabel?.sizeToFit()
-                btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 0, right: 0)
+                btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
                 btn.layer.masksToBounds = true
                 btn.setBackgroundImage((self.tag[i][1] as! UIImage), for: UIControlState())
                 btn.contentMode = UIViewContentMode.scaleAspectFit
@@ -136,7 +140,8 @@ class IdeaViewController: UIViewController {
                 
                 // 프로젝트 구름은 클릭해도 다시 view가 생성되지 않음.
                 // 대신, 해당 프로젝트 화면으로 이동해야 함. (아직 구현 미완료)
-                btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+//                btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+                btn.addTarget(self, action: #selector(IdeaViewController.cloudHidden(_:)), for: UIControlEvents.touchUpInside)
                 array.add(btn)
                 self.sphereView.addSubview(btn)
             }
@@ -153,6 +158,11 @@ class IdeaViewController: UIViewController {
             })
             }
         }
+    }
+    
+    @objc func cloudHidden(_ btn: UIButton) {
+        self.sphereView.isHidden = true
+        self.sphereView.timerStop()
     }
     
 //    @objc func buttonPressed2(_ btn: UIButton) {
