@@ -13,7 +13,8 @@ import UIKit
 
 class CommentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var modelComment = CommentModel()
+//    var modelComment = CommentModel()
+    var modelComment = CommentModel.CommentModelSingleton
     var modelProject = ProjectModel()
     var modelUser = UserListModel()
 //    var comment = CommentModel()
@@ -30,6 +31,9 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
         let detailProject = modelProject.arrayList[modelProject.selectedIndex]
         labelTitle.text = detailProject.title
         labelSummary.text = detailProject.summary
+        
+//        CommentInfo.CommentInfoSingleton
+//        CommentModel.CommentModelSingleton
     }
     
     @IBAction func bottomPressed(_ sender: Any) {
@@ -74,6 +78,7 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
         TextCommentAdd.text = commentContent
         
         modelComment.addComment(title: labelTitle.text!, userImage: "", userName: "테스트", contents: commentContent, writeDate: "99-99")
+//        CommentModel.CommentModelSingleton.addComment(title: labelTitle.text!, userImage: "", userName: "테스트", contents: commentContent, writeDate: "99-99")
         self.comment = self.modelComment.searchForTitle(title: labelTitle.text!)
         tableView.reloadData()
     }
