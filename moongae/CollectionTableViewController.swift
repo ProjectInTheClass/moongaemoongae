@@ -32,7 +32,10 @@ class CollectionTableViewController: UITableViewController {
         
         cell.title?.text = info.title
         cell.summary?.text = info.summary
-        cell.tags?.text = info.tags
+        for i in 0...info.tags.count-1 {
+                    cell.tags?.text = " # " + info.tags[i]
+        }
+
         cell.createdDate?.text = info.createdDate
         cell.project_image?.image = UIImage(named: info.project_image)
         cell.startDate?.text = info.startDate
