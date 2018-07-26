@@ -363,11 +363,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-moongae/Pods-moongae-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloud/DBSphereTagCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/DCPathButton/DCPathButton.framework",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCPathButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +421,6 @@
 				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
 				D0DE709C210873DB0045EA22 /* CreateProjectController.swift in Sources */,
-				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
 				B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */,

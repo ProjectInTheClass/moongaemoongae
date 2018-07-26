@@ -7,92 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0468517A1EECA8D018C00AA65A732D17 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */; };
-		1CCC627FF1D9B59A95BDC083D417A44A /* DBPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FF36EF577CDCAE1703E52CA9983E08A /* DCPathButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22441212279249EF0FBB4904C8A3F82A /* DCPathButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0468517A1EECA8D018C00AA65A732D17 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F92647CE3D49F03DACA256F6625747 /* DCPathItemButton.m */; };
+		08D179705318073C364700B08F652A7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258BAF19C4120544B5D27DFE4CA92D2 /* TagView.swift */; };
+		1CCC627FF1D9B59A95BDC083D417A44A /* DBPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E108AC4B5482D98DA0F9C545E2203503 /* DBPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF36EF577CDCAE1703E52CA9983E08A /* DCPathButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3D144CD24FD1AD364A3DEBBB3E9C0D /* DCPathButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22441212279249EF0FBB4904C8A3F82A /* DCPathButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14258D7F3AFFFA5B644B863D11E5F6B0 /* DCPathButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23F65B4EDE44AEF2B9ADA2D928FFBB1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20711D00ACCF9B1456070B64A994424 /* CoreGraphics.framework */; };
-		381EA2CDEBB0295ED168FC379DDE64FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
-		451A5CDA9313675199CA45300BF5F2AF /* DBMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6130C1A1FAB60D1AFFAA7621D6F25736 /* DBSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */; };
-		62F6641838755C504E895DAB523CE3E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */; };
-		7192342270E1B0F3BA0AFFA22EB141D9 /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */; };
-		7D08CAE9F0C89438573657473B5DD458 /* Pods-moongae-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */; };
-		7D208420E9DCC45AC5E4009FA92F36C4 /* DCPathButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */; };
-		7DFA729A8C5D561D074658528CF879C4 /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */; };
-		8481D1742DED4C93038E5010A0993AEB /* DBSphereTagCloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AE4BEE8EB75927609B9CA1F76A3B24 /* Pods-moongae-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451A5CDA9313675199CA45300BF5F2AF /* DBMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BD988223978217A542B0C5E78C3893 /* DBMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AA076D34D8D23DA8C8ECE44794F95E0 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74774E49FA91F0EF1B79E48679923D92 /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6130C1A1FAB60D1AFFAA7621D6F25736 /* DBSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B859C81134F2964E4DC30C6C2475B /* DBSphereView.m */; };
+		62F6641838755C504E895DAB523CE3E5 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25875CF57DBB8DBA237F8D354CC1EF50 /* DCPathButton.m */; };
+		7192342270E1B0F3BA0AFFA22EB141D9 /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0ED4A4A6977B0A93F2F991BA501FAC97 /* fold.caf */; };
+		7CF0E5919BA046F04864FC849D889985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
+		7D208420E9DCC45AC5E4009FA92F36C4 /* DCPathButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B4D70F57F2E6997EE7EFF71121E8 /* DCPathButton-dummy.m */; };
+		7DFA729A8C5D561D074658528CF879C4 /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 79EA2F8F6D74F45772E30ED07F58EBBC /* bloom.caf */; };
+		807F88279A8DC44A1A4F9AAA829A3F32 /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8228C76116B39B2C501D849249D26E38 /* TagListView-dummy.m */; };
+		82EC4CB9D41916D4B37FD99FED60BE89 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B6C53118ADEEE49D0E376D2A250FC /* TagListView.swift */; };
+		8481D1742DED4C93038E5010A0993AEB /* DBSphereTagCloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C11363033C3F427BC7037F83F9979A0 /* DBSphereTagCloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FBE1D494E1AB4902387209337CEE83A /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC90C9A3E68B7C48E0AF4271CDF7293 /* CloseButton.swift */; };
 		904F339BB1D786A74201F9D0B1FAE5B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE43D61A65367DF5D29D2ED61BB14359 /* UIKit.framework */; };
 		9668FE74C738EC8D32F1BE5BDCA24C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
-		9BCC4AFC8EAD117091E87EE762423025 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 577F75169618CA68A76A6C9B67733492 /* selected.caf */; };
+		9BCC4AFC8EAD117091E87EE762423025 /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 653C4EF28A165C35608F4264359DB269 /* selected.caf */; };
+		9E7095B1E9300D3DF248DC3ADAF59FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
 		A1C3A3A4C4F6567D3144A614BC549C02 /* AudioToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8783ADEE02499B0E47C522A6288AFA84 /* AudioToolBox.framework */; };
 		A410090A58F1AB3DCA8ABC48C69F95BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254D00F78EB6692C01DF347213122319 /* Foundation.framework */; };
-		BF9A0015C01A7C62870BD3E93D4ACC72 /* DBSphereTagCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */; };
-		C70D6EF88DE9CEFBC0AE729C7EDFBE50 /* DBSphereView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9A0015C01A7C62870BD3E93D4ACC72 /* DBSphereTagCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C40CD6FA5106FC4EDA9C2F3014E995 /* DBSphereTagCloud-dummy.m */; };
+		C70D6EF88DE9CEFBC0AE729C7EDFBE50 /* DBSphereView.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FE5B2A5738242D9D98063105AE12E3 /* DBSphereView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00905F491348CC8186D9449116A4A6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4C54B7142D4141F42821D7D430CC40 /* QuartzCore.framework */; };
-		D79CF5917E35A34E6B08F28B2C041274 /* Pods-moongae-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8D0BC91806BEA7711A9E443EED7F79D /* DCPathItemButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2A56A419B988B4F2EBCE43CD47B4316 /* Pods-moongae-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */; };
+		E8D0BC91806BEA7711A9E443EED7F79D /* DCPathItemButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF4300214DC0648B9C25CC10D9854E6 /* DCPathItemButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31317E5FA528DF31734A7A269EF03291 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7764533D6B4098922368C95F6DDDF004;
-			remoteInfo = DCPathButton;
-		};
-		43AECD16BC3855BB09CE539582860EF4 /* PBXContainerItemProxy */ = {
+		2230EA3EA18801D5ED3C928BBC24ED64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 516B697CCE233FC7AB8F09F5F237AEEC;
 			remoteInfo = DBSphereTagCloud;
 		};
+		59DF274CFAD5B51CD126AA8E58C619F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A43ED6B963DCD7C02180E0FEC8A8B39E;
+			remoteInfo = TagListView;
+		};
+		D2A0AD925E376AE2CDEBD5AAD370B817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7764533D6B4098922368C95F6DDDF004;
+			remoteInfo = DCPathButton;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBSphereTagCloud-dummy.m"; sourceTree = "<group>"; };
-		0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCPathButton.xcconfig; sourceTree = "<group>"; };
-		19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathItemButton.h; path = DCPathButton/Classes/DCPathItemButton.h; sourceTree = "<group>"; };
-		1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.caf; path = DCPathButton/Sounds/bloom.caf; sourceTree = "<group>"; };
-		1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DCPathButton.framework; path = DCPathButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA324D0845771DA962104F1E7EEB64C /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_moongae.framework; path = "Pods-moongae.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED4A4A6977B0A93F2F991BA501FAC97 /* fold.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = fold.caf; path = DCPathButton/Sounds/fold.caf; sourceTree = "<group>"; };
+		1234F3C68BBD304F7FEBC82D4F1E4E15 /* DCPathButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCPathButton.xcconfig; sourceTree = "<group>"; };
+		14258D7F3AFFFA5B644B863D11E5F6B0 /* DCPathButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-umbrella.h"; sourceTree = "<group>"; };
+		1C8E219FC582B3535D5604BB00C99CA6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23FE5B2A5738242D9D98063105AE12E3 /* DBSphereView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSphereView.h; path = DBSphereTagCloud/DBSphereView.h; sourceTree = "<group>"; };
 		254D00F78EB6692C01DF347213122319 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25875CF57DBB8DBA237F8D354CC1EF50 /* DCPathButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = DCPathButton/Classes/DCPathButton.m; sourceTree = "<group>"; };
 		28D0D62F39A41A6E02054F9CBCC4E97F /* Pods-moongae-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-moongae-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMatrix.h; path = DBSphereTagCloud/DBMatrix.h; sourceTree = "<group>"; };
-		33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = DCPathButton/Classes/DCPathButton.h; sourceTree = "<group>"; };
-		3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_moongae.framework; path = "Pods-moongae.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C40CD6FA5106FC4EDA9C2F3014E995 /* DBSphereTagCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBSphereTagCloud-dummy.m"; sourceTree = "<group>"; };
+		2D3D144CD24FD1AD364A3DEBBB3E9C0D /* DCPathButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = DCPathButton/Classes/DCPathButton.h; sourceTree = "<group>"; };
 		387CA8A1992E69318E4EEAFE52B83B77 /* Pods-moongae-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-moongae-resources.sh"; sourceTree = "<group>"; };
-		45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBSphereView.m; path = DBSphereTagCloud/DBSphereView.m; sourceTree = "<group>"; };
+		3C11363033C3F427BC7037F83F9979A0 /* DBSphereTagCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-umbrella.h"; sourceTree = "<group>"; };
+		4513492029BDE0D4EFA972423DE7BB03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451F36B952BA986995ECEAE9E0572396 /* DBSphereTagCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBSphereTagCloud.xcconfig; sourceTree = "<group>"; };
 		456AA83C161034554F6B283BFDB89341 /* Pods-moongae-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-moongae-umbrella.h"; sourceTree = "<group>"; };
-		45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPoint.h; path = DBSphereTagCloud/DBPoint.h; sourceTree = "<group>"; };
 		469F95093E69F99360934032D9D87DE9 /* Pods-moongae-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-moongae-acknowledgements.plist"; sourceTree = "<group>"; };
-		4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSphereView.h; path = DBSphereTagCloud/DBSphereView.h; sourceTree = "<group>"; };
-		577F75169618CA68A76A6C9B67733492 /* selected.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = selected.caf; path = DCPathButton/Sounds/selected.caf; sourceTree = "<group>"; };
-		58104B107C6251AEC143C528075EF120 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6492CE8B39B6D938A449A40751D088C7 /* DBSphereTagCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBSphereTagCloud.modulemap; sourceTree = "<group>"; };
+		653C4EF28A165C35608F4264359DB269 /* selected.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = selected.caf; path = DCPathButton/Sounds/selected.caf; sourceTree = "<group>"; };
+		6B6B859C81134F2964E4DC30C6C2475B /* DBSphereView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBSphereView.m; path = DBSphereTagCloud/DBSphereView.m; sourceTree = "<group>"; };
+		6BF5BD7C49A52082533E1DEDED168E23 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
+		74774E49FA91F0EF1B79E48679923D92 /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
+		79EA2F8F6D74F45772E30ED07F58EBBC /* bloom.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.caf; path = DCPathButton/Sounds/bloom.caf; sourceTree = "<group>"; };
+		81BD988223978217A542B0C5E78C3893 /* DBMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBMatrix.h; path = DBSphereTagCloud/DBMatrix.h; sourceTree = "<group>"; };
+		8228C76116B39B2C501D849249D26E38 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
 		8783ADEE02499B0E47C522A6288AFA84 /* AudioToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolBox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolBox.framework; sourceTree = DEVELOPER_DIR; };
+		87F92647CE3D49F03DACA256F6625747 /* DCPathItemButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathItemButton.m; path = DCPathButton/Classes/DCPathItemButton.m; sourceTree = "<group>"; };
 		925B4C2BE1D8FDB7F6F19AE812705BCA /* Pods-moongae-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-moongae-frameworks.sh"; sourceTree = "<group>"; };
-		9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBSphereTagCloud.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathItemButton.m; path = DCPathButton/Classes/DCPathItemButton.m; sourceTree = "<group>"; };
+		94D6A486CB8F0DEC27E76B15AE43055E /* DCPathButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DCPathButton.modulemap; sourceTree = "<group>"; };
+		96413F55447D5BA1ECFAAF7B922A11B8 /* DCPathButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-prefix.pch"; sourceTree = "<group>"; };
+		A258BAF19C4120544B5D27DFE4CA92D2 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
 		A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
 		A4BCDB1A9BDAB19FFF275B69525F8218 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4E2DA4B45F2C60B8D2A067142782172 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = DCPathButton/Classes/DCPathButton.m; sourceTree = "<group>"; };
-		B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCPathButton-dummy.m"; sourceTree = "<group>"; };
-		B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */ = {isa = PBXFileReference; includeInIndex = 1; name = fold.caf; path = DCPathButton/Sounds/fold.caf; sourceTree = "<group>"; };
-		B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DBSphereTagCloud.framework; path = DBSphereTagCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52979C700B74B9E0D59012914837670 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
+		B7CB24544CC038A00B18328E6B0916F3 /* DCPathButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DCPathButton.framework; path = DCPathButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BBF6B6DACA5BBA8AFE53A02DEE9968 /* DBSphereTagCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-prefix.pch"; sourceTree = "<group>"; };
+		BA04E8B2193B8E6645FDC2414C854F9A /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC90C9A3E68B7C48E0AF4271CDF7293 /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
 		BE43D61A65367DF5D29D2ED61BB14359 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C20711D00ACCF9B1456070B64A994424 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		C66D568D6B57D55894C992F9772E3262 /* Pods-moongae-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-moongae-dummy.m"; sourceTree = "<group>"; };
-		C74785D4E6ED289066DD7B3FD449AE0B /* DBSphereTagCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-prefix.pch"; sourceTree = "<group>"; };
-		CCB750CEBA931010AB59A51A4055C391 /* DCPathButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-prefix.pch"; sourceTree = "<group>"; };
+		CDF4300214DC0648B9C25CC10D9854E6 /* DCPathItemButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DCPathItemButton.h; path = DCPathButton/Classes/DCPathItemButton.h; sourceTree = "<group>"; };
+		CF0B6C53118ADEEE49D0E376D2A250FC /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
+		D4F599F7999BC429EBE373DDF8E5A83A /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
 		D7BEFAA4B2E65F9F2B99A38F474CC2DB /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
-		E608128E7B39FFA4E25A9D9159DE7AC4 /* DCPathButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DCPathButton.modulemap; sourceTree = "<group>"; };
+		E108AC4B5482D98DA0F9C545E2203503 /* DBPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPoint.h; path = DBSphereTagCloud/DBPoint.h; sourceTree = "<group>"; };
+		EBAF09B0BBC1AE74D644457A74CDCAF8 /* DBSphereTagCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBSphereTagCloud.modulemap; sourceTree = "<group>"; };
+		EDE1B4D70F57F2E6997EE7EFF71121E8 /* DCPathButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCPathButton-dummy.m"; sourceTree = "<group>"; };
 		EF4C54B7142D4141F42821D7D430CC40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloud-umbrella.h"; sourceTree = "<group>"; };
 		F64E69A176580EC68507C1685CFA498E /* Pods-moongae.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-moongae.modulemap"; sourceTree = "<group>"; };
-		F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCPathButton-umbrella.h"; sourceTree = "<group>"; };
+		F96817FC8701985425F202E89A6525D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFB9AFD6FFD4626BB5615872B1DA9B6 /* DBSphereTagCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DBSphereTagCloud.framework; path = DBSphereTagCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +129,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C5B329198923ED29E08011AA1DAB4D2 /* Frameworks */ = {
+		496C98F3FD45322856457324959EDA5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381EA2CDEBB0295ED168FC379DDE64FF /* Foundation.framework in Frameworks */,
+				7CF0E5919BA046F04864FC849D889985 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,40 +147,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA5433D0988183C56D18990015AA21D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7095B1E9300D3DF248DC3ADAF59FA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01560C51D102A5A19BEA72CC3BF02955 /* Support Files */ = {
+		02D868CEF481E74C7384337D74AA1FBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6492CE8B39B6D938A449A40751D088C7 /* DBSphereTagCloud.modulemap */,
-				9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */,
-				07146A6D24074C9869BA623001BAE54F /* DBSphereTagCloud-dummy.m */,
-				C74785D4E6ED289066DD7B3FD449AE0B /* DBSphereTagCloud-prefix.pch */,
-				F25CC72A9A1DD150540DBD61DDD53123 /* DBSphereTagCloud-umbrella.h */,
-				A4E2DA4B45F2C60B8D2A067142782172 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DBSphereTagCloud";
-			sourceTree = "<group>";
-		};
-		0A8140DB1F0DB1CD1657262756A4DA12 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2C7D17A4A26EC24749EF4ED532EA152C /* DBSphereTagCloud */,
-				640D768BDF9E284CFE326C62557E4140 /* DCPathButton */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		0B612FD16E7C1BF879E1B09157D211FB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */,
-				1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */,
-				3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */,
+				FBFB9AFD6FFD4626BB5615872B1DA9B6 /* DBSphereTagCloud.framework */,
+				B7CB24544CC038A00B18328E6B0916F3 /* DCPathButton.framework */,
+				0AA324D0845771DA962104F1E7EEB64C /* Pods_moongae.framework */,
+				BA04E8B2193B8E6645FDC2414C854F9A /* TagListView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1F9EAD928F0A4ECB5A7A3A8DB846CD0E /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D3D144CD24FD1AD364A3DEBBB3E9C0D /* DCPathButton.h */,
+				25875CF57DBB8DBA237F8D354CC1EF50 /* DCPathButton.m */,
+				CDF4300214DC0648B9C25CC10D9854E6 /* DCPathItemButton.h */,
+				87F92647CE3D49F03DACA256F6625747 /* DCPathItemButton.m */,
+				F29C3B306E434802C7F48D5774C0B65B /* Resources */,
+				2D844DCAFA095FD67AE13A4FF57E24AA /* Support Files */,
+			);
+			name = DCPathButton;
+			path = DCPathButton;
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
@@ -168,17 +191,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2C7D17A4A26EC24749EF4ED532EA152C /* DBSphereTagCloud */ = {
+		2D844DCAFA095FD67AE13A4FF57E24AA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A9A4E3BCCC707833ECFD2D1CCF6BDFB /* DBMatrix.h */,
-				45CB12331A8B54CCA8A4A0AD33425C65 /* DBPoint.h */,
-				4CD3EBAD20B2C011C89F07420551DE4D /* DBSphereView.h */,
-				45019D27D7AFAA1C5844A14868273D7A /* DBSphereView.m */,
-				01560C51D102A5A19BEA72CC3BF02955 /* Support Files */,
+				94D6A486CB8F0DEC27E76B15AE43055E /* DCPathButton.modulemap */,
+				1234F3C68BBD304F7FEBC82D4F1E4E15 /* DCPathButton.xcconfig */,
+				EDE1B4D70F57F2E6997EE7EFF71121E8 /* DCPathButton-dummy.m */,
+				96413F55447D5BA1ECFAAF7B922A11B8 /* DCPathButton-prefix.pch */,
+				14258D7F3AFFFA5B644B863D11E5F6B0 /* DCPathButton-umbrella.h */,
+				1C8E219FC582B3535D5604BB00C99CA6 /* Info.plist */,
 			);
-			name = DBSphereTagCloud;
-			path = DBSphereTagCloud;
+			name = "Support Files";
+			path = "../Target Support Files/DCPathButton";
 			sourceTree = "<group>";
 		};
 		38527E7DB596F1B59CB12FE54FC38656 /* Pods-moongae */ = {
@@ -207,6 +231,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		528F0AD480C95DB4BBEB27E36EA8962F /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				BDC90C9A3E68B7C48E0AF4271CDF7293 /* CloseButton.swift */,
+				CF0B6C53118ADEEE49D0E376D2A250FC /* TagListView.swift */,
+				A258BAF19C4120544B5D27DFE4CA92D2 /* TagView.swift */,
+				78788D334EAF34687274B56B710EF485 /* Support Files */,
+			);
+			name = TagListView;
+			path = TagListView;
+			sourceTree = "<group>";
+		};
 		5A61229B7CDBD6DC1E4D31490CCC19FF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,28 +255,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		621A2A7C8D127F7F5066CD7A18766714 /* Resources */ = {
+		78788D334EAF34687274B56B710EF485 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1BED3923FE77A74B355E6C3397C1BB72 /* bloom.caf */,
-				B0E98B3EDF3957366F4157773FEF5EDB /* fold.caf */,
-				577F75169618CA68A76A6C9B67733492 /* selected.caf */,
+				F96817FC8701985425F202E89A6525D6 /* Info.plist */,
+				6BF5BD7C49A52082533E1DEDED168E23 /* TagListView.modulemap */,
+				D4F599F7999BC429EBE373DDF8E5A83A /* TagListView.xcconfig */,
+				8228C76116B39B2C501D849249D26E38 /* TagListView-dummy.m */,
+				A52979C700B74B9E0D59012914837670 /* TagListView-prefix.pch */,
+				74774E49FA91F0EF1B79E48679923D92 /* TagListView-umbrella.h */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/TagListView";
 			sourceTree = "<group>";
 		};
-		640D768BDF9E284CFE326C62557E4140 /* DCPathButton */ = {
+		7B713DBD3C7DAD11F83C0AE714E340D2 /* DBSphereTagCloud */ = {
 			isa = PBXGroup;
 			children = (
-				33C56707ACB5EA424CAF04F7BE3C4B4B /* DCPathButton.h */,
-				A772BDB22FFD94DCF859063D07486B6C /* DCPathButton.m */,
-				19E76F3352EAAE3FCEDD869ECFB7A92D /* DCPathItemButton.h */,
-				A36F9DCCFE05B0B07395F8F9A961B491 /* DCPathItemButton.m */,
-				621A2A7C8D127F7F5066CD7A18766714 /* Resources */,
-				B91063BD173BE4E803FF8B84A46D2C9F /* Support Files */,
+				81BD988223978217A542B0C5E78C3893 /* DBMatrix.h */,
+				E108AC4B5482D98DA0F9C545E2203503 /* DBPoint.h */,
+				23FE5B2A5738242D9D98063105AE12E3 /* DBSphereView.h */,
+				6B6B859C81134F2964E4DC30C6C2475B /* DBSphereView.m */,
+				9967B1815A5D461C9DEA09DA782692B5 /* Support Files */,
 			);
-			name = DCPathButton;
-			path = DCPathButton;
+			name = DBSphereTagCloud;
+			path = DBSphereTagCloud;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -248,37 +287,49 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				0A8140DB1F0DB1CD1657262756A4DA12 /* Pods */,
-				0B612FD16E7C1BF879E1B09157D211FB /* Products */,
+				DA7B8D77E5F9E2771CCE24C830056DA0 /* Pods */,
+				02D868CEF481E74C7384337D74AA1FBA /* Products */,
 				4609B818B7099607E39D58A306B95261 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B91063BD173BE4E803FF8B84A46D2C9F /* Support Files */ = {
+		9967B1815A5D461C9DEA09DA782692B5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E608128E7B39FFA4E25A9D9159DE7AC4 /* DCPathButton.modulemap */,
-				0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */,
-				B01BE2ABD0CC82CA2A78C87D82E22DE5 /* DCPathButton-dummy.m */,
-				CCB750CEBA931010AB59A51A4055C391 /* DCPathButton-prefix.pch */,
-				F7D8C9E1A75DCEAB8DD7C74412E550E0 /* DCPathButton-umbrella.h */,
-				58104B107C6251AEC143C528075EF120 /* Info.plist */,
+				EBAF09B0BBC1AE74D644457A74CDCAF8 /* DBSphereTagCloud.modulemap */,
+				451F36B952BA986995ECEAE9E0572396 /* DBSphereTagCloud.xcconfig */,
+				29C40CD6FA5106FC4EDA9C2F3014E995 /* DBSphereTagCloud-dummy.m */,
+				B9BBF6B6DACA5BBA8AFE53A02DEE9968 /* DBSphereTagCloud-prefix.pch */,
+				3C11363033C3F427BC7037F83F9979A0 /* DBSphereTagCloud-umbrella.h */,
+				4513492029BDE0D4EFA972423DE7BB03 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/DCPathButton";
+			path = "../Target Support Files/DBSphereTagCloud";
+			sourceTree = "<group>";
+		};
+		DA7B8D77E5F9E2771CCE24C830056DA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B713DBD3C7DAD11F83C0AE714E340D2 /* DBSphereTagCloud */,
+				1F9EAD928F0A4ECB5A7A3A8DB846CD0E /* DCPathButton */,
+				528F0AD480C95DB4BBEB27E36EA8962F /* TagListView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F29C3B306E434802C7F48D5774C0B65B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79EA2F8F6D74F45772E30ED07F58EBBC /* bloom.caf */,
+				0ED4A4A6977B0A93F2F991BA501FAC97 /* fold.caf */,
+				653C4EF28A165C35608F4264359DB269 /* selected.caf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4CBD6DE014DDEDFC092B23CECB59FC65 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D79CF5917E35A34E6B08F28B2C041274 /* Pods-moongae-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		880866FF3F0C4EA5883A28BF5C5D7306 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +338,22 @@
 				1CCC627FF1D9B59A95BDC083D417A44A /* DBPoint.h in Headers */,
 				8481D1742DED4C93038E5010A0993AEB /* DBSphereTagCloud-umbrella.h in Headers */,
 				C70D6EF88DE9CEFBC0AE729C7EDFBE50 /* DBSphereView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9316010C65E4E50ABD7973B096F696B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA076D34D8D23DA8C8ECE44794F95E0 /* TagListView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72659B24FF859179E4E3F11AABC7412 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AE4BEE8EB75927609B9CA1F76A3B24 /* Pods-moongae-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,25 +370,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03EB202C41A49866CFABF573EAC5E909 /* Pods-moongae */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72E471C3F34BAF14142B5CC1F4C1D0DC /* Build configuration list for PBXNativeTarget "Pods-moongae" */;
-			buildPhases = (
-				4F02D63C8938F3A52E72F35E2F10D4EF /* Sources */,
-				4C5B329198923ED29E08011AA1DAB4D2 /* Frameworks */,
-				4CBD6DE014DDEDFC092B23CECB59FC65 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				31714424CC696244E91EA0DCADE8E508 /* PBXTargetDependency */,
-				EFF8EA4D041AC0891C43F23B4B3B3D7E /* PBXTargetDependency */,
-			);
-			name = "Pods-moongae";
-			productName = "Pods-moongae";
-			productReference = 3773277DEB562019DE431C1F11F0888B /* Pods_moongae.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7CD4646551ACFBDC7D1E1B606E607C5 /* Build configuration list for PBXNativeTarget "DBSphereTagCloud" */;
@@ -336,7 +384,7 @@
 			);
 			name = DBSphereTagCloud;
 			productName = DBSphereTagCloud;
-			productReference = B0F3F0C5FD66E8CAA518D58286945C87 /* DBSphereTagCloud.framework */;
+			productReference = FBFB9AFD6FFD4626BB5615872B1DA9B6 /* DBSphereTagCloud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7764533D6B4098922368C95F6DDDF004 /* DCPathButton */ = {
@@ -354,7 +402,44 @@
 			);
 			name = DCPathButton;
 			productName = DCPathButton;
-			productReference = 1DE279E8AE7DA54A893669271D72A5B3 /* DCPathButton.framework */;
+			productReference = B7CB24544CC038A00B18328E6B0916F3 /* DCPathButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A43ED6B963DCD7C02180E0FEC8A8B39E /* TagListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653ED398757342AE501D76B93DB13A89 /* Build configuration list for PBXNativeTarget "TagListView" */;
+			buildPhases = (
+				DB7F56C21D0E00499A365FC13297B3F5 /* Sources */,
+				DA5433D0988183C56D18990015AA21D1 /* Frameworks */,
+				A9316010C65E4E50ABD7973B096F696B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagListView;
+			productName = TagListView;
+			productReference = BA04E8B2193B8E6645FDC2414C854F9A /* TagListView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9C65A1307AE9B39E7B982262467EC49 /* Pods-moongae */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0502E7180C8F02291075FE4C767B546F /* Build configuration list for PBXNativeTarget "Pods-moongae" */;
+			buildPhases = (
+				26C9032055A8859A85EC1E3113903B22 /* Sources */,
+				496C98F3FD45322856457324959EDA5E /* Frameworks */,
+				C72659B24FF859179E4E3F11AABC7412 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4122C7A23469E5834DFC15F847A0D2 /* PBXTargetDependency */,
+				AF1DFD90DDCC8EC89A514AF09734384E /* PBXTargetDependency */,
+				799A100553BD47BCB366572F773807CF /* PBXTargetDependency */,
+			);
+			name = "Pods-moongae";
+			productName = "Pods-moongae";
+			productReference = 0AA324D0845771DA962104F1E7EEB64C /* Pods_moongae.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -374,13 +459,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0B612FD16E7C1BF879E1B09157D211FB /* Products */;
+			productRefGroup = 02D868CEF481E74C7384337D74AA1FBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */,
 				7764533D6B4098922368C95F6DDDF004 /* DCPathButton */,
-				03EB202C41A49866CFABF573EAC5E909 /* Pods-moongae */,
+				E9C65A1307AE9B39E7B982262467EC49 /* Pods-moongae */,
+				A43ED6B963DCD7C02180E0FEC8A8B39E /* TagListView */,
 			);
 		};
 /* End PBXProject section */
@@ -399,11 +485,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4F02D63C8938F3A52E72F35E2F10D4EF /* Sources */ = {
+		26C9032055A8859A85EC1E3113903B22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D08CAE9F0C89438573657473B5DD458 /* Pods-moongae-dummy.m in Sources */,
+				D2A56A419B988B4F2EBCE43CD47B4316 /* Pods-moongae-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +500,17 @@
 				7D208420E9DCC45AC5E4009FA92F36C4 /* DCPathButton-dummy.m in Sources */,
 				62F6641838755C504E895DAB523CE3E5 /* DCPathButton.m in Sources */,
 				0468517A1EECA8D018C00AA65A732D17 /* DCPathItemButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB7F56C21D0E00499A365FC13297B3F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBE1D494E1AB4902387209337CEE83A /* CloseButton.swift in Sources */,
+				807F88279A8DC44A1A4F9AAA829A3F32 /* TagListView-dummy.m in Sources */,
+				82EC4CB9D41916D4B37FD99FED60BE89 /* TagListView.swift in Sources */,
+				08D179705318073C364700B08F652A7A /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,195 +526,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		31714424CC696244E91EA0DCADE8E508 /* PBXTargetDependency */ = {
+		799A100553BD47BCB366572F773807CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DBSphereTagCloud;
-			target = 516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */;
-			targetProxy = 43AECD16BC3855BB09CE539582860EF4 /* PBXContainerItemProxy */;
+			name = TagListView;
+			target = A43ED6B963DCD7C02180E0FEC8A8B39E /* TagListView */;
+			targetProxy = 59DF274CFAD5B51CD126AA8E58C619F1 /* PBXContainerItemProxy */;
 		};
-		EFF8EA4D041AC0891C43F23B4B3B3D7E /* PBXTargetDependency */ = {
+		AF1DFD90DDCC8EC89A514AF09734384E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DCPathButton;
 			target = 7764533D6B4098922368C95F6DDDF004 /* DCPathButton */;
-			targetProxy = 31317E5FA528DF31734A7A269EF03291 /* PBXContainerItemProxy */;
+			targetProxy = D2A0AD925E376AE2CDEBD5AAD370B817 /* PBXContainerItemProxy */;
+		};
+		CE4122C7A23469E5834DFC15F847A0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DBSphereTagCloud;
+			target = 516B697CCE233FC7AB8F09F5F237AEEC /* DBSphereTagCloud */;
+			targetProxy = 2230EA3EA18801D5ED3C928BBC24ED64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		095F0F5FE184212D12A60A8BF5703467 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-moongae/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-moongae/Pods-moongae.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51F075A9DA263D1CBDF60D0CB7F9569E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
-				PRODUCT_MODULE_NAME = DBSphereTagCloud;
-				PRODUCT_NAME = DBSphereTagCloud;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		602FA1C2113F6FA732F68211BD7FD316 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9275BC0183361A1A6D602B8870584A6B /* DBSphereTagCloud.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
-				PRODUCT_MODULE_NAME = DBSphereTagCloud;
-				PRODUCT_NAME = DBSphereTagCloud;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8E04E16A9447A7F6E23A103C6CD5B6E2 /* Debug */ = {
+		42F5D5FB8A9068F0CEF363D21882AB31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7BEFAA4B2E65F9F2B99A38F474CC2DB /* Pods-moongae.debug.xcconfig */;
 			buildSettings = {
@@ -649,73 +579,161 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+		51F075A9DA263D1CBDF60D0CB7F9569E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451F36B952BA986995ECEAE9E0572396 /* DBSphereTagCloud.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloud;
+				PRODUCT_NAME = DBSphereTagCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		602FA1C2113F6FA732F68211BD7FD316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451F36B952BA986995ECEAE9E0572396 /* DBSphereTagCloud.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloud/DBSphereTagCloud.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloud;
+				PRODUCT_NAME = DBSphereTagCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BF1424DF89C0754A7E5FB76FD2892A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F599F7999BC429EBE373DDF8E5A83A /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF20A0181F427503DB3A76D07A2FBF3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F599F7999BC429EBE373DDF8E5A83A /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		AF26FA80D8D63AA0D87904A1C3F4DF0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */;
+			baseConfigurationReference = 1234F3C68BBD304F7FEBC82D4F1E4E15 /* DCPathButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -751,7 +769,7 @@
 		};
 		B74FAD891E99B8BA45B83C8CBBF52602 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E450B7E2B7731974C1CECC09DD32E64 /* DCPathButton.xcconfig */;
+			baseConfigurationReference = 1234F3C68BBD304F7FEBC82D4F1E4E15 /* DCPathButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -784,23 +802,189 @@
 			};
 			name = Debug;
 		};
+		EB40D3B15FE39DFF0E9A28FC0F16FC4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B94ACC630F51D48D7831A2663619CC /* Pods-moongae.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-moongae/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-moongae/Pods-moongae.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9457F810A15E7F3B91224A2182C7215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FD752F88AFC1D54ADF45C6DEAC133C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0502E7180C8F02291075FE4C767B546F /* Build configuration list for PBXNativeTarget "Pods-moongae" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				42F5D5FB8A9068F0CEF363D21882AB31 /* Debug */,
+				EB40D3B15FE39DFF0E9A28FC0F16FC4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72E471C3F34BAF14142B5CC1F4C1D0DC /* Build configuration list for PBXNativeTarget "Pods-moongae" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E04E16A9447A7F6E23A103C6CD5B6E2 /* Debug */,
-				095F0F5FE184212D12A60A8BF5703467 /* Release */,
+				FD752F88AFC1D54ADF45C6DEAC133C14 /* Debug */,
+				F9457F810A15E7F3B91224A2182C7215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653ED398757342AE501D76B93DB13A89 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF1424DF89C0754A7E5FB76FD2892A5 /* Debug */,
+				AF20A0181F427503DB3A76D07A2FBF3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

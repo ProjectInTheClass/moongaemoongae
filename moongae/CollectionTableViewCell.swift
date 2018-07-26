@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TagListView
 
 class CollectionTableViewCell: UITableViewCell {
 
@@ -14,7 +15,6 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var summary: UILabel!
     @IBOutlet weak var createdDate: UILabel!
-    @IBOutlet weak var tags: UILabel!
     @IBOutlet weak var project_image: UIImageView!
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
@@ -23,7 +23,9 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var commentCount: UILabel!
     @IBOutlet weak var btnComment: UIButton!
+    @IBOutlet var nextBtn: UIButton!
     
+    @IBOutlet weak var tagListView: TagListView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

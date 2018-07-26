@@ -11,7 +11,7 @@ import UIKit
 class MajorTableViewController: UITableViewController {
 
     var modelMajor = MajorModel()
-    var modelProject = ProjectModel()
+    var modelProject = ProjectModel.ProjectModelSingleton
     
     override func viewDidLoad() {
         super.viewDidLoad()

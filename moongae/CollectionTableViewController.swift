@@ -10,12 +10,12 @@ import UIKit
 
 class CollectionTableViewController: UITableViewController {
 
-    var modelProject = ProjectModel()
-//    var modelComment = CommentModel()
+    var modelProject = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
     
     override func viewDidLoad() {
         super.viewDidLoad()
+ 
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -26,6 +26,9 @@ class CollectionTableViewController: UITableViewController {
         return modelProject.arrayList.count
     }
     
+    var currentImage = 0
+
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : CollectionTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Collection Cell", for: indexPath) as! CollectionTableViewCell
@@ -33,16 +36,31 @@ class CollectionTableViewController: UITableViewController {
         
         cell.title?.text = info.title
         cell.summary?.text = info.summary
+        
+        
+        // 태그
         for i in 0...info.tags.count-1 {
-                    cell.tags?.text = " # " + info.tags[i]
+            cell.tagListView.textFont = UIFont.systemFont(ofSize: 15)
+            cell.tagListView.alignment = .left // possible values are .Left, .Center, and .Right
+            
+            cell.tagListView.addTag(info.tags[i])
         }
 
+        
         cell.createdDate?.text = info.createdDate
-        cell.project_image?.image = UIImage(named: info.project_image)
+        // cell.project_image?.image = UIImage(named: info.project_image)
         cell.startDate?.text = info.startDate
         cell.endDate?.text = info.endDate
         cell.major?.text = info.major
-        cell.author?.text = info.author
+        
+        
+        // 팀원
+        var authors = ""
+        for i in 0...info.author.count-1 {
+            authors.append(info.author[i] + " ")
+        }
+        cell.author?.text = authors
+
         cell.likeCount?.text = String(info.likeCount)
         cell.commentCount?.text = String(info.commentCount)
         
@@ -57,7 +75,10 @@ class CollectionTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toProjectDetail" {
             if let destination = segue.destination as? ProjectDetailViewController {
-                let cell = sender as! UITableViewCell
+                
+                let btn = sender as! UIButton
+                let cell = btn.superview?.superview?.superview as! UITableViewCell
+                
                 let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
         
                 self.modelProject.selectedIndex = indexPath.row

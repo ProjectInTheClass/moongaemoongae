@@ -56,7 +56,7 @@ class MajorCollectionSortViewController: UIViewController, UICollectionViewDeleg
         
         let info = self.modelCollect[indexPath.row]
         
-        cell.project_image?.image = UIImage(named: info.project_image)
+        cell.project_image?.image = UIImage(named: info.image[0])
         cell.title?.text = info.title
         cell.likeCount?.text = String(info.likeCount)
         cell.commentCount?.text = String(info.commentCount)

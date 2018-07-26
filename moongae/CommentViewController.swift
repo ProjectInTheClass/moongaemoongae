@@ -15,7 +15,7 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
 
 //    var modelComment = CommentModel()
     var modelComment = CommentModel.CommentModelSingleton
-    var modelProject = ProjectModel()
+    var modelProject = ProjectModel.ProjectModelSingleton
     var modelUser = UserListModel()
 //    var comment = CommentModel()
     var comment:Array<CommentInfo> = []
