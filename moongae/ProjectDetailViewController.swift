@@ -11,6 +11,7 @@ import UIKit
 class ProjectDetailViewController: UIViewController {
     
     var modelProject:ProjectModel!
+    var model = CommentModel.CommentModelSingleton
     
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSummary: UILabel!
@@ -34,6 +35,8 @@ class ProjectDetailViewController: UIViewController {
         labelLanguage.text = detailProject.language
         labelDetail.text = detailProject.detail
         labelBenefit.text = detailProject.benefit
+        
+        
         // Do any additional setup after loading the view.
     }
 

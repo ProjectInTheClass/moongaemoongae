@@ -8,9 +8,13 @@
 
 import UIKit
 
+
+
+
 class CommentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var modelComment = CommentModel()
+//    var modelComment = CommentModel()
+    var modelComment = CommentModel.CommentModelSingleton
     var modelProject = ProjectModel()
     var modelUser = UserListModel()
 //    var comment = CommentModel()
@@ -19,14 +23,17 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelSummary: UILabel!
+    @IBOutlet weak var TextCommentAdd: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let detailProject = modelProject.arrayList[modelProject.selectedIndex]
-        
         labelTitle.text = detailProject.title
         labelSummary.text = detailProject.summary
+        
+//        CommentInfo.CommentInfoSingleton
+//        CommentModel.CommentModelSingleton
     }
     
     @IBAction func bottomPressed(_ sender: Any) {
@@ -63,6 +70,17 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 84.0;
+    }
+    
+    // 댓글 등록 버튼 클릭
+    @IBAction func CommetAddPressed(_ sender: Any) {
+        let commentContent:String = ""
+        TextCommentAdd.text = commentContent
+        
+        modelComment.addComment(title: labelTitle.text!, userImage: "", userName: "테스트", contents: commentContent, writeDate: "99-99")
+//        CommentModel.CommentModelSingleton.addComment(title: labelTitle.text!, userImage: "", userName: "테스트", contents: commentContent, writeDate: "99-99")
+        self.comment = self.modelComment.searchForTitle(title: labelTitle.text!)
+        tableView.reloadData()
     }
     
 

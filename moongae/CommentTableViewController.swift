@@ -10,7 +10,8 @@ import UIKit
 
 class CommentTableViewController: UITableViewController {
 
-    var modelComment = CommentModel()
+//    var modelComment = CommentModel()
+    var modelComment = CommentModel.CommentModelSingleton
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {

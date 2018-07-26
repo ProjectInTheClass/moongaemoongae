@@ -11,7 +11,8 @@ import UIKit
 class CollectionTableViewController: UITableViewController {
 
     var modelProject = ProjectModel()
-    var modelComment = CommentModel()
+//    var modelComment = CommentModel()
+    var modelComment = CommentModel.CommentModelSingleton
     
     override func viewDidLoad() {
         super.viewDidLoad()
