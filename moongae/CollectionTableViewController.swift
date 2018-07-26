@@ -60,7 +60,7 @@ class CollectionTableViewController: UITableViewController {
                 destination.modelProject = self.modelProject
             }
         }
-        
+
         if segue.identifier == "toComment" {
             if let destination = segue.destination as? CommentViewController {
                 

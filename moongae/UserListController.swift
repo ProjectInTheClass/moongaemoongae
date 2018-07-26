@@ -16,7 +16,7 @@ class UserListViewController : UITableViewController{
         //Model 생성 후, 코드에 다시 추가
         let info = self.modelUserList.arrayList[indexPath.row]
         
-        let cell : UserTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell") as! UserTableViewCell
+        let cell : UserTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell") as! UserTableViewCell
         //(선언할 때 느낌표는 옵셔널이지만 값이 항상 있다라고 가정하고 언래핑된 상태로 사용하겠따..)처음에 앱을 실행하면 캐시에 아무것도 없기 때문에 재사용할 셀이 없다... 그래서 옵셔널! 옵셔널은 그냥 쓸 수 없고, 언래핑해야지
         //       if cell == nil {
         //          cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")

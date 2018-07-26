@@ -63,6 +63,7 @@
 		D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE420FC7656003A9DE0 /* Category.storyboard */; };
 		D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */; };
 		D0AC2AE920FC798A003A9DE0 /* Idea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */; };
+		D0DE709C210873DB0045EA22 /* CreateProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE709B210873DB0045EA22 /* CreateProjectController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,7 @@
 		D0AC2AE420FC7656003A9DE0 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 		D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Idea.storyboard; sourceTree = "<group>"; };
+		D0DE709B210873DB0045EA22 /* CreateProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
 				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
 				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
+				D0DE709B210873DB0045EA22 /* CreateProjectController.swift */,
 				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
 				A0888CF820FF017900F70112 /* ProjectModel.swift */,
 				A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */,
@@ -416,6 +419,7 @@
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
 				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
+				D0DE709C210873DB0045EA22 /* CreateProjectController.swift in Sources */,
 				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
@@ -567,7 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R78643UTJ5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = moongae/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R78643UTJ5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = moongae/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

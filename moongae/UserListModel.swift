@@ -23,7 +23,7 @@ class UserListModel {
     
     init() {
         self.arrayList = []
-        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_1.png", UserName: "박예빈", UserMajor: "정보보호학과", UserGrade: "4", UserEmail: "aaaa@naver.com"))
+        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName: "박예빈", UserMajor: "정보보호학과", UserGrade: "4", UserEmail: "aaaa@naver.com"))
         
         self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName:"김소연", UserMajor:"컴퓨터학과", UserGrade:"4", UserEmail: "ese2003@naver.com"))
         
