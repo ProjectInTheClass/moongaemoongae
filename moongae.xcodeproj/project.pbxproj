@@ -19,7 +19,6 @@
 		A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */; };
 		A0D52E4120FC867E00DF5A80 /* btn_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E4020FC867E00DF5A80 /* btn_bottom.png */; };
 		B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B520EDE70400BC80DB /* AppDelegate.swift */; };
-		B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B720EDE70400BC80DB /* FirstViewController.swift */; };
 		B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B920EDE70400BC80DB /* SecondViewController.swift */; };
 		B810A0BD20EDE70400BC80DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BB20EDE70400BC80DB /* Main.storyboard */; };
 		B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BE20EDE70600BC80DB /* Assets.xcassets */; };
@@ -73,6 +72,7 @@
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
+		A08FFEA1210828CC0024B382 /* icon_dea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dea.png; sourceTree = "<group>"; };
 		A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		A0A6DC932100665100EBE60F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,6 @@
 		A0D52E4020FC867E00DF5A80 /* btn_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bottom.png; sourceTree = "<group>"; };
 		B810A0B220EDE70400BC80DB /* moongae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moongae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810A0B520EDE70400BC80DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B810A0B720EDE70400BC80DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B810A0B920EDE70400BC80DB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B810A0BC20EDE70400BC80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B810A0BE20EDE70600BC80DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		A0888CF720FF011400F70112 /* etc */ = {
 			isa = PBXGroup;
 			children = (
+				A08FFEA1210828CC0024B382 /* icon_dea.png */,
 				A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */,
 				A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */,
 				A0D52E3A20FC867800DF5A80 /* img_profile_woman_3.png */,
@@ -206,7 +206,6 @@
 				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
 				B8803C9220EF30BC009717DF /* ui1.png */,
 				B8803C9020EF30B9009717DF /* ui2.png */,
-				B810A0B720EDE70400BC80DB /* FirstViewController.swift */,
 				B810A0B920EDE70400BC80DB /* SecondViewController.swift */,
 				B834C9B920F3098300088D85 /* 4ViewController.swift */,
 				B8576C6420F4530200E081F4 /* signupViewController.swift */,

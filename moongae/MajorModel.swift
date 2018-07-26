@@ -28,8 +28,8 @@ class MajorModel {
         
         self.arrayList.append(MajorInfo(major: "디지털미디어학과", number: 0))
         self.arrayList.append(MajorInfo(major: "소프트웨어융합학과", number: 0))
-        self.arrayList.append(MajorInfo(major: "정보보호학과", number: 1))
-        self.arrayList.append(MajorInfo(major: "컴퓨터학과", number: 2))
+        self.arrayList.append(MajorInfo(major: "정보보호학과", number: 0))
+        self.arrayList.append(MajorInfo(major: "컴퓨터학과", number: 0))
         self.arrayList.append(MajorInfo(major: "콘텐츠디자인학과", number: 0))
         
     }
