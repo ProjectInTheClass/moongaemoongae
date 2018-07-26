@@ -4,10 +4,12 @@ import Foundation
 
 class UserListViewController : UITableViewController{
     
-    var modelUserList = UserListModel()
+//    var modelUserList = UserListModel()
+    var modelUserList = UserListModel.UserListModelSingleton
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {//섹션 수 를 묻고 있음 , override 상속
-        return 200 //Zero base 0~999
+        return 1 //Zero base 0~999
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // 총 1000번 호출 됨
         return self.modelUserList.arrayList.count

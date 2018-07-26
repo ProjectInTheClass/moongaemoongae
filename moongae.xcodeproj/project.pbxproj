@@ -58,6 +58,7 @@
 		D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCF920FF05A900E64E15 /* UserListModel.swift */; };
 		D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFB20FF0B2A00E64E15 /* UserListController.swift */; };
 		D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */; };
+		D091AF342109A5B400890929 /* CreateAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091AF332109A5B400890929 /* CreateAccountController.swift */; };
 		D0AC2AE320FC7442003A9DE0 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */; };
 		D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE420FC7656003A9DE0 /* Category.storyboard */; };
 		D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */; };
@@ -123,6 +124,7 @@
 		D008DCF920FF05A900E64E15 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		D008DCFB20FF0B2A00E64E15 /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
 		D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D091AF332109A5B400890929 /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
 		D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		D0AC2AE420FC7656003A9DE0 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 		D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
 				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
 				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
+				D091AF332109A5B400890929 /* CreateAccountController.swift */,
 				B810A0C320EDE70600BC80DB /* Info.plist */,
 				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
 				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
@@ -418,8 +421,8 @@
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
 				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,
+				D091AF342109A5B400890929 /* CreateAccountController.swift in Sources */,
 				D0DE709C210873DB0045EA22 /* CreateProjectController.swift in Sources */,
-				B810A0B820EDE70400BC80DB /* FirstViewController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
 				B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */,
