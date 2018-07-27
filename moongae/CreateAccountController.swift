@@ -23,6 +23,7 @@ class CreateAccountController: UIViewController {
     @IBOutlet weak var UserPWConfirm: UITextField!
     @IBOutlet weak var UserName: UITextField!
     @IBOutlet weak var UserMajor: UITextField!
+    @IBOutlet weak var User2Major: UITextField?
     @IBOutlet weak var UserMajorSecond: UITextField!
     @IBOutlet weak var UserGrade: UITextField!
     
@@ -41,8 +42,84 @@ class CreateAccountController: UIViewController {
     
     
     @IBAction func CreateAccount(_ sender: Any) {
-        modelUser.CreateUserAccount(UserPhoto: "", UserName: UserName.text!, UserMajor: UserMajor.text!, UserGrade: UserGrade.text!, UserEmail: UserEmail.text!)
+        
+        if UserEmail.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "이메일은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        
+        }
+        
+        if UserPW.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호는 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        }
+        
+        if UserPWConfirm.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호 확인은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        }
+        
+        if UserName.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "이름은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        }
+        
+        if UserMajor.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "전공은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        }
+        
+        if UserGrade.text?.count == 0  {
+            let alertController = UIAlertController(title: "필수 입력 내용",message: "학년은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            //UIAlertActionStye.destructive 지정 글꼴 색상 변경
+            let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(OKButton)
+            
+            self.present(alertController,animated: true,completion: nil)
+            return
+        }
+        
+        modelUser.CreateUserAccount(UserPhoto: "", UserName: UserName.text!, UserMajor: UserMajor.text!,User2Major: User2Major?.text, UserGrade: UserGrade.text!, UserEmail: UserEmail.text!)
     }
+    
+    
     
     /*
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

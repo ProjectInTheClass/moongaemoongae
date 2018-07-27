@@ -5,16 +5,19 @@ class UserList{
     var UserPhoto:String
     var UserName:String
     var UserMajor:String
+    var User2Major:String?
     var UserGrade:String
     var UserEmail:String
     
-    init(UserPhoto:String, UserName:String, UserMajor:String, UserGrade:String, UserEmail:String) {//생성자
+    init(UserPhoto:String, UserName:String, UserMajor:String, User2Major:String?, UserGrade:String, UserEmail:String) {//생성자
         self.UserPhoto = UserPhoto
         self.UserName = UserName
         self.UserMajor = UserMajor
+        self.User2Major = User2Major
         self.UserGrade = UserGrade
         self.UserEmail = UserEmail
     }
+    
 }
 
 class UserListModel {
@@ -25,16 +28,16 @@ class UserListModel {
     
     private init() {
         self.arrayList = []
-        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName: "박예빈", UserMajor: "정보보호학과", UserGrade: "4", UserEmail: "aaaa@naver.com"))
+        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName: "박예빈", UserMajor: "정보보호학과", User2Major: "컴퓨터학과", UserGrade: "4", UserEmail: "aaaa@naver.com"))
         
-        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName:"김소연", UserMajor:"컴퓨터학과", UserGrade:"4", UserEmail: "ese2003@naver.com"))
+        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_2.png", UserName:"김소연", UserMajor:"컴퓨터학과", User2Major : nil, UserGrade:"4", UserEmail: "ese2003@naver.com"))
         
-        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_3.png", UserName:"이재은", UserMajor:"콘텐츠디자인학과", UserGrade:"4", UserEmail: "cccc@naver.com"))
+        self.arrayList.append(UserList(UserPhoto:"img_profile_woman_3.png", UserName:"이재은", UserMajor:"콘텐츠디자인학과" , User2Major: nil , UserGrade:"4", UserEmail: "cccc@naver.com"))
     }
     
 //회원가입 함수
-    func CreateUserAccount(UserPhoto:String, UserName:String, UserMajor:String, UserGrade:String, UserEmail:String) -> Void {
-        self.arrayList.append(UserList(UserPhoto: UserPhoto, UserName: UserName, UserMajor: UserMajor, UserGrade: UserGrade, UserEmail: UserEmail))
+    func CreateUserAccount(UserPhoto:String, UserName:String, UserMajor:String, User2Major :String? , UserGrade:String, UserEmail:String) -> Void {
+        self.arrayList.append(UserList(UserPhoto: UserPhoto, UserName: UserName, UserMajor: UserMajor, User2Major:User2Major , UserGrade: UserGrade, UserEmail: UserEmail))
     }
     
     // email로 user 검색
@@ -51,7 +54,7 @@ class UserListModel {
     // UserName로 user 검색
     // 현재 댓글 등록한 사용자의 email을 알아낼 수 없어서(방법을 몰라서) 이름으로 검색되도록 함.
     func searchForName(email:String) -> UserList {
-        var result:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", UserGrade: "",UserEmail:"")
+        var result:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", User2Major: "" , UserGrade: "",UserEmail:"")
         for i in 0 ... arrayList.count - 1 {
             if(email == arrayList[i].UserName){
                 result = arrayList[i]
