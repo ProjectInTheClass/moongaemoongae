@@ -232,7 +232,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-zP-MDe">
-                                <rect key="frame" x="-1" y="218" width="376" height="511"/>
+                                <rect key="frame" x="-1" y="88" width="376" height="641"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -250,6 +250,7 @@
                     <navigationItem key="navigationItem" title="아이디어" id="ytq-YU-Xv3"/>
                     <connections>
                         <outlet property="searchView" destination="dDM-Li-PyL" id="Odg-gX-LEl"/>
+                        <outlet property="sphereSmallView" destination="i5f-zP-MDe" id="c2x-wy-Pv0"/>
                         <outlet property="sphereView" destination="i5f-zP-MDe" id="2H3-1s-fa3"/>
                         <outlet property="tagView" destination="oWC-er-hc0" id="SnI-Iz-26U"/>
                     </connections>

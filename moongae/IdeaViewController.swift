@@ -10,10 +10,10 @@ import UIKit
 import DBSphereTagCloud
 
 class IdeaViewController: UIViewController {
-    
     @IBOutlet weak var searchView: UITextField!
     @IBOutlet weak var tagView: UIView!
     @IBOutlet var sphereView: DBSphereView!
+    @IBOutlet weak var sphereSmallView: UIView!
     var patchView: SFPatchView!
     var tag: [[AnyObject]] = [["자바" as AnyObject, UIImage(named: "cloud3")!],
                                  ["감성" as AnyObject, UIImage(named: "cloud3")!],
@@ -36,14 +36,23 @@ class IdeaViewController: UIViewController {
                                  ["여행" as AnyObject, UIImage(named: "cloud3")!],
                                  ["여름" as AnyObject, UIImage(named: "cloud3")!]]
     
-    var project: [[AnyObject]] = [["장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["무덤덤" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["무덤덤" as AnyObject, UIImage(named: "cloud1")!],
-                                 ["AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!]]
+    var project: [[AnyObject]] = [["" as AnyObject,"장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"무덤덤" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"무덤덤" as AnyObject, UIImage(named: "cloud1")!],
+                                 ["" as AnyObject,"AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!]]
+    
+    var project2: [[AnyObject]] = [["자바" as AnyObject, "자바 -장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -무덤덤" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -장애인을 위한 음성안내 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -익명 sns 서비스" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -무덤덤" as AnyObject, UIImage(named: "cloud1")!],
+                                  ["자바" as AnyObject, "자바 -AR코어 기반 위치 일기장 서비스" as AnyObject, UIImage(named: "cloud1")!]]
     
     var isClicked:Bool = false
     
@@ -89,7 +98,13 @@ class IdeaViewController: UIViewController {
             btn.contentMode = UIViewContentMode.scaleAspectFit
             btn.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
             btn.layer.cornerRadius = 30
-            btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+            
+            // 태그 구름 클릭 시 프로젝트가 보임
+            // 프로젝트가 보이는 상태에서 클릭하면 없어져야 함.
+            if(!isClicked) {
+                btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
+            }
+            else {sphereView.removeFromSuperview()}
             array.add(btn)
             sphereView.addSubview(btn)
         }
@@ -98,6 +113,9 @@ class IdeaViewController: UIViewController {
         self.view.addSubview(sphereView)
         self.view.bringSubview(toFront: tagView)
         self.view.bringSubview(toFront: searchView)
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(IdeaViewController.someAction(_:)))
+        self.sphereView.addGestureRecognizer(gesture)
     }
     
     // 원래 코드
@@ -114,20 +132,22 @@ class IdeaViewController: UIViewController {
 //        }
 //    }
     
+    // 프로젝트에 대한 버튼
     @objc func buttonPressed(_ btn: UIButton) {
         isClicked = true
-        if(isClicked) {
         sphereView.timerStop()
-        UIView.animate(withDuration: 0.3, animations: {() -> Void in
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
             btn.transform = CGAffineTransform(scaleX: 3, y: 3)
             
             // 클릭한 버튼을 중심으로 view가 새로 생성되도록
-            self.sphereView = DBSphereView(frame: CGRect(x: (btn.frame.origin.x-150), y: (btn.frame.origin.y-150), width: 300, height: 300))
+            self.sphereView = DBSphereView(frame: CGRect(x: (btn.frame.origin.x-200), y: (btn.frame.origin.y-200), width: 300, height: 300))
+            self.sphereSmallView = self.sphereView
             
             let array = NSMutableArray(capacity: 0)
+            if(btn.titleLabel!.text == "자바") {self.project = self.project2}
             for i in 0 ..< self.project.count {
                 let btn: UIButton = UIButton(type: UIButtonType.system)
-                btn.setTitle((self.project[i][0] as! String), for: UIControlState())
+                btn.setTitle((self.project[i][1] as! String), for: UIControlState())
                 btn.setTitleColor(UIColor.blue, for: .normal);
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
                 btn.titleLabel?.sizeToFit()
@@ -142,13 +162,12 @@ class IdeaViewController: UIViewController {
                 // 대신, 해당 프로젝트 화면으로 이동해야 함. (아직 구현 미완료)
 //                btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
                 btn.addTarget(self, action: #selector(IdeaViewController.cloudHidden(_:)), for: UIControlEvents.touchUpInside)
+                
                 array.add(btn)
                 self.sphereView.addSubview(btn)
             }
             self.sphereView.setCloudTags(array as [AnyObject])
             self.view.addSubview(self.sphereView)
-            self.isClicked = false
-            
         }) {
             (finished) -> Void in
             UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -157,7 +176,15 @@ class IdeaViewController: UIViewController {
                 self.sphereView.timerStart()
             })
             }
+    }
+    
+    @objc func someAction(_ sender:UITapGestureRecognizer){
+//        if(isClicked) {self.sphereView.isHidden = true}
+        if(isClicked) {
+            self.sphereSmallView.isHidden = true
+            self.sphereView.timerStart()
         }
+        
     }
     
     @objc func cloudHidden(_ btn: UIButton) {
