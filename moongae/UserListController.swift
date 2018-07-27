@@ -31,6 +31,7 @@ class UserListViewController : UITableViewController{
         cell.UserPhoto?.image = UIImage(named: info.UserPhoto)
         cell.UserName?.text = info.UserName
         cell.UserMajor?.text = info.UserMajor
+        cell.User2Major?.text = info.User2Major
         cell.UserGrade?.text = info.UserGrade
 
         
