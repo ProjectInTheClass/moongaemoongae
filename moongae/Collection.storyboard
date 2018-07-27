@@ -451,18 +451,18 @@
                                                     <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjI-01-iws">
-                                                    <rect key="frame" x="8" y="459" width="333" height="71"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <connections>
-                                                        <segue destination="z5P-jf-Srh" kind="show" identifier="toProjectDetail" id="BXu-Py-7u7"/>
-                                                    </connections>
-                                                </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6U-eq-AbA" customClass="TagListView" customModule="TagListView">
                                                     <rect key="frame" x="0.0" y="66" width="349" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjI-01-iws">
+                                                    <rect key="frame" x="8" y="457" width="333" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="z5P-jf-Srh" kind="show" identifier="toProjectDetail" id="BXu-Py-7u7"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <gestureRecognizers/>
@@ -471,9 +471,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
-                                    <outlet property="author" destination="IKw-Ld-1IC" id="WGf-Tu-AFs"/>
                                     <outlet property="btnComment" destination="Mqp-TZ-0zd" id="BdZ-ad-DtN"/>
                                     <outlet property="commentCount" destination="Kwz-kv-nY1" id="Ebu-kv-UbY"/>
+                                    <outlet property="coworker" destination="IKw-Ld-1IC" id="atH-2A-NHf"/>
                                     <outlet property="createdDate" destination="nF0-NG-9Zk" id="50K-My-DI3"/>
                                     <outlet property="endDate" destination="x9A-RW-zoe" id="4Kw-2n-FcB"/>
                                     <outlet property="likeCount" destination="gxd-9d-FRi" id="6yF-vs-Vut"/>

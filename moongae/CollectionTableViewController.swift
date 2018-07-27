@@ -12,6 +12,11 @@ class CollectionTableViewController: UITableViewController {
 
     var modelProject = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
+
+    
+           // cell.project_image?.image = UIImage(named: info.project_image)
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +50,16 @@ class CollectionTableViewController: UITableViewController {
             
             cell.tagListView.addTag(info.tags[i])
         }
-
+        
+        // 이미지
+        /*
+        slideshow.setImageInputs([
+            cell.project_image?.image(image: UIImage(named: "myImage"))!,
+            cell.project_image?.image(image: UIImage(named: "myImage2"))!,
+            cell.project_image?.image(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080"),
+            cell.project_image?.image(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080"),
+            ParseSource(file: PFFile(name:"image.jpg", data:data))
+            ])*/
         
         cell.createdDate?.text = info.createdDate
         // cell.project_image?.image = UIImage(named: info.project_image)
@@ -55,11 +69,12 @@ class CollectionTableViewController: UITableViewController {
         
         
         // 팀원
-        var authors = ""
-        for i in 0...info.author.count-1 {
-            authors.append(info.author[i] + " ")
+        var coworkers = ""
+        for i in 0...info.coworker.count-1 {
+            coworkers.append(info.coworker[i] + " ")
         }
-        cell.author?.text = authors
+        coworkers.append(info.author)
+        cell.coworker?.text = coworkers
 
         cell.likeCount?.text = String(info.likeCount)
         cell.commentCount?.text = String(info.commentCount)

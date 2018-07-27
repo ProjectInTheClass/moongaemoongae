@@ -19,7 +19,7 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
     @IBOutlet weak var major: UILabel!
-    @IBOutlet weak var author: UILabel!
+    @IBOutlet var coworker: UILabel!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var commentCount: UILabel!
     @IBOutlet weak var btnComment: UIButton!

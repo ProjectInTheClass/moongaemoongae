@@ -19,62 +19,67 @@ enum major : String {
 
 class ProjectInfo {
     
-    let title:String
-    let createdDate:String
-    let summary:String
-    let tags:Array<String>
-    let image:Array<String>
+    let title: String
+    let image: Array<String>
 //    let video:Array<String>
-//    let project_image:String
-    // 비디오 추가해야함
-    let startDate:String
-    let endDate:String
-    let major:String
-    let author:Array<String>
+    let startDate: String
+    let endDate: String
+    let tags: Array<String>
+    let summary: String
+    let coworker: Array<String>
+
+    let language: String
+    let environment: String
+    let motivation: String
+    let benefit: String
+    let detail: String
+    
+    let createdDate: String
+    let author: String
+    let major: String
+    
     let likeCount:Int
     let commentCount:Int
-    let motivation:String
-    let environment:String
-    let language:String
-    let detail:String
-    let benefit:String
+
     
-    init(title:String, createdDate:String, summary:String, tags:Array<String>, image:Array<String>, startDate:String, endDate:String, major:String, author:Array<String>, likeCount:Int, commentCount:Int, motivation:String, environment:String, language:String, detail:String, benefit:String) {
+    init(title: String,  image: Array<String>, startDate: String, endDate: String, tags: Array<String>, summary: String,  coworker: Array<String>, language:String, environment: String, motivation: String, benefit: String, detail:String, createdDate: String, author: String, major: String, likeCount: Int, commentCount: Int) {
         self.title = title
-        self.createdDate = createdDate
-        self.summary = summary
-        self.tags = tags
         self.image = image
-       // self.project_image = project_image
         self.startDate = startDate
         self.endDate = endDate
-        self.major = major
+        self.tags = tags
+        self.summary = summary
+        self.coworker = coworker
+        self.language = language
+        self.environment = environment
+        self.motivation = motivation
+        self.benefit = benefit
+        self.detail = detail
+        self.createdDate = createdDate
         self.author = author
+        self.major = major
         self.likeCount = likeCount
         self.commentCount = commentCount
-        self.motivation = motivation
-        self.environment = environment
-        self.language = language
-        self.detail = detail
-        self.benefit = benefit
     }
 }
 
 class ProjectModel {
     static let ProjectModelSingleton = ProjectModel()
-    var arrayList:Array<ProjectInfo>
-    var selectedIndex:Int = 0
+    var arrayList: Array<ProjectInfo>
+    var selectedIndex: Int = 0
     
     private init() {
         self.arrayList = []
         
-        let project1 = ProjectInfo(title:"공간캡슐", createdDate:"2018-06-22", summary:"소중한 공간 속 소중한 순간들", tags:["자바","씨쁠쁠","안드로이드"], image:["ui1.png","ui2.png"], startDate:"2018-03-08", endDate:"2018-06-22", major:"컴퓨터학과", author:["김소연", "박예빈", "이재은"], likeCount:12, commentCount:3, motivation:"기억을 리마인드 할 수 있는 서비스를 만들고 싶었다.", environment: "안드로이드 스튜디오 3.1.1, SQLite", language: "서버 : java", detail:" ", benefit: "재밌을 것 같다. ")
+        let project1 = ProjectInfo(title: "공간캡슐", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "기억을 리마인드 할 수 있는 서비스를 만들고 싶었다.", benefit: "재밌을 것 같다. "
+            ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:12, commentCount:3)
         self.arrayList.append(project1)
         
-        let project2 = ProjectInfo(title:"무덤덤", createdDate:"2018-07-10", summary:"당신의 기억을 묻어 보세요. ", tags:["고민상담","병원"], image:["ui1.png","ui2.png"], startDate:"2018-06-22", endDate:"2018-06-22", major:"정보보호학과", author:["김소연", "박예빈", "이재은", "등등"], likeCount:17, commentCount:13, motivation:"행복한 글만 올리는 sns와 달리 고민을 올리는 sns가 필요하다고 생각했다. ", environment: "안드로이드 스튜디오, 마리아db", language: "서버 : java", detail:"jsdfmsdlkfsfsfsdfsdfsdfdsfsdf", benefit: "sadfsadfasdfsdfsadfasddbdlr")
+        let project2 = ProjectInfo(title: "무덤덤", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["고민상담","병원"], summary: "당신의 기억을 묻어 보세요. ", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오, 마리아db", motivation: "행복한 글만 올리는 sns와 달리 고민을 올리는 sns가 필요하다고 생각했다.", benefit: "재밌을 것 같다. "
+            ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "정보보호학과", likeCount:1, commentCount:8)
         self.arrayList.append(project2)
         
-        let project3 = ProjectInfo(title:"세번째에요", createdDate:"2018-06-22", summary:"소중한 공간 속 소중한 순간들", tags:["자바","안드로이드"], image:["ui1.png","ui1.png","ui2.png"], startDate:"2018-06-22", endDate:"2018-06-22", major:"컴퓨터학과", author:["김소연", "박예빈", "이재은"], likeCount:12, commentCount:8, motivation:"바쁜 현대인들을 위해....", environment: "안드로이드 스튜디오....", language: "서버 : java", detail:"jsdfmsdlkfsfsfsdfsdfsdfdsfsdf", benefit: "sadfsadfasdfsdfsadfasddbdlr")
+        let project3 = ProjectInfo(title: "세번째에요", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
         self.arrayList.append(project3)
     }
     
@@ -98,5 +103,10 @@ class ProjectModel {
             }
         }
         return num
+    }
+    
+    // 프로젝트 등록
+    func addProject(title: String,  image: Array<String>, startDate: String, endDate: String, tags: Array<String>, summary: String,  coworker: Array<String>, language:String, environment: String, motivation: String, benefit: String, detail:String, createdDate: String, author: String, major: String, likeCount: Int, commentCount: Int) -> Void {
+        self.arrayList.append(ProjectInfo(title: title, image: image, startDate: startDate, endDate: endDate, tags: tags, summary: summary, coworker: coworker, language: language, environment: environment, motivation: motivation, benefit: benefit, detail: detail, createdDate: createdDate, author: author, major: major, likeCount: likeCount, commentCount: commentCount))
     }
 }

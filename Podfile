@@ -7,6 +7,12 @@ target 'moongae' do
 pod "DBSphereTagCloud"
 pod 'DCPathButton', '~> 2.1.3'
 pod 'TagListView', '~> 1.0'
+pod 'ImageSlideshow', '~> 1.6'
+pod "ImageSlideshow/Alamofire"
+pod "ImageSlideshow/AFURL"
+pod "ImageSlideshow/SDWebImage"
+pod "ImageSlideshow/Kingfisher"
+
 
 post_install do |installer|
   installer.pods_project.build_configurations.each do |config|

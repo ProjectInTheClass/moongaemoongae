@@ -10,16 +10,26 @@ import UIKit
 
 class CreateProjectController: UIViewController {
     
+    var modelProject = ProjectModel.ProjectModelSingleton
+    
 //     @IBOutlet weak var createdDate: UILabel!
-    @IBOutlet weak var project_image: UIImageView!
-    @IBOutlet weak var startDate: UIDatePicker!
-    @IBOutlet weak var endDate: UIDatePicker!
-    @IBOutlet weak var Projecttitle: UITextField!
-    @IBOutlet weak var tags: UITextField!
-    @IBOutlet weak var summary: UITextField!
-    @IBOutlet weak var language: UITextField!
-//    @IBOutlet weak var enviroments: UITextField!
-    //개발언어 부터 선택사항인데 어떻게 선언?
+    @IBOutlet var projectTitle: UITextField!
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var startDate: UIDatePicker!
+    @IBOutlet var endDate: UIDatePicker!
+
+    @IBOutlet var tags: UITextField!
+    @IBOutlet var summary: UITextField!
+    @IBOutlet var coworker: UITextField!
+    
+    @IBOutlet var language: UITextField!
+    @IBOutlet var environment: UITextField!
+    @IBOutlet var motivation: UITextView!
+    @IBOutlet var benefit: UITextView!
+    @IBOutlet var detail: UITextView!
+    
+    @IBOutlet var addImageBtn: UIButton!
+    @IBOutlet var addCoworker: UIButton!
     
 
     override func viewDidLoad() {
@@ -34,6 +44,15 @@ class CreateProjectController: UIViewController {
     }
     @IBAction func CreateProject(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "CreateProject", sender: self)
+        
+        // var commentContent:String = ""
+        
+        modelProject.addProject(title: projectTitle.text!,  image: ["ui1.png"], startDate: "07-23", endDate: "07-26", tags: ["태그", "나는"], summary: summary.text!,  coworker: ["왜", "왜", "왜"], language: language.text!, environment:  environment.text!, motivation: motivation.text!, benefit: benefit.text!, detail: detail.text!, createdDate: "07-25", author: "이재은", major: "컴퓨터학과", likeCount: 0, commentCount: 0)
+        
+        
+       // self. = self.modelComment.searchForTitle(title: labelTitle.text!)
+       
+        // tableView.reloadData()
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
