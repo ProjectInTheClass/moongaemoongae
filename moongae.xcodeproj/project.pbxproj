@@ -10,12 +10,6 @@
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
-		A08FFEA8210AE8640024B382 /* img_cloud_5.png in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA2210AE85B0024B382 /* img_cloud_5.png */; };
-		A08FFEA9210AE8640024B382 /* img_cloud_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA3210AE85D0024B382 /* img_cloud_1.png */; };
-		A08FFEAA210AE8640024B382 /* img_cloud_3.png in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA4210AE85E0024B382 /* img_cloud_3.png */; };
-		A08FFEAB210AE8640024B382 /* img_cloud_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA5210AE8600024B382 /* img_cloud_2.jpg */; };
-		A08FFEAC210AE8640024B382 /* img_cloud_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA6210AE8610024B382 /* img_cloud_6.jpg */; };
-		A08FFEAD210AE8640024B382 /* img_cloud_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A08FFEA7210AE8620024B382 /* img_cloud_4.jpg */; };
 		A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */; };
 		A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC932100665100EBE60F /* CommentViewController.swift */; };
 		A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */; };
@@ -80,12 +74,6 @@
 		A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
 		A08FFEA1210828CC0024B382 /* icon_dea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dea.png; sourceTree = "<group>"; };
-		A08FFEA2210AE85B0024B382 /* img_cloud_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cloud_5.png; sourceTree = "<group>"; };
-		A08FFEA3210AE85D0024B382 /* img_cloud_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cloud_1.png; sourceTree = "<group>"; };
-		A08FFEA4210AE85E0024B382 /* img_cloud_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cloud_3.png; sourceTree = "<group>"; };
-		A08FFEA5210AE8600024B382 /* img_cloud_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cloud_2.jpg; sourceTree = "<group>"; };
-		A08FFEA6210AE8610024B382 /* img_cloud_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cloud_6.jpg; sourceTree = "<group>"; };
-		A08FFEA7210AE8620024B382 /* img_cloud_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cloud_4.jpg; sourceTree = "<group>"; };
 		A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		A0A6DC932100665100EBE60F /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -168,12 +156,6 @@
 		A0888CF720FF011400F70112 /* etc */ = {
 			isa = PBXGroup;
 			children = (
-				A08FFEA3210AE85D0024B382 /* img_cloud_1.png */,
-				A08FFEA4210AE85E0024B382 /* img_cloud_3.png */,
-				A08FFEA5210AE8600024B382 /* img_cloud_2.jpg */,
-				A08FFEA7210AE8620024B382 /* img_cloud_4.jpg */,
-				A08FFEA2210AE85B0024B382 /* img_cloud_5.png */,
-				A08FFEA6210AE8610024B382 /* img_cloud_6.jpg */,
 				A08FFEA1210828CC0024B382 /* icon_dea.png */,
 				A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */,
 				A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */,
@@ -339,17 +321,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A08FFEA8210AE8640024B382 /* img_cloud_5.png in Resources */,
 				D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */,
 				B834C9D120F3328D00088D85 /* new (1).png in Resources */,
 				A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */,
 				B8803C8D20EF2F76009717DF /* like.png in Resources */,
-				A08FFEA9210AE8640024B382 /* img_cloud_1.png in Resources */,
 				B8803C8E20EF2F76009717DF /* comment-white-oval-bubble.png in Resources */,
 				D0AC2AE320FC7442003A9DE0 /* Mypage.storyboard in Resources */,
 				B834C9D020F3328D00088D85 /* calendar-with-spring-binder-and-date-blocks.png in Resources */,
 				A0D52E4120FC867E00DF5A80 /* btn_bottom.png in Resources */,
-				A08FFEAA210AE8640024B382 /* img_cloud_3.png in Resources */,
 				B849151A20EF4F7F00E6AF74 /* calendar2.png in Resources */,
 				B810A0C220EDE70600BC80DB /* LaunchScreen.storyboard in Resources */,
 				A0D52E3D20FC867900DF5A80 /* img_profile_woman_3.png in Resources */,
@@ -357,7 +336,6 @@
 				D0AC2AE920FC798A003A9DE0 /* Idea.storyboard in Resources */,
 				B8803C8320EF1E3F009717DF /* calendar.png in Resources */,
 				B834C9CA20F32DAA00088D85 /* hearts.png in Resources */,
-				A08FFEAB210AE8640024B382 /* img_cloud_2.jpg in Resources */,
 				B849151820EF4DA200E6AF74 /* 일정정보.png in Resources */,
 				B8803C8B20EF2F76009717DF /* cloud-2.png in Resources */,
 				B834C9D220F3328D00088D85 /* folder (1).png in Resources */,
@@ -366,8 +344,6 @@
 				B834C9CC20F331C600088D85 /* idea (2).png in Resources */,
 				B834C9D620F3406800088D85 /* moong2.png in Resources */,
 				B8803C8F20EF2F76009717DF /* cloud-5.png in Resources */,
-				A08FFEAC210AE8640024B382 /* img_cloud_6.jpg in Resources */,
-				A08FFEAD210AE8640024B382 /* img_cloud_4.jpg in Resources */,
 				D0AC2AE720FC76C8003A9DE0 /* Collection.storyboard in Resources */,
 				B849151C20EF51E200E6AF74 /* line.png in Resources */,
 				B8803C9320EF30BD009717DF /* ui1.png in Resources */,
@@ -388,14 +364,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-moongae/Pods-moongae-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloud/DBSphereTagCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/DCPathButton/DCPathButton.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCPathButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
