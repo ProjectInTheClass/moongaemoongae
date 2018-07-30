@@ -27,7 +27,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     var btn: UIButton = UIButton(type: .custom)
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // search bar
         tagList = modelProject.searchProjectTag()
         var suggestionList = Array<ModernSearchBarModel>()
@@ -42,6 +42,8 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         // sphereView
         sphereView = DBSphereView(frame: CGRect(x: -200, y: -200, width: 1000, height: 1000))
+        
+        
         let array = NSMutableArray(capacity: 0)
         for i in 1 ..< tagList.count {
             // btn 설정
@@ -51,9 +53,9 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
             btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
             btn.layer.masksToBounds = true
-            btn.setBackgroundImage(UIImage(named: "cloud-5")!, for: UIControlState())
+            btn.setBackgroundImage(UIImage(named: "img_cloud")!, for: UIControlState())
             btn.contentMode = UIViewContentMode.scaleAspectFit
-            btn.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+            btn.frame = CGRect(x: 0, y: 0, width: 140, height: 100)
             btn.layer.cornerRadius = 30
             
             // 태그 구름 클릭 시 프로젝트가 보임
@@ -69,7 +71,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
         
         sphereView.setCloudTags(array as [AnyObject])
-        sphereView.backgroundColor = UIColor.white
+        sphereView.backgroundColor =  #colorLiteral(red: 0.7333333333, green: 0.8470588235, blue: 0.8549019608, alpha: 1)
         self.view.addSubview(sphereView)
         self.view.bringSubview(toFront: tagView)
         self.view.bringSubview(toFront: searchBar)
@@ -98,14 +100,13 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             for i in 0 ..< self.projectList.count {
                 let btn: UIButton = UIButton(type: UIButtonType.system)
                 btn.setTitle(self.projectList[i], for: UIControlState())
-                btn.setTitleColor(UIColor.blue, for: .normal);
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
                 btn.titleLabel?.sizeToFit()
                 btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
                 btn.layer.masksToBounds = true
-                btn.setBackgroundImage(UIImage(named: "cloud-5"), for: UIControlState())
+                btn.setBackgroundImage(UIImage(named: "img_cloud"), for: UIControlState())
                 btn.contentMode = UIViewContentMode.scaleAspectFit
-                btn.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
+                btn.frame = CGRect(x: 0, y: 0, width: 80, height: 50)
                 btn.layer.cornerRadius = 0
             
                 btn.addTarget(self, action: #selector(IdeaViewController.projectPressed(_:)), for: UIControlEvents.touchUpInside)

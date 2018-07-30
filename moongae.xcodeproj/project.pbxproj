@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1089EB36210F8BC100F7CCE4 /* img_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 1089EB35210F8BC000F7CCE4 /* img_cloud.png */; };
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		102D6DD2D585064ED527A437 /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moongae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1089EB35210F8BC000F7CCE4 /* img_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cloud.png; sourceTree = "<group>"; };
 		1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.release.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
 		4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		B810A0B420EDE70400BC80DB /* moongae */ = {
 			isa = PBXGroup;
 			children = (
+				1089EB35210F8BC000F7CCE4 /* img_cloud.png */,
 				A0888CF720FF011400F70112 /* etc */,
 				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
 				B8803C9220EF30BC009717DF /* ui1.png */,
@@ -340,6 +343,7 @@
 				B8803C8B20EF2F76009717DF /* cloud-2.png in Resources */,
 				B834C9D220F3328D00088D85 /* folder (1).png in Resources */,
 				B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */,
+				1089EB36210F8BC100F7CCE4 /* img_cloud.png in Resources */,
 				B8803C8C20EF2F76009717DF /* cloud-4.png in Resources */,
 				B834C9CC20F331C600088D85 /* idea (2).png in Resources */,
 				B834C9D620F3406800088D85 /* moong2.png in Resources */,

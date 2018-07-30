@@ -217,6 +217,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="검색할 태그를 입력하세요" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-dH-Aaq" customClass="ModernSearchBar" customModule="ModernSearchBar">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8i-AC-Hfb" customClass="TagListView" customModule="TagListView">
                                 <rect key="frame" x="0.0" y="152" width="375" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -233,15 +240,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="검색할 태그를 입력하세요" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-dH-Aaq" customClass="ModernSearchBar" customModule="ModernSearchBar">
-                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="barTintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-zP-MDe" customClass="DBSphereView">
-                                <rect key="frame" x="-1" y="88" width="376" height="641"/>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-zP-MDe" customClass="DBSphereView">
+                                <rect key="frame" x="383" y="720" width="36" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -253,7 +253,6 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3kt-tW-QCU"/>
                     </view>
                     <navigationItem key="navigationItem" title="아이디어" id="ytq-YU-Xv3"/>
