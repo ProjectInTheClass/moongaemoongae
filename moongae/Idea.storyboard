@@ -217,15 +217,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-Li-PyL">
-                                <rect key="frame" x="22" y="107" width="330" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8i-AC-Hfb" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="0.0" y="145" width="375" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-dH-Aaq" customClass="ModernSearchBar" customModule="ModernSearchBar">
+                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </searchBar>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5f-zP-MDe">
-                                <rect key="frame" x="-1" y="88" width="376" height="641"/>
+                                <rect key="frame" x="-1" y="86" width="376" height="641"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -236,18 +239,13 @@
                                     <segue destination="ZBo-Jf-2an" kind="embed" id="JP9-Io-34K"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8i-AC-Hfb" customClass="TagListView" customModule="TagListView">
-                                <rect key="frame" x="0.0" y="145" width="375" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3kt-tW-QCU"/>
                     </view>
                     <navigationItem key="navigationItem" title="아이디어" id="ytq-YU-Xv3"/>
                     <connections>
-                        <outlet property="searchView" destination="dDM-Li-PyL" id="Odg-gX-LEl"/>
+                        <outlet property="searchBar" destination="JAW-dH-Aaq" id="lfc-sr-HoN"/>
                         <outlet property="sphereSmallView" destination="i5f-zP-MDe" id="c2x-wy-Pv0"/>
                         <outlet property="sphereView" destination="i5f-zP-MDe" id="2H3-1s-fa3"/>
                         <outlet property="tagView" destination="C8i-AC-Hfb" id="J3o-D9-BZF"/>

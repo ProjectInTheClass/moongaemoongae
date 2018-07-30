@@ -12,7 +12,7 @@ pod 'ImageSlideshow/Alamofire'
 pod "ImageSlideshow/AFURL"
 pod "ImageSlideshow/SDWebImage"
 pod "ImageSlideshow/Kingfisher"
-
+pod 'ModernSearchBar'
 
 post_install do |installer|
   installer.pods_project.build_configurations.each do |config|

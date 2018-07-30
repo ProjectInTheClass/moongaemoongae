@@ -35,6 +35,7 @@ PODS:
     - ImageSlideshow/Core
     - SDWebImage (< 5.0, >= 3.7)
   - Kingfisher (4.8.0)
+  - ModernSearchBar (1.5)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - ImageSlideshow/Alamofire
   - ImageSlideshow/Kingfisher
   - ImageSlideshow/SDWebImage
+  - ModernSearchBar
   - TagListView (~> 1.0)
 
 SPEC REPOS:
@@ -59,6 +61,7 @@ SPEC REPOS:
     - DCPathButton
     - ImageSlideshow
     - Kingfisher
+    - ModernSearchBar
     - SDWebImage
     - TagListView
 
@@ -70,9 +73,10 @@ SPEC CHECKSUMS:
   DCPathButton: 99c8211ef3eafc3b438c917a4c7b4502fa77eee7
   ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   TagListView: 6dafd34a61021c6db72c0c8e3a044054c9854311
 
-PODFILE CHECKSUM: bbf19acac6ff080dc50d6f157d7ea4c2e46feba2
+PODFILE CHECKSUM: ec391878d5c92060c615f8a9d8bc8b741a9fceeb
 
 COCOAPODS: 1.5.3

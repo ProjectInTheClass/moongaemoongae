@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum major : String {
     case computer = "컴퓨터학과"
@@ -16,7 +17,8 @@ enum major : String {
     case softwareConvergence = "소프트웨어융합학과"
 }
 
-class ProjectInfo {
+//class ProjectInfo {
+struct ProjectInfo: Codable {
     let title: String
     let image: Array<String>
 //    let video:Array<String>
@@ -103,16 +105,24 @@ class ProjectModel {
         return num
     }
     
-    func searchProjectTitieOfTag(tagName: String) -> Array<String> {
+    // 태그명 가져오기
+    func searchProjectTag() -> [[AnyObject]] {
+        var resultArray: [[AnyObject]] = [[]]
+        for i in 0 ..< arrayList.count {
+            for j in 0...arrayList[i].tags.count-1{
+                resultArray.append([arrayList[i].tags[j] as AnyObject, UIImage(named: "cloud-5")!])
+            }
+        }
+        return resultArray
+    }
+    
+    // 태그가 포함된 프로젝트명 가져오기
+    func searchProjectNameOfTag(tagName: String) -> Array<String> {
         var resultArray: Array<String> = []
         for i in 0 ..< arrayList.count {
             for j in 0 ..< arrayList[i].tags.count {
                 if tagName == arrayList[i].tags[j] {
-//                    if(resultArray[i] == arrayList[i].tags[j] == tagName) {break}
-//                    else {
                         resultArray.append(arrayList[i].title)
-                        
-//                    }
                 }
             }
         }
