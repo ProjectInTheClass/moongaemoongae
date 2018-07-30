@@ -29,7 +29,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRv-TV-Wo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3065" y="1859"/>
+            <point key="canvasLocation" x="-2895" y="1541"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MrJ-Uy-W8a">
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbT-IY-cGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1383.2" y="1541.3793103448277"/>
+            <point key="canvasLocation" x="-2036" y="1541"/>
         </scene>
         <!--내 정보 수정-->
         <scene sceneID="vXq-c9-9xH">
@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ey4-My-F2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-430.39999999999998" y="1291.6256157635469"/>
+            <point key="canvasLocation" x="-1240" y="1244"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oTy-XU-Afy">
@@ -637,7 +637,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTo-Vb-qRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1822" y="4139"/>
+            <point key="canvasLocation" x="-1347" y="3496"/>
         </scene>
         <!--아이디어-->
         <scene sceneID="6Hq-DJ-GYo">
@@ -676,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4d-41-Aeg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1674" y="3214"/>
+            <point key="canvasLocation" x="-1238" y="2605"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hgg-Oa-xwN">
@@ -770,14 +770,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04H-ki-tko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1614" y="4679"/>
+            <point key="canvasLocation" x="-1197" y="4123"/>
         </scene>
         <!--작품 등록-->
         <scene sceneID="ymI-nM-jsU">
             <objects>
                 <viewController id="Tlr-yf-iCa" customClass="CreateProjectController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Onr-BB-Gst">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqH-Ts-2qt">
@@ -983,11 +983,12 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="7x9-sg-X0V">
                             <connections>
                                 <action selector="CreateProject:" destination="Tlr-yf-iCa" id="3dc-vO-Spr"/>
+                                <segue destination="GOG-Jm-bal" kind="show" id="fhm-ww-Vux"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <size key="freeformSize" width="375" height="1600"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="addCoworker" destination="G6s-SJ-2u8" id="AHF-cq-xTm"/>
                         <outlet property="addImageBtn" destination="tRL-W4-1Ph" id="APQ-mq-TPx"/>
@@ -1007,7 +1008,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19A-Zg-Iku" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1309.5999999999999" y="2651.231527093596"/>
+            <point key="canvasLocation" x="-326" y="2194"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="NXn-xb-1Nq">
@@ -1092,7 +1093,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDN-xf-NYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433" y="1900"/>
+            <point key="canvasLocation" x="-1242" y="1885"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="RZC-ub-53M">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProjectView" id="GOG-Jm-bal" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esK-UN-Cor" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="1682"/>
         </scene>
         <!--User List View Controller-->
         <scene sceneID="T9Y-lT-MBc">
@@ -1176,7 +1185,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrV-5j-Yg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="2530.7881773399017"/>
+            <point key="canvasLocation" x="612" y="2194"/>
         </scene>
         <!--모아보기-->
         <scene sceneID="Z8X-PN-WX0">
@@ -1364,7 +1373,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4no-zR-9dL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="3390"/>
+            <point key="canvasLocation" x="-36" y="3086"/>
         </scene>
     </scenes>
     <resources>

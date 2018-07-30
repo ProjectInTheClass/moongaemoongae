@@ -20,11 +20,9 @@
 		A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */; };
 		A0D52E4120FC867E00DF5A80 /* btn_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A0D52E4020FC867E00DF5A80 /* btn_bottom.png */; };
 		B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B520EDE70400BC80DB /* AppDelegate.swift */; };
-		B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810A0B920EDE70400BC80DB /* SecondViewController.swift */; };
 		B810A0BD20EDE70400BC80DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BB20EDE70400BC80DB /* Main.storyboard */; };
 		B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BE20EDE70600BC80DB /* Assets.xcassets */; };
 		B810A0C220EDE70600BC80DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */; };
-		B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B834C9B920F3098300088D85 /* 4ViewController.swift */; };
 		B834C9CA20F32DAA00088D85 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9C920F32DAA00088D85 /* hearts.png */; };
 		B834C9CC20F331C600088D85 /* idea (2).png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9CB20F331C500088D85 /* idea (2).png */; };
 		B834C9D020F3328D00088D85 /* calendar-with-spring-binder-and-date-blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9CD20F3328900088D85 /* calendar-with-spring-binder-and-date-blocks.png */; };
@@ -86,12 +84,10 @@
 		A0D52E4020FC867E00DF5A80 /* btn_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bottom.png; sourceTree = "<group>"; };
 		B810A0B220EDE70400BC80DB /* moongae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moongae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B810A0B520EDE70400BC80DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B810A0B920EDE70400BC80DB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B810A0BC20EDE70400BC80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B810A0BE20EDE70600BC80DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B810A0C120EDE70600BC80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B810A0C320EDE70600BC80DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B834C9B920F3098300088D85 /* 4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4ViewController.swift; sourceTree = "<group>"; };
 		B834C9C920F32DAA00088D85 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts.png; sourceTree = "<group>"; };
 		B834C9CB20F331C500088D85 /* idea (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idea (2).png"; sourceTree = "<group>"; };
 		B834C9CD20F3328900088D85 /* calendar-with-spring-binder-and-date-blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-with-spring-binder-and-date-blocks.png"; sourceTree = "<group>"; };
@@ -211,18 +207,16 @@
 				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
 				B8803C9220EF30BC009717DF /* ui1.png */,
 				B8803C9020EF30B9009717DF /* ui2.png */,
-				B810A0B920EDE70400BC80DB /* SecondViewController.swift */,
-				B834C9B920F3098300088D85 /* 4ViewController.swift */,
 				B8576C6420F4530200E081F4 /* signupViewController.swift */,
-				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
 				B810A0BE20EDE70600BC80DB /* Assets.xcassets */,
+				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
 				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
 				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
 				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
 				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
-				D091AF332109A5B400890929 /* CreateAccountController.swift */,
 				B810A0C320EDE70600BC80DB /* Info.plist */,
 				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
+				D091AF332109A5B400890929 /* CreateAccountController.swift */,
 				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
 				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
 				D0DE709B210873DB0045EA22 /* CreateProjectController.swift */,
@@ -426,7 +420,6 @@
 				A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */,
 				A0A6DC982106C16100EBE60F /* MajorCollectionSortViewController.swift in Sources */,
 				B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */,
-				B810A0BA20EDE70400BC80DB /* SecondViewController.swift in Sources */,
 				B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
 				B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */,
@@ -445,7 +438,6 @@
 				D0DE709C210873DB0045EA22 /* CreateProjectController.swift in Sources */,
 				A0A6DC962101A9EE00EBE60F /* UserProfileViewController.swift in Sources */,
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
-				B834C9BA20F3098300088D85 /* 4ViewController.swift in Sources */,
 				A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */,
 				A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */,
 			);

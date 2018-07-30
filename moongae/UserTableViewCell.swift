@@ -9,17 +9,13 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-
-//    @IBOutlet weak var UserPhoto: UIImageView!
-//    @IBOutlet weak var UserName: UILabel!
-//    @IBOutlet weak var UserMajor: UILabel!
-//    @IBOutlet weak var UserGrade: UILabel!
     
     @IBOutlet weak var UserPhoto: UIImageView!
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var UserMajor: UILabel!
     @IBOutlet weak var User2Major: UILabel!
     @IBOutlet weak var UserGrade: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

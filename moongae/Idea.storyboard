@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLY-fJ-P00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="-2268.4729064039411"/>
+            <point key="canvasLocation" x="2221" y="-2267"/>
         </scene>
         <!--아이디어-->
         <scene sceneID="Cgw-tr-WHy">
@@ -260,12 +260,12 @@
                         <outlet property="searchBar" destination="JAW-dH-Aaq" id="lfc-sr-HoN"/>
                         <outlet property="sphereSmallView" destination="i5f-zP-MDe" id="c2x-wy-Pv0"/>
                         <outlet property="sphereView" destination="i5f-zP-MDe" id="2H3-1s-fa3"/>
-                        <outlet property="tagView" destination="C8i-AC-Hfb" id="J3o-D9-BZF"/>
+                        <outlet property="tagView" destination="C8i-AC-Hfb" id="dZq-ZZ-vfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Mi-Si-xqO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.5999999999999" y="-1442.3645320197045"/>
+            <point key="canvasLocation" x="941.60000000000002" y="-1500"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pcj-T8-qiE">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkl-lB-tAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240" y="-1729"/>
+            <point key="canvasLocation" x="2222" y="-1816"/>
         </scene>
     </scenes>
     <resources>

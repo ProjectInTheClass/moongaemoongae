@@ -36,9 +36,22 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         }
         self.searchBar.setDatasWithUrl(datas: suggestionList)
         
-        // tag
+        // 랜덤 컬러 나오는 함수
+        func getRandomColor() -> UIColor {
+            
+            let randomRed: CGFloat = CGFloat(drand48())
+            let randomGreen: CGFloat = CGFloat(drand48())
+            let randomBlue: CGFloat = CGFloat(drand48())
+            
+            return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+            
+        }
+        
         tagView.addTags(tagList)
         tagView.textFont = UIFont.systemFont(ofSize: 18)
+        for view in tagView.tagViews {
+            view.tagBackgroundColor = getRandomColor()
+        }
         
         // sphereView
         sphereView = DBSphereView(frame: CGRect(x: -200, y: -200, width: 1000, height: 1000))

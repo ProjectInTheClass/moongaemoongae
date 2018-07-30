@@ -4,7 +4,6 @@ import Foundation
 
 class UserListViewController : UITableViewController{
     
-//    var modelUserList = UserListModel()
     var modelUserList = UserListModel.UserListModelSingleton
     
     
