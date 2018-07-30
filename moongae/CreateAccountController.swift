@@ -5,19 +5,20 @@
 //  Created by swuad_06 on 2018. 7. 26..
 //  Copyright © 2018년 swuad_14. All rights reserved.
 //
-
 import UIKit
+import MobileCoreServices
 
-class CreateAccountController: UIViewController {
+class CreateAccountController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var modelUser = UserListModel.UserListModelSingleton
     var comment:Array<UserList> = []
-    //
+    
     //    @IBOutlet var UserListTable: UITableView!
     //    @IBOutlet weak var UserPhoto: UIImageView!
     //    @IBOutlet weak var UserName: UILabel!
     //    @IBOutlet weak var UserGrade: UILabel!
     //    @IBOutlet weak var UserMajor: UILabel!
     
+    @IBOutlet weak var Profile: UIImageView!
     @IBOutlet weak var UserEmail: UITextField!
     @IBOutlet weak var UserPW: UITextField!
     @IBOutlet weak var UserPWConfirm: UITextField!
@@ -26,6 +27,10 @@ class CreateAccountController: UIViewController {
     @IBOutlet weak var User2Major: UITextField?
     @IBOutlet weak var UserMajorSecond: UITextField!
     @IBOutlet weak var UserGrade: UITextField!
+    
+    let imagePicker: UIImagePickerController! = UIImagePickerController()
+    var captureImage: UIImage!
+    var flagImageSave = false
     
     
     override func viewDidLoad() {
@@ -39,8 +44,43 @@ class CreateAccountController: UIViewController {
         
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
+    @IBAction func AlbumClicked(_ sender: UIButton) {
+        if(UIImagePickerController.isSourceTypeAvailable(.photoLibrary)) {
+            flagImageSave = false
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.mediaTypes = [kUTTypeImage as String]
+            imagePicker.allowsEditing = true
+            
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
     
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
+        print (mediaType)
+        
+        if mediaType.isEqual(to :kUTTypeImage as NSString as String) {
+            captureImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            
+                if flagImageSave{
+                    UIImageWriteToSavedPhotosAlbum(captureImage, self, nil, nil)
+                }
+        
+            Profile.image = captureImage
+        }
+        self.dismiss(animated: true, completion : nil)
+    }
+    
+    public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+
     @IBAction func CreateAccount(_ sender: Any) {
         
         if UserEmail.text?.count == 0  {

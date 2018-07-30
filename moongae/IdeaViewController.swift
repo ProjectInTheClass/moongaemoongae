@@ -33,7 +33,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         var suggestionList = Array<ModernSearchBarModel>()
         for i in 1 ..< tagList.count {
-            suggestionList.append(ModernSearchBarModel(title:tagList[0] as! String, url:""))
+            suggestionList.append(ModernSearchBarModel(title:tagList[i] as! String, url:""))
         }
         self.searchBar.setDatasWithUrl(datas: suggestionList)
         

@@ -132,11 +132,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwC-zF-oEO">
-                                <rect key="frame" x="103" y="119" width="169" height="142"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn_CreateAccountProfileIMG"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnh-jq-bpf">
                                 <rect key="frame" x="171" y="694" width="33" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,6 +162,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-zC-nHh">
+                                <rect key="frame" x="217" y="202" width="41" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btn_Edit_Profile"/>
+                                <connections>
+                                    <action selector="AlbumClicked:" destination="th4-Kc-vEn" eventType="touchUpInside" id="sxi-Pe-lAj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_Default_Profile" translatesAutoresizingMaskIntoConstraints="NO" id="IY8-WP-vVU">
+                                <rect key="frame" x="125" y="110" width="127" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YIS-o8-J7Q"/>
@@ -174,6 +181,7 @@
                     <tabBarItem key="tabBarItem" title="" image="redlike" id="hrX-U7-JA9"/>
                     <navigationItem key="navigationItem" title="회원가입" id="FAs-f0-iAI"/>
                     <connections>
+                        <outlet property="Profile" destination="IY8-WP-vVU" id="jcm-9B-FCa"/>
                         <outlet property="User2Major" destination="RRD-xx-Let" id="7fT-SD-WLZ"/>
                         <outlet property="UserEmail" destination="PhU-41-lZR" id="xQ2-iC-7Ol"/>
                         <outlet property="UserGrade" destination="IMC-XL-OR6" id="97W-kU-0fe"/>
@@ -186,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWH-9j-US9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="547"/>
+            <point key="canvasLocation" x="808.79999999999995" y="546.79802955665025"/>
         </scene>
         <!--Category-->
         <scene sceneID="hyY-Pf-P4s">
@@ -324,7 +332,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_CreateAccountProfileIMG" width="362" height="324"/>
+        <image name="btn_Edit_Profile" width="702" height="702"/>
+        <image name="img_Default_Profile" width="409" height="375"/>
         <image name="redlike" width="64" height="64"/>
     </resources>
 </document>

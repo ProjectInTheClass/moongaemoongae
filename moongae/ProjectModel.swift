@@ -121,8 +121,10 @@ class ProjectModel {
     func searchProjectTag() -> Array<String> {
         var resultArray: Array<String> = []
         for i in 0 ..< arrayList.count {
-            for j in 0...arrayList[i].tags.count-1{
-//                if(resultArray[i] == arrayList[i].tags[j]) {break}
+            for j in 0 ..< arrayList[i].tags.count{
+//                print(resultArray[i])
+                print(arrayList[i].tags[j])
+//                if(resultArray[i] == arrayList[i].tags[j]) {continue}
                 resultArray.append(arrayList[i].tags[j])
             }
         }
