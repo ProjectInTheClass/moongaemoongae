@@ -983,20 +983,26 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="7x9-sg-X0V">
                             <connections>
                                 <action selector="CreateProject:" destination="Tlr-yf-iCa" id="3dc-vO-Spr"/>
-                                <segue destination="2IR-pb-2UQ" kind="show" identifier="CreateProjectSegue" id="Sse-8l-cCn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <size key="freeformSize" width="375" height="1600"/>
                     <connections>
-                        <outlet property="Projecttitle" destination="r6h-lv-brC" id="Icj-WK-A3x"/>
-                        <outlet property="endDate" destination="TG3-gv-Ras" id="3z6-PZ-jB1"/>
-                        <outlet property="language" destination="zXn-u3-JiY" id="qBB-56-mBP"/>
-                        <outlet property="project_image" destination="fo4-VR-I1q" id="vJ9-D5-7nj"/>
-                        <outlet property="startDate" destination="fo4-VR-I1q" id="gug-Z5-eNf"/>
-                        <outlet property="summary" destination="nAa-Fe-IuI" id="ypq-me-v2W"/>
-                        <outlet property="tags" destination="WNH-jO-api" id="TgU-7C-cbk"/>
+                        <outlet property="addCoworker" destination="G6s-SJ-2u8" id="AHF-cq-xTm"/>
+                        <outlet property="addImageBtn" destination="tRL-W4-1Ph" id="APQ-mq-TPx"/>
+                        <outlet property="benefit" destination="BVw-iv-qGb" id="A0a-8i-OFx"/>
+                        <outlet property="coworker" destination="0YH-fN-VvT" id="M15-01-omP"/>
+                        <outlet property="detail" destination="M1i-Xf-eKY" id="5YD-jN-Txa"/>
+                        <outlet property="endDate" destination="TG3-gv-Ras" id="gZb-we-SxE"/>
+                        <outlet property="environment" destination="QOc-yV-u38" id="TKd-Tk-HJ0"/>
+                        <outlet property="imageView" destination="2xj-c5-JOT" id="Vyz-M8-f4k"/>
+                        <outlet property="language" destination="zXn-u3-JiY" id="oWK-wM-JwM"/>
+                        <outlet property="motivation" destination="hhV-RY-FMq" id="gAK-VP-1mK"/>
+                        <outlet property="projectTitle" destination="r6h-lv-brC" id="bfK-pn-uai"/>
+                        <outlet property="startDate" destination="fo4-VR-I1q" id="H4h-au-IS9"/>
+                        <outlet property="summary" destination="nAa-Fe-IuI" id="wva-RU-oGs"/>
+                        <outlet property="tags" destination="WNH-jO-api" id="whf-V8-Dm3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19A-Zg-Iku" userLabel="First Responder" sceneMemberID="firstResponder"/>
