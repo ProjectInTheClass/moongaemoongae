@@ -71,7 +71,7 @@ class ProjectModel {
     private init() {
         self.arrayList = []
         
-        let project1 = ProjectInfo(title: "공간캡슐", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "기억을 리마인드 할 수 있는 서비스를 만들고 싶었다.", benefit: "재밌을 것 같다. "
+        let project1 = ProjectInfo(title: "공간캡슐", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드","서버"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "기억을 리마인드 할 수 있는 서비스를 만들고 싶었다.", benefit: "재밌을 것 같다. "
             ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:12, commentCount:3)
         self.arrayList.append(project1)
         
@@ -79,11 +79,9 @@ class ProjectModel {
             ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "정보보호학과", likeCount:1, commentCount:8)
         self.arrayList.append(project2)
         
-        let project3 = ProjectInfo(title: "세번째에요", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
+        let project3 = ProjectInfo(title: "세번째에요", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드","고민상담"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
         self.arrayList.append(project3)
     }
-    
-    
     
     func searchMajor(majorName: String) -> Array<ProjectInfo> {
         var modelProject: Array<ProjectInfo> = []
@@ -105,27 +103,14 @@ class ProjectModel {
         return num
     }
     
-//    // 태그명 가져오기
-//    func searchProjectTag() -> [[AnyObject]] {
-//        var resultArray: [[AnyObject]] = [[]]
-//        for i in 0 ..< arrayList.count {
-//            for j in 0...arrayList[i].tags.count-1{
-//                if(resultArray[0][j] as! String == arrayList[i].tags[j]) {break}
-//                resultArray.append([arrayList[i].tags[j] as AnyObject, UIImage(named: "cloud-5")!])
-//            }
-//        }
-//        return resultArray
-//    }
-    
-    // 태그명 가져오기
+    // 태그명 중복 없이 가져오기
     func searchProjectTag() -> Array<String> {
         var resultArray: Array<String> = []
         for i in 0 ..< arrayList.count {
             for j in 0 ..< arrayList[i].tags.count{
-//                print(resultArray[i])
-                print(arrayList[i].tags[j])
-//                if(resultArray[i] == arrayList[i].tags[j]) {continue}
-                resultArray.append(arrayList[i].tags[j])
+                if(!resultArray.contains(arrayList[i].tags[j])){
+                    resultArray.append(arrayList[i].tags[j])
+                }
             }
         }
         return resultArray
