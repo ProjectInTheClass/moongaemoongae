@@ -20,7 +20,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     @IBOutlet weak var sphereSmallView: UIView!
     var patchView: SFPatchView!
     
-    var tagList: [[AnyObject]] = [[]]
+    var tagList: Array<String> = []
     var projectList: Array<String> = []
     
     var isClicked:Bool = false
@@ -33,9 +33,8 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         var suggestionList = Array<ModernSearchBarModel>()
         for i in 1 ..< tagList.count {
-            suggestionList.append(ModernSearchBarModel(title:tagList[i][0] as! String, url:""))
+            suggestionList.append(ModernSearchBarModel(title:tagList[0] as! String, url:""))
         }
-        
         self.searchBar.setDatasWithUrl(datas: suggestionList)
         
         sphereView = DBSphereView(frame: CGRect(x: -200, y: -200, width: 1000, height: 1000))
@@ -43,17 +42,17 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         for i in 1 ..< tagList.count {
             // tag 설정
-            tagView.addTag(tagList[i][0] as! String)
+            tagView.addTag(tagList[i] as! String)
             tagView.textFont = UIFont.systemFont(ofSize: 15)
             
             // btn 설정
             let btn: UIButton = UIButton(type: .custom)
-            btn.setTitle(tagList[i][0] as? String, for: UIControlState())
+            btn.setTitle(tagList[i] as? String, for: UIControlState())
             btn.setTitleColor(UIColor.black, for: .normal);
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
             btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
             btn.layer.masksToBounds = true
-            btn.setBackgroundImage(tagList[i][1] as? UIImage, for: UIControlState())
+            btn.setBackgroundImage(UIImage(named: "cloud-5")!, for: UIControlState())
             btn.contentMode = UIViewContentMode.scaleAspectFit
             btn.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
             btn.layer.cornerRadius = 30

@@ -105,12 +105,25 @@ class ProjectModel {
         return num
     }
     
+//    // 태그명 가져오기
+//    func searchProjectTag() -> [[AnyObject]] {
+//        var resultArray: [[AnyObject]] = [[]]
+//        for i in 0 ..< arrayList.count {
+//            for j in 0...arrayList[i].tags.count-1{
+//                if(resultArray[0][j] as! String == arrayList[i].tags[j]) {break}
+//                resultArray.append([arrayList[i].tags[j] as AnyObject, UIImage(named: "cloud-5")!])
+//            }
+//        }
+//        return resultArray
+//    }
+    
     // 태그명 가져오기
-    func searchProjectTag() -> [[AnyObject]] {
-        var resultArray: [[AnyObject]] = [[]]
+    func searchProjectTag() -> Array<String> {
+        var resultArray: Array<String> = []
         for i in 0 ..< arrayList.count {
             for j in 0...arrayList[i].tags.count-1{
-                resultArray.append([arrayList[i].tags[j] as AnyObject, UIImage(named: "cloud-5")!])
+//                if(resultArray[i] == arrayList[i].tags[j]) {break}
+                resultArray.append(arrayList[i].tags[j])
             }
         }
         return resultArray
