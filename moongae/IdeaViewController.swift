@@ -27,7 +27,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // search bar
         tagList = modelProject.searchProjectTag()
         var suggestionList = Array<ModernSearchBarModel>()
@@ -78,7 +78,10 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
                 sphereView.timerStop()
                 btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
             }
-            else {print("else");sphereView.timerStop();sphereView.removeFromSuperview()}
+            else {print("else");
+                sphereView.timerStop();sphereView.removeFromSuperview()
+                
+            }
             array.add(btn)
             sphereView.addSubview(btn)
         }
@@ -129,6 +132,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
                 self.sphereSmallView.addSubview(btn)
             }
             self.sphereView.setCloudTags(array as [AnyObject])
+            self.sphereView.backgroundColor =  UIColor(red:0/255, green: 210/255, blue: 240/255, alpha: 1)
             self.view.addSubview(self.sphereView)
             self.view.bringSubview(toFront: self.tagView)
             self.view.bringSubview(toFront: self.searchBar)

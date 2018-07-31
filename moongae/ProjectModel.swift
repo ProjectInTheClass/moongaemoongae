@@ -75,12 +75,18 @@ class ProjectModel {
             ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:12, commentCount:3)
         self.arrayList.append(project1)
         
-        let project2 = ProjectInfo(title: "무덤덤", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["고민상담","병원"], summary: "당신의 기억을 묻어 보세요. ", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오, 마리아db", motivation: "행복한 글만 올리는 sns와 달리 고민을 올리는 sns가 필요하다고 생각했다.", benefit: "재밌을 것 같다. "
+        let project2 = ProjectInfo(title: "무덤덤", image: ["ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["고민상담","병원","iOS", "익명"], summary: "당신의 기억을 묻어 보세요. ", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오, 마리아db", motivation: "행복한 글만 올리는 sns와 달리 고민을 올리는 sns가 필요하다고 생각했다.", benefit: "재밌을 것 같다. "
             ,  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "정보보호학과", likeCount:1, commentCount:8)
         self.arrayList.append(project2)
         
-        let project3 = ProjectInfo(title: "세번째에요", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드","고민상담"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
+        let project3 = ProjectInfo(title: "세번째", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["자바","씨쁠쁠","안드로이드","고민상담","학교"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
         self.arrayList.append(project3)
+        
+        let project4 = ProjectInfo(title: "네번째", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["계절","헤어스타일","머신러닝","그래프"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
+        self.arrayList.append(project4)
+        
+        let project5 = ProjectInfo(title: "네번째", image: ["ui1.png","ui1.png","ui2.png"], startDate: "2018-03-08", endDate: "2018-06-22", tags: ["코틀린"], summary: "소중한 공간 속 소중한 순간들", coworker: ["김소연", "박예빈", "이재은"], language: "서버 ,java", environment: "안드로이드 스튜디오 3.1.1, SQLite", motivation: "바쁜 현대인들을 위해....,", benefit: "재밌을 것 같다.",  detail:" ", createdDate:"2018-06-22",  author: "이재은", major: "컴퓨터학과", likeCount:127, commentCount: 12)
+        self.arrayList.append(project5)
     }
     
     func searchMajor(majorName: String) -> Array<ProjectInfo> {
