@@ -23,6 +23,7 @@
 		B810A0BD20EDE70400BC80DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BB20EDE70400BC80DB /* Main.storyboard */; };
 		B810A0BF20EDE70600BC80DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810A0BE20EDE70600BC80DB /* Assets.xcassets */; };
 		B810A0C220EDE70600BC80DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */; };
+		B82DD01E211053D8009ED317 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82DD01D211053D8009ED317 /* LoginViewController.swift */; };
 		B834C9CA20F32DAA00088D85 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9C920F32DAA00088D85 /* hearts.png */; };
 		B834C9CC20F331C600088D85 /* idea (2).png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9CB20F331C500088D85 /* idea (2).png */; };
 		B834C9D020F3328D00088D85 /* calendar-with-spring-binder-and-date-blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = B834C9CD20F3328900088D85 /* calendar-with-spring-binder-and-date-blocks.png */; };
@@ -88,6 +89,7 @@
 		B810A0BE20EDE70600BC80DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B810A0C120EDE70600BC80DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B810A0C320EDE70600BC80DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B82DD01D211053D8009ED317 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B834C9C920F32DAA00088D85 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts.png; sourceTree = "<group>"; };
 		B834C9CB20F331C500088D85 /* idea (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idea (2).png"; sourceTree = "<group>"; };
 		B834C9CD20F3328900088D85 /* calendar-with-spring-binder-and-date-blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-with-spring-binder-and-date-blocks.png"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				B8BD1E5C2107071400A89577 /* BridgeHeader.h */,
 				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
 				B8BD1E5F21070B6700A89577 /* Common.swift */,
+				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				B837FAB621005BA4005F4E65 /* MajorCollectionViewCell.swift in Sources */,
 				B810A0B620EDE70400BC80DB /* AppDelegate.swift in Sources */,
 				B8BD1E6021070B6700A89577 /* Common.swift in Sources */,
+				B82DD01E211053D8009ED317 /* LoginViewController.swift in Sources */,
 				A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */,
 				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,

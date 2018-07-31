@@ -40,6 +40,10 @@ class CreateProjectController: UIViewController, UIImagePickerControllerDelegate
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
     
     func imagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String:Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {

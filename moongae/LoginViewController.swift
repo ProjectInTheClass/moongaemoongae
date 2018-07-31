@@ -1,15 +1,20 @@
 //
-//  signupViewController.swift
+//  LoginViewController.swift
 //  moongae
 //
-//  Created by swuad_14 on 2018. 7. 10..
+//  Created by swuad_14 on 2018. 7. 31..
 //  Copyright © 2018년 swuad_14. All rights reserved.
 //
 
 import UIKit
 
-class signupViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,18 +26,7 @@ class signupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func touchDone( _sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-        
-        
-    }
 
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
-        self.view.endEditing(true)
-    }
-    
-    
     /*
     // MARK: - Navigation
 

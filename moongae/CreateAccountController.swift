@@ -60,6 +60,10 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let mediaType = info[UIImagePickerControllerMediaType] as! NSString
         print (mediaType)
