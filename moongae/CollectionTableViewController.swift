@@ -73,7 +73,7 @@ class CollectionTableViewController: UITableViewController {
         cell.coworker?.text = coworkers
         
         cell.likeCount?.text = String(info.likeCount)
-        cell.commentCount?.text = String(info.commentCount)
+        cell.commentCount?.text = "(\(String(info.commentCount)))"
         
         return cell
     }
