@@ -396,7 +396,7 @@
         <!--모아보기-->
         <scene sceneID="Tok-PG-RJk">
             <objects>
-                <tableViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofX-hW-Wlc" customClass="CollectionTableViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vcMoaBogi" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofX-hW-Wlc" customClass="CollectionTableViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2gz-OK-7kx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

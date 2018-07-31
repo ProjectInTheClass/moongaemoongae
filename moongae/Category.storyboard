@@ -59,7 +59,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nag-ZZ-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="2157"/>
+            <point key="canvasLocation" x="1814" y="2155"/>
         </scene>
         <!--Title-->
         <scene sceneID="myu-ve-AjH">
@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="2613.5999999999999" y="2155.4187192118229"/>
         </scene>
-        <!--Collection-->
+        <!--vcMoaBogi-->
         <scene sceneID="bjb-zB-uyY">
             <objects>
-                <viewControllerPlaceholder storyboardName="Collection" id="rtW-kb-asG" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="vcMoaBogi" id="rtW-kb-asG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4P-Er-GOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3290" y="2155"/>
