@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.54117647059999996" green="0.64313725489999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.031372549019607843" green="0.33725490196078434" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="1aF-AM-y1j" kind="relationship" relationship="viewControllers" id="HDW-g6-b6s"/>
@@ -27,7 +27,6 @@
                         <segue destination="rfP-kj-Vy7" kind="relationship" relationship="viewControllers" id="a8O-N0-5xM"/>
                         <segue destination="UVe-dj-5F0" kind="relationship" relationship="viewControllers" id="DK7-ZF-Egg"/>
                         <segue destination="lLr-jc-67j" kind="presentation" identifier="Login" id="8GU-aM-Ym2"/>
-                        <segue destination="th4-Kc-vEn" kind="relationship" relationship="viewControllers" id="DkZ-N0-bvg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -195,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWH-9j-US9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="546.79802955665025"/>
+            <point key="canvasLocation" x="2282" y="-740"/>
         </scene>
         <!--Category-->
         <scene sceneID="hyY-Pf-P4s">
@@ -264,6 +263,9 @@
                                             <color key="titleColor" red="0.24617306472081213" green="0.24617306472081213" blue="0.24617306472081213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" red="0.47849767510000002" green="0.80107868019999995" blue="0.65547810689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="th4-Kc-vEn" kind="presentation" id="zLV-bl-qPF"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-E5-88k">
                                         <rect key="frame" x="32" y="113" width="229" height="21"/>
@@ -315,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpK-UH-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1591" y="-291"/>
+            <point key="canvasLocation" x="1522" y="-740"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tpu-vl-RPp">
@@ -326,10 +328,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B72-0h-yRI" kind="relationship" relationship="rootViewController" id="pJI-1K-vqn"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGy-eZ-Fao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="-740.39408866995075"/>
+            <point key="canvasLocation" x="767" y="-740"/>
         </scene>
     </scenes>
     <resources>

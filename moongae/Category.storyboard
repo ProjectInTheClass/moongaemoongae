@@ -13,7 +13,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Major Table View Controller-->
+        <!--카테고리-->
         <scene sceneID="PhH-VX-cvL">
             <objects>
                 <tableViewController id="N38-gB-OTl" customClass="MajorTableViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="N38-gB-OTl" id="I8p-Kf-oB8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="USC-2K-4td"/>
+                    <navigationItem key="navigationItem" title="카테고리" id="USC-2K-4td"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nag-ZZ-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

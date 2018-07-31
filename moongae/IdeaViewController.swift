@@ -5,7 +5,6 @@
 //  Created by swuad_14 on 2018. 7. 24..
 //  Copyright © 2018년 swuad_14. All rights reserved.
 //
-
 import UIKit
 import DBSphereTagCloud
 import TagListView
@@ -25,6 +24,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     
     var isClicked:Bool = false
     var btn: UIButton = UIButton(type: .custom)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -38,13 +38,15 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         // 랜덤 컬러 나오는 함수
         func getRandomColor() -> UIColor {
+            var colorRandom:Array<UIColor> = []
+            colorRandom.append(UIColor(red: 8.0/255, green: 86/255, blue: 195/255, alpha: 1))
+            colorRandom.append(UIColor(red: 21/255, green: 123/255, blue: 208/255, alpha: 1))
+            colorRandom.append(UIColor(red: 0/255, green: 174/255, blue: 214/255, alpha: 1))
+//            colorRandom.append(UIColor(red: 173/255, green: 227/255, blue: 240/255, alpha: 1))
             
-            let randomRed: CGFloat = CGFloat(drand48())
-            let randomGreen: CGFloat = CGFloat(drand48())
-            let randomBlue: CGFloat = CGFloat(drand48())
-            
-            return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-            
+            let randomNo: UInt32 = arc4random_uniform(3);
+            let randomNum:Int = Int(randomNo)
+            return colorRandom[randomNum]
         }
         
         tagView.addTags(tagList)
@@ -55,7 +57,6 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         
         // sphereView
         sphereView = DBSphereView(frame: CGRect(x: -200, y: -200, width: 1000, height: 1000))
-        
         
         let array = NSMutableArray(capacity: 0)
         for i in 1 ..< tagList.count {
@@ -73,10 +74,11 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             
             // 태그 구름 클릭 시 프로젝트가 보임
             if(!isClicked) {
+                print("if");
                 sphereView.timerStop()
                 btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
             }
-            else {sphereView.removeFromSuperview()}
+            else {print("else");sphereView.timerStop();sphereView.removeFromSuperview()}
             array.add(btn)
             sphereView.addSubview(btn)
         }
@@ -84,7 +86,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         btn.addTarget(self, action: #selector(IdeaViewController.buttonPressed(_:)), for: UIControlEvents.touchUpInside)
         
         sphereView.setCloudTags(array as [AnyObject])
-        sphereView.backgroundColor =  #colorLiteral(red: 0.7333333333, green: 0.8470588235, blue: 0.8549019608, alpha: 1)
+        sphereView.backgroundColor =  UIColor(red: 173/255, green: 227/255, blue: 240/255, alpha: 1)
         self.view.addSubview(sphereView)
         self.view.bringSubview(toFront: tagView)
         self.view.bringSubview(toFront: searchBar)

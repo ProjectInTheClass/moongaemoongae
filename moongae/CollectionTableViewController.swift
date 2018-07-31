@@ -12,11 +12,9 @@ class CollectionTableViewController: UITableViewController {
 
     var modelProject = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,15 +28,15 @@ class CollectionTableViewController: UITableViewController {
    // var currentImage = 0
     
     func getRandomColor() -> UIColor {
+        var colorRandom:Array<UIColor> = []
+        colorRandom.append(UIColor(red: 8.0/255, green: 86/255, blue: 195/255, alpha: 1))
+        colorRandom.append(UIColor(red: 21/255, green: 123/255, blue: 208/255, alpha: 1))
+        colorRandom.append(UIColor(red: 0/255, green: 174/255, blue: 214/255, alpha: 1))
         
-        let randomRed: CGFloat = CGFloat(drand48())
-        let randomGreen: CGFloat = CGFloat(drand48())
-        let randomBlue: CGFloat = CGFloat(drand48())
-        
-        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-        
+        let randomNo: UInt32 = arc4random_uniform(3);
+        let randomNum:Int = Int(randomNo)
+        return colorRandom[randomNum]
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
