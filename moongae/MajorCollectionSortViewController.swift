@@ -59,7 +59,6 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         
         cell.project_image?.image = UIImage(named: info.image[0])
         cell.title?.text = info.title
-        cell.likeCount?.text = String(info.likeCount)
         cell.commentCount?.text = String(info.commentCount)
         
         return cell

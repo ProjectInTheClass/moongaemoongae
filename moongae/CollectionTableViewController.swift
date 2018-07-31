@@ -111,10 +111,22 @@ class CollectionTableViewController: UITableViewController {
                 
                 let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
                 
+                destination.title = "상세정보"
                 self.modelProject.selectedIndex = indexPath.row
                 destination.modelProject = self.modelProject
             }
         }
+        
+//        if let projectData = segue.destination as? MajorCollectionSortViewController {
+//            
+//            let cell = sender as! UITableViewCell
+//            let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
+//            self.modelMajor.selectedIndex = indexPath.row
+//            let majorName = modelMajor.arrayList[modelMajor.selectedIndex].major
+//            
+//            projectData.modelCollect = modelProject.searchMajor(majorName: majorName)
+//            
+//            projectData.title = modelMajor.arrayList[modelMajor.selectedIndex].major
         
         if segue.identifier == "toComment" {
             if let destination = segue.destination as? CommentViewController {
