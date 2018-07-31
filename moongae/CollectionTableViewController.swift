@@ -116,17 +116,7 @@ class CollectionTableViewController: UITableViewController {
                 destination.modelProject = self.modelProject
             }
         }
-        
-//        if let projectData = segue.destination as? MajorCollectionSortViewController {
-//            
-//            let cell = sender as! UITableViewCell
-//            let indexPath:IndexPath! =  self.tableView.indexPath(for: cell)
-//            self.modelMajor.selectedIndex = indexPath.row
-//            let majorName = modelMajor.arrayList[modelMajor.selectedIndex].major
-//            
-//            projectData.modelCollect = modelProject.searchMajor(majorName: majorName)
-//            
-//            projectData.title = modelMajor.arrayList[modelMajor.selectedIndex].major
+
         
         if segue.identifier == "toComment" {
             if let destination = segue.destination as? CommentViewController {
