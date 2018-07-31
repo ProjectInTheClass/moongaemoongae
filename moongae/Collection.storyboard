@@ -414,14 +414,6 @@
                                             <rect key="frame" x="0.0" y="11" width="375" height="617"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ui1" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-5C-EiH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="376" height="357"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="66D-oG-mJf" appends="YES" id="fPW-yD-o3n"/>
-                                                    </connections>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사용자 맞춤 음악 서비스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SB-yD-mtR">
                                                     <rect key="frame" x="23" y="365" width="336" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -548,6 +540,20 @@
                                                     <color key="textColor" red="0.08235294118" green="0.4823529412" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igu-US-dZ9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="357"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UfB-5C-EiH">
+                                                            <rect key="frame" x="-1" y="0.0" width="376" height="357"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <gestureRecognizers/>
+                                                            <connections>
+                                                                <outletCollection property="gestureRecognizers" destination="66D-oG-mJf" appends="YES" id="fPW-yD-o3n"/>
+                                                            </connections>
+                                                        </imageView>
+                                                    </subviews>
+                                                </scrollView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <gestureRecognizers/>
@@ -564,6 +570,7 @@
                                     <outlet property="major" destination="DfL-X4-G3U" id="cgw-gv-FVG"/>
                                     <outlet property="nextBtn" destination="L9e-VF-lbL" id="rYI-wc-MdR"/>
                                     <outlet property="project_image" destination="UfB-5C-EiH" id="7MV-42-4LM"/>
+                                    <outlet property="scrollView" destination="igu-US-dZ9" id="AbL-p9-TV6"/>
                                     <outlet property="startDate" destination="RmJ-hq-6WJ" id="3xL-wc-Apc"/>
                                     <outlet property="summary" destination="SGg-Xe-NRA" id="tss-bB-QNP"/>
                                     <outlet property="tagListView" destination="60o-l1-4Ti" id="c3O-Rc-yoc"/>
@@ -589,7 +596,6 @@
         <image name="icon_next.png" width="64" height="64"/>
         <image name="img_profile_woman_2.png" width="994" height="994"/>
         <image name="newbtn" width="32" height="32"/>
-        <image name="ui1" width="683" height="511"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sco-3O-6tL"/>

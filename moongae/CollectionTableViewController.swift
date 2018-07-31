@@ -43,6 +43,23 @@ class CollectionTableViewController: UITableViewController {
         let cell : CollectionTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Collection Cell", for: indexPath) as! CollectionTableViewCell
         let info = self.modelProject.arrayList[indexPath.row]
         
+        
+        for i in 0 ..< info.image.count {
+            let imageView = UIImageView()
+            imageView.image = UIImage(named: info.image[i])
+            // imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
+            let xPosition = self.view.frame.width * CGFloat(i)
+            
+            imageView.frame = CGRect(x: xPosition, y: -250,
+                                     width: self.view.frame.width,
+                                     height: self.view.frame.height) // 즉 이미지 뷰가 화면 전체를 덮게 됨.
+            
+            cell.scrollView.contentSize.width =
+                self.view.frame.width * CGFloat(1+i)
+            
+            cell.scrollView.addSubview(imageView)
+        }
+        
         cell.title?.text = info.title
         cell.summary?.text = info.summary
         
@@ -77,16 +94,6 @@ class CollectionTableViewController: UITableViewController {
         
         return cell
     }
-        
-        // 이미지
-        /*
-         slideshow.setImageInputs([
-         cell.project_image?.image(image: UIImage(named: "myImage"))!,
-         cell.project_image?.image(image: UIImage(named: "myImage2"))!,
-         cell.project_image?.image(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080"),
-         cell.project_image?.image(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080"),
-         ParseSource(file: PFFile(name:"image.jpg", data:data))
-         ])*/
         
     
     

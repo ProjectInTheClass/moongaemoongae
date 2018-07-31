@@ -25,6 +25,8 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var btnComment: UIButton!
     @IBOutlet var nextBtn: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var tagListView: TagListView!
     override func awakeFromNib() {
         super.awakeFromNib()
