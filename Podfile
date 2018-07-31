@@ -13,6 +13,7 @@ pod "ImageSlideshow/AFURL"
 pod "ImageSlideshow/SDWebImage"
 pod "ImageSlideshow/Kingfisher"
 pod 'ModernSearchBar'
+pod "BSImagePicker", "~> 2.7"
 
 post_install do |installer|
   installer.pods_project.build_configurations.each do |config|

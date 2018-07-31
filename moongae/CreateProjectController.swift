@@ -8,6 +8,10 @@
 
 import UIKit
 
+import Photos
+import BSImagePicker
+
+
 class CreateProjectController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var modelProject = ProjectModel.ProjectModelSingleton
@@ -31,55 +35,65 @@ class CreateProjectController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet var addImageBtn: UIButton!
     @IBOutlet var addCoworker: UIButton!
     
-    let picker = UIImagePickerController()
+
+    
+    var SelectedAssets = [PHAsset]()
+    var PhotoArray = [UIImage]()
+    
     
     @IBAction func addImage(_ sender: Any) {
-        picker.delegate = self;
-        picker.sourceType = .photoLibrary
-        self.present(picker, animated: true, completion: nil)
+       
+        let vc = BSImagePickerViewController()
         
+        bs_presentImagePickerController(vc, animated: true,
+                                        select: { (asset: PHAsset) -> Void in
+                                            // User selected an asset.
+                                            // Do something with it, start upload perhaps?
+        }, deselect: { (asset: PHAsset) -> Void in
+            // User deselected an assets.
+            // Do something, cancel upload?
+        }, cancel: { (assets: [PHAsset]) -> Void in
+            // User cancelled. And this where the assets currently selected.
+        }, finish: { (assets: [PHAsset]) -> Void in
+            // User finished with these assets
+            for i in 0 ..< assets.count{
+                self.SelectedAssets.append(assets[i])
+            }
+            self.convertAssetToImages()
+        }, completion: nil)
     }
+    
+    func convertAssetToImages() -> Void {
+        if SelectedAssets.count != 0 {
+            for i in 0 ..< SelectedAssets.count {
+                let manager = PHImageManager.default()
+                let option = PHImageRequestOptions()
+                var thumbnail = UIImage()
+                option.isSynchronous = true
+                manager.requestImage(for: SelectedAssets[i], targetSize: CGSize(width: 200, height: 200),
+                                     contentMode: .aspectFill, options: option, resultHandler: {(result, info)->Void in
+                                                                    thumbnail = result!
+                })
+                let data = UIImageJPEGRepresentation(thumbnail, 0.7)
+                let newImage = UIImage(data: data!)
+                self.PhotoArray.append(newImage! as UIImage)
+            }
+            self.imageView.animationImages = self.PhotoArray
+            self.imageView.animationDuration = 3.0
+            self.imageView.startAnimating()
+        }
+    }
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
     }
     
     
-    func imagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String:Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            self.imageView.image = image
-        }
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func tappedImageView() {
-        let picker = UIImagePickerController()
-        picker.delegate = self;
-        picker.sourceType = .photoLibrary
-        self.present(picker, animated: true, completion: nil)
-    }
-    
-    
-    //    ELCImagePickerController *elcPicker = [[ELCImagePickerController alloc] initImagePicker];
-    //    elcPicker.maximumImagesCount = 4; //Set the maximum number of images to select, defaults to 4
-    //    elcPicker.returnsOriginalImage = NO; //Only return the fullScreenImage, not the fullResolutionImage
-    //    elcPicker.returnsImage = YES; //Return UIimage if YES. If NO, only return asset location information
-    //    elcPicker.onOrder = YES; //For multiple image selection, display and return selected order of images
-    //    elcPicker.imagePickerDelegate = self;
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        picker.delegate = self
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(CreateProjectController.tappedImageView))
-        addImageBtn.addGestureRecognizer(tap)
-        addImageBtn.isUserInteractionEnabled = true
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -17,6 +17,10 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
+  - BSGridCollectionViewLayout (1.2.0)
+  - BSImagePicker (2.7.1):
+    - BSGridCollectionViewLayout (~> 1.2.0)
+    - UIImageViewModeScaleAspect (= 1.5)
   - DBSphereTagCloud (1.0.0)
   - DCPathButton (2.1.4)
   - ImageSlideshow (1.6.1):
@@ -40,8 +44,10 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - TagListView (1.3.1)
+  - UIImageViewModeScaleAspect (1.5)
 
 DEPENDENCIES:
+  - BSImagePicker (~> 2.7)
   - DBSphereTagCloud
   - DCPathButton (~> 2.1.3)
   - ImageSlideshow (~> 1.6)
@@ -57,6 +63,8 @@ SPEC REPOS:
     - AFNetworking
     - Alamofire
     - AlamofireImage
+    - BSGridCollectionViewLayout
+    - BSImagePicker
     - DBSphereTagCloud
     - DCPathButton
     - ImageSlideshow
@@ -64,11 +72,14 @@ SPEC REPOS:
     - ModernSearchBar
     - SDWebImage
     - TagListView
+    - UIImageViewModeScaleAspect
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
+  BSImagePicker: eb12948a6e71b9855c2c37723dfd989b9b4288bd
   DBSphereTagCloud: 57b9571e93b3565fc22cd65040eabbada06b56f2
   DCPathButton: 99c8211ef3eafc3b438c917a4c7b4502fa77eee7
   ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
@@ -76,7 +87,8 @@ SPEC CHECKSUMS:
   ModernSearchBar: 5dd19c94b1e04f1f83dd9b9950d05153ef2535e5
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   TagListView: 6dafd34a61021c6db72c0c8e3a044054c9854311
+  UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
 
-PODFILE CHECKSUM: ec391878d5c92060c615f8a9d8bc8b741a9fceeb
+PODFILE CHECKSUM: 929c465a202c23a34653a2fd452670aadb476c7e
 
 COCOAPODS: 1.5.3
