@@ -136,7 +136,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
                 self.sphereSmallView.addSubview(btn)
             }
             self.sphereView.setCloudTags(array as [AnyObject])
-            self.sphereView.backgroundColor =  UIColor(red:0/255, green: 210/255, blue: 240/255, alpha: 1)
+//            self.sphereView.backgroundColor =  UIColor(red:0/255, green: 210/255, blue: 240/255, alpha: 0.2)
             self.view.addSubview(self.sphereView)
             self.view.bringSubview(toFront: self.tagView)
             self.view.bringSubview(toFront: self.searchBar)

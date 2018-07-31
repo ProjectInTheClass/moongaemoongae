@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1089EB36210F8BC100F7CCE4 /* img_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 1089EB35210F8BC000F7CCE4 /* img_cloud.png */; };
+		10FA58082110876C002BAB37 /* icon_info_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FA58072110876A002BAB37 /* icon_info_blue.png */; };
+		10FA580A211087FC002BAB37 /* icon_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FA5809211087FA002BAB37 /* icon_next.png */; };
+		10FA580C21108C4A002BAB37 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FA580B21108C4A002BAB37 /* RoundButton.swift */; };
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
@@ -69,6 +72,9 @@
 /* Begin PBXFileReference section */
 		102D6DD2D585064ED527A437 /* Pods_moongae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moongae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1089EB35210F8BC000F7CCE4 /* img_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_cloud.png; sourceTree = "<group>"; };
+		10FA58072110876A002BAB37 /* icon_info_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info_blue.png; sourceTree = "<group>"; };
+		10FA5809211087FA002BAB37 /* icon_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_next.png; sourceTree = "<group>"; };
+		10FA580B21108C4A002BAB37 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.release.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
 		4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
@@ -204,6 +210,8 @@
 		B810A0B420EDE70400BC80DB /* moongae */ = {
 			isa = PBXGroup;
 			children = (
+				10FA5809211087FA002BAB37 /* icon_next.png */,
+				10FA58072110876A002BAB37 /* icon_info_blue.png */,
 				1089EB35210F8BC000F7CCE4 /* img_cloud.png */,
 				A0888CF720FF011400F70112 /* etc */,
 				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
@@ -242,6 +250,7 @@
 				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
 				B8BD1E5F21070B6700A89577 /* Common.swift */,
 				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
+				10FA580B21108C4A002BAB37 /* RoundButton.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -321,8 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FA58082110876C002BAB37 /* icon_info_blue.png in Resources */,
 				D0AC2AE520FC7656003A9DE0 /* Category.storyboard in Resources */,
 				B834C9D120F3328D00088D85 /* new (1).png in Resources */,
+				10FA580A211087FC002BAB37 /* icon_next.png in Resources */,
 				A0D52E3F20FC867900DF5A80 /* img_profile_woman_1.png in Resources */,
 				B8803C8D20EF2F76009717DF /* like.png in Resources */,
 				B8803C8E20EF2F76009717DF /* comment-white-oval-bubble.png in Resources */,
@@ -431,6 +442,7 @@
 				B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */,
 				B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
+				10FA580C21108C4A002BAB37 /* RoundButton.swift in Sources */,
 				B8B9758220FF05CD00C1F922 /* CommentModel.swift in Sources */,
 				B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */,
 				A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */,
