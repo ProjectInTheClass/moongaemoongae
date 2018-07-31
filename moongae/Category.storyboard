@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="2613.5999999999999" y="2155.4187192118229"/>
         </scene>
-        <!--vcMoaBogi-->
+        <!--ProjectView-->
         <scene sceneID="bjb-zB-uyY">
             <objects>
-                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="vcMoaBogi" id="rtW-kb-asG" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="ProjectView" id="rtW-kb-asG" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4P-Er-GOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3290" y="2155"/>
