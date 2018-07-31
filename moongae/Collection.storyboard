@@ -548,9 +548,6 @@
                                                             <rect key="frame" x="-1" y="0.0" width="376" height="357"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <gestureRecognizers/>
-                                                            <connections>
-                                                                <outletCollection property="gestureRecognizers" destination="66D-oG-mJf" appends="YES" id="fPW-yD-o3n"/>
-                                                            </connections>
                                                         </imageView>
                                                     </subviews>
                                                 </scrollView>
@@ -586,7 +583,6 @@
                     <navigationItem key="navigationItem" title="모아보기" id="11I-zy-gJZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgD-Vu-hKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="66D-oG-mJf"/>
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="331.77339901477836"/>
         </scene>
