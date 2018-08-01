@@ -35,7 +35,7 @@ class CreateProjectController: UIViewController, UIImagePickerControllerDelegate
     @IBOutlet var addImageBtn: UIButton!
     @IBOutlet var addCoworker: UIButton!
     
-
+//    var TeamMembers:Array = []()
     
     var SelectedAssets = [PHAsset]()
     var PhotoArray = [UIImage]()

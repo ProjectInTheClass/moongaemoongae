@@ -14,10 +14,9 @@
         <scene sceneID="opU-IV-f5e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="luP-tx-3dd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="모아보기" image="newbtn" id="RdP-em-aZ4">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="모아보기" image="icon_tab_collect" id="4Do-cS-fgS"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qxW-vy-gmk">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -590,8 +589,8 @@
     <resources>
         <image name="btn_bottom.png" width="512" height="512"/>
         <image name="icon_next.png" width="64" height="64"/>
+        <image name="icon_tab_collect" width="32" height="32"/>
         <image name="img_profile_woman_2.png" width="994" height="994"/>
-        <image name="newbtn" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sco-3O-6tL"/>

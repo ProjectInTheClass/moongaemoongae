@@ -173,8 +173,9 @@
         <scene sceneID="bQg-XR-o4D">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UY6-TF-6qd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="카테고리" image="folderbtn" id="qXm-bu-jAP"/>
+                    <tabBarItem key="tabBarItem" title="카테고리" image="icon_tab_folder" id="nrk-tX-nPz"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xVQ-Fj-rJo">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -192,6 +193,6 @@
     <resources>
         <image name="calendar" width="391" height="407"/>
         <image name="comment" width="64" height="64"/>
-        <image name="folderbtn" width="32" height="32"/>
+        <image name="icon_tab_folder" width="32" height="32"/>
     </resources>
 </document>
