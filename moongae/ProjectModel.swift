@@ -155,6 +155,7 @@ class ProjectModel {
         
         
     }
+
     
     func searchMajor(majorName: String) -> Array<ProjectInfo> {
         var modelProject: Array<ProjectInfo> = []

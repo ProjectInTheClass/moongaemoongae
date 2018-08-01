@@ -115,16 +115,18 @@ class CreateProjectController: UIViewController, UIImagePickerControllerDelegate
         // tableView.reloadData()
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //
-    //        if segue.identifier == "CreateProjectSegue"
-    //        {
-    //
-    //            let CollectionTableVC = segue.destination as! CollectionTableViewController
-    //
-    //            CollectionTableVC.data =
-    //        }
-    //    }
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+            if segue.identifier == "SendTeamMembers"
+            {
+    
+                let vcUser = segue.destination as!
+                    UserListViewController
+                
+                vcUser.vcCreatePRJ = self
+            }
+        }
     
     
     

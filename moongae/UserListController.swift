@@ -3,7 +3,7 @@ import UIKit
 import Foundation
 
 class UserListViewController : UITableViewController{
-    
+    var vcCreatePRJ : CreateProjectController!
     var modelUserList = UserListModel.UserListModelSingleton
     var teamMembers:Array? = []
     
@@ -11,8 +11,7 @@ class UserListViewController : UITableViewController{
         return 1 //Zero base 0~999
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // 총 1000번 호출 됨
-//        return self.modelUserList.arrayList.count
-        return 1
+        return self.modelUserList.arrayList.count
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,15 +41,21 @@ class UserListViewController : UITableViewController{
             let selctedCell = check.superview?.superview as! UITableViewCell
             let indexPath:IndexPath! = self.tableView.indexPath(for: selctedCell)
             let info = self.modelUserList.arrayList[indexPath.row]
-            print(info.UserName)
+            print(info.UserName, info.UserMajor)
             teamMembers!.append(info.UserName)
+            teamMembers!.append(info.UserMajor)
         }
         print(teamMembers ?? "팀원없음")
         
     }
-    @IBAction func AddMembers(_ sender: Any) {
-       let Members = teamMembers
-        performSegue(withIdentifier: "AddMem", sender: Members)
+    
+    @IBAction func AddMembers(sender : Any) {
+        self.vcCreatePRJ.coworker.text = "\(teamMembers!)"
+//       let Members = teamMembers
+//
+        self.navigationController?.popViewController(animated: true)
+        
+//        performSegue(withIdentifier: "AddMem", sender: Members)
     }
     
     
