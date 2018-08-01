@@ -14,7 +14,7 @@ class MajorCollectionSortViewController: UIViewController,
 UICollectionViewDelegate, UICollectionViewDataSource {
     
     var modelCollect: Array<ProjectInfo>!
-//    var modelCollect: Array<ProjectInfo>!
+
     var modelProject = ProjectModel.ProjectModelSingleton
     
     @IBOutlet var collectionView: UICollectionView!
@@ -61,6 +61,7 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         
         cell.project_image?.image = UIImage(named: info.image[0])
         cell.title?.text = info.title
+        cell.createDate?.text = info.createdDate
         cell.commentCount?.text = String(info.commentCount)
         
         return cell
@@ -81,7 +82,6 @@ UICollectionViewDelegate, UICollectionViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPjtDetail" {
             if let destination = segue.destination as? CollectionTableViewController {
-                
                 let cell = sender as! UICollectionViewCell
                 let indexPath: IndexPath! =  self.collectionView.indexPath(for: cell)
                 self.modelProject.selectedIndex = indexPath.row

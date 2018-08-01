@@ -11,7 +11,7 @@ import UIKit
 class CommentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var modelComment = CommentModel.CommentModelSingleton
-//    var modelProject = ProjectModel.ProjectModelSingleton
+
     var modelProject : ProjectInfo?
     var modelUser = UserListModel.UserListModelSingleton
     var comment:Array<CommentInfo>!
@@ -23,8 +23,7 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let detailProject = modelProject.arrayList[modelProject.selectedIndex]
+
         let detailProject = modelProject!
         labelTitle.text = detailProject.title
         labelSummary.text = detailProject.summary
@@ -43,22 +42,19 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return self.modelComment.arrayList.count
+
         return self.comment.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-//        let info = self.modelComment.arrayList[indexPath.row]
-//        let info = self.comment.arrayList[indexPath.row]
+
         let info = self.comment[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CommentTableViewCell
 
         // 프로필 화면으로 이동하기 위해 userName, userImage를 Button으로 바꿈.
         cell.userName.setTitle(info.userName, for: .normal)
         cell.userImage.setImage(UIImage(named: info.userImage), for: .normal)
-//        cell.userImage?.image = UIImage(named: info.userImage)
-//        cell.userName?.text = info.userName
         cell.contents?.text = info.contents
         cell.writeDate?.text = info.writeDate
         
@@ -90,7 +86,6 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
                 
                 // 선택한 유저의 이름으로 유저 리스트에서 검색함.
                 let user:UserList = modelUser.searchForName(email:(btn.titleLabel?.text)!)
-//                let user:UserList = modelUser.searchForEmail(email:(btn.titleLabel?.text)!)
                 destination.user = user
             }
         }
