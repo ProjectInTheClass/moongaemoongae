@@ -14,9 +14,11 @@ class MajorCollectionSortViewController: UIViewController,
 UICollectionViewDelegate, UICollectionViewDataSource {
     
     var modelCollect: Array<ProjectInfo>!
+//    var modelCollect: Array<ProjectInfo>!
+    var modelProject = ProjectModel.ProjectModelSingleton
     
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var sortSegment: UISegmentedControl!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +64,36 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         cell.commentCount?.text = String(info.commentCount)
         
         return cell
+    }
+    
+
+    func searchProject(title: String) -> Array<ProjectInfo> {
+        var modelCollect2: Array<ProjectInfo> = []
+        for i in 0 ..< modelCollect.count {
+            if title == self.modelCollect[i].title {
+                modelCollect2.append(self.modelCollect[i])
+            }
+        }
+        
+        return modelCollect2
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPjtDetail" {
+            if let destination = segue.destination as? CollectionTableViewController {
+                
+                let cell = sender as! UICollectionViewCell
+                let indexPath: IndexPath! =  self.collectionView.indexPath(for: cell)
+                self.modelProject.selectedIndex = indexPath.row
+                let info = self.modelCollect[indexPath.row]
+                
+                print(info.title)
+                print(modelCollect[indexPath.row])
+                
+                destination.title = "작품 보기"
+                destination.modelProject2 = self.searchProject(title: info.title)
+            }
+        }
     }
     
 }

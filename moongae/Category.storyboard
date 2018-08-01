@@ -137,7 +137,7 @@
                                             <outlet property="commentCount" destination="3CN-6I-lDd" id="8LY-ff-YSc"/>
                                             <outlet property="project_image" destination="Fvl-cp-qM0" id="r9i-NJ-Cu4"/>
                                             <outlet property="title" destination="6Yg-ru-WIM" id="KDx-Gx-jq8"/>
-                                            <segue destination="rtW-kb-asG" kind="show" id="dnR-EA-Ovz"/>
+                                            <segue destination="rtW-kb-asG" kind="show" identifier="toPjtDetail" id="dnR-EA-Ovz"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

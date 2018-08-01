@@ -10,11 +10,27 @@ import UIKit
 
 class CollectionTableViewController: UITableViewController {
 
-    var modelProject = ProjectModel.ProjectModelSingleton
+//    var modelProject2 : Array<ProjectInfo>!
+//    var modelProject : Array<ProjectInfo>!
+//    var projectSingle = ProjectModel.ProjectModelSingleton.arrayList
+//    var modelComment = CommentModel.CommentModelSingleton
+    
+//    var modelProject2 : Array<ProjectInfo>!
+    var modelProject3 = ProjectModel.ProjectModelSingleton
+    var modelProject2 : Array<ProjectInfo>!
+    var modelProject : Array<ProjectInfo>!
+    var projectSingle = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(modelProject2 == nil) {
+            modelProject = modelProject3.arrayList
+        }
+        else {
+            modelProject = modelProject2
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -22,7 +38,8 @@ class CollectionTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return modelProject.arrayList.count
+//        return modelProject.arrayList.count
+        return modelProject.count
     }
     
    // var currentImage = 0
@@ -41,7 +58,8 @@ class CollectionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell : CollectionTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Collection Cell", for: indexPath) as! CollectionTableViewCell
-        let info = self.modelProject.arrayList[indexPath.row]
+//        let info = self.modelProject.arrayList[indexPath.row]
+        let info = self.modelProject[indexPath.row]
         
         
         for i in 0 ..< info.image.count {
@@ -103,32 +121,38 @@ class CollectionTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toProjectDetail" {
             if let destination = segue.destination as? ProjectDetailViewController {
-                
+
                 let btn = sender as! UIButton
                 let cell = btn.superview?.superview?.superview as! UITableViewCell
-                
+
                 let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
-                
+
                 destination.title = "상세정보"
-                self.modelProject.selectedIndex = indexPath.row
-                destination.modelProject = self.modelProject
+//               self.modelProject.selectedIndex = indexPath.row
+//                self.projectSingle.selectedIndex = indexPath.row
+//                destination.modelProject = self.projectSingle
+                
+                destination.project = self.modelProject[indexPath.row]
             }
         }
 
-        
+
         if segue.identifier == "toComment" {
             if let destination = segue.destination as? CommentViewController {
-                
+
                 let btn = sender as! UIButton
                 let cell = btn.superview?.superview?.superview as! UITableViewCell
                 let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
-                let info = self.modelProject.arrayList[indexPath.row]
+//                let info = self.projectSingle.arrayList[indexPath.row]
                 
-                self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
-                destination.modelProject = self.modelProject
-                
+                let info = self.modelProject[indexPath.row]
+
+                self.projectSingle.selectedIndex = tableView.indexPath(for: cell)!.row
+                destination.modelProject = info
+
                 var comment: Array<CommentInfo> = modelComment.searchForTitle(title: info.title)
                 destination.comment = comment
+//                destination.comment = self.modelProject[indexPath.row]
             }
         }
     }
