@@ -5,14 +5,55 @@ import Foundation
 class UserListViewController : UITableViewController{
     
     var modelUserList = UserListModel.UserListModelSingleton
-    
+    var teamMembers:Array? = []
     
     override func numberOfSections(in tableView: UITableView) -> Int {//섹션 수 를 묻고 있음 , override 상속
         return 1 //Zero base 0~999
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { // 총 1000번 호출 됨
-        return self.modelUserList.arrayList.count
+//        return self.modelUserList.arrayList.count
+        return 1
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    //    if segue.identifier == "toComment" {
+//    if let destination = segue.destination as? CommentViewController {
+//
+//    let btn = sender as! UIButton
+//    let cell = btn.superview?.superview?.superview as! UITableViewCell
+//    let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
+//    let info = self.modelProject.arrayList[indexPath.row]
+//
+//    self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
+//    destination.modelProject = self.modelProject
+//
+//    var comment: Array<CommentInfo> = modelComment.searchForTitle(title: info.title)
+//    destination.comment = comment
+//    }
+    
+ 
+    
+    @IBAction func aaaaa(_ sender: UISwitch) {
+        if(sender.isOn) {
+            let check = sender
+//            as! UISwitch
+            let selctedCell = check.superview?.superview as! UITableViewCell
+            let indexPath:IndexPath! = self.tableView.indexPath(for: selctedCell)
+            let info = self.modelUserList.arrayList[indexPath.row]
+            print(info.UserName)
+            teamMembers!.append(info.UserName)
+        }
+        print(teamMembers ?? "팀원없음")
+        
+    }
+    @IBAction func AddMembers(_ sender: Any) {
+       let Members = teamMembers
+        performSegue(withIdentifier: "AddMem", sender: Members)
+    }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Model 생성 후, 코드에 다시 추가
         let info = self.modelUserList.arrayList[indexPath.row]
