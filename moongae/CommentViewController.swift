@@ -10,12 +10,11 @@ import UIKit
 
 class CommentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-//    var modelComment = CommentModel()
     var modelComment = CommentModel.CommentModelSingleton
-    var modelProject = ProjectModel.ProjectModelSingleton
+//    var modelProject = ProjectModel.ProjectModelSingleton
+    var modelProject : ProjectInfo?
     var modelUser = UserListModel.UserListModelSingleton
-//    var comment = CommentModel()
-    var comment:Array<CommentInfo> = []
+    var comment:Array<CommentInfo>!
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -25,7 +24,8 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let detailProject = modelProject.arrayList[modelProject.selectedIndex]
+//        let detailProject = modelProject.arrayList[modelProject.selectedIndex]
+        let detailProject = modelProject!
         labelTitle.text = detailProject.title
         labelSummary.text = detailProject.summary
     }

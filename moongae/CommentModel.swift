@@ -38,7 +38,13 @@ class CommentModel {
         self.arrayList = []
         
         self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_1.png", userName: "김소연", contents: "우와 개발 어떻게 하신 거에요?", writeDate: "06-22"))
-        self.arrayList.append(CommentInfo(title: "무덤덤", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "김문희", contents: "오 되게 멋지네요!", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "데스크 탑 잠금해제 어플리케이션", userImage: "img_profile_woman_2.png", userName: "김소연", contents: "우와 진짜 신기해요!!", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
+        self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
         self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_3.png", userName: "이재은", contents: "디자인이 너무 예쁘네요", writeDate: "07-17"))
     }
     

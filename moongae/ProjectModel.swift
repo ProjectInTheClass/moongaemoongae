@@ -202,6 +202,17 @@ class ProjectModel {
         return resultArray
     }
     
+//    // 태그가 포함된 프로젝트명 가져오기
+//    func searchProject(title: String) -> Array<ProjectInfo> {
+//        var modelProject: Array<ProjectInfo> = []
+//        for i in 0 ..< arrayList.count {
+//            if title == arrayList[i].title {
+//                modelProject.append(arrayList[i])
+//            }
+//        }
+//        return modelProject
+//    }
+    
     // 프로젝트 등록
     func addProject(title: String,  image: Array<String>, startDate: String, endDate: String, tags: Array<String>, summary: String,  coworker: Array<String>, language:String, environment: String, motivation: String, benefit: String, detail:String, createdDate: String, author: String, major: String, likeCount: Int, commentCount: Int) -> Void {
         self.arrayList.append(ProjectInfo(title: title, image: image, startDate: startDate, endDate: endDate, tags: tags, summary: summary, coworker: coworker, language: language, environment: environment, motivation: motivation, benefit: benefit, createdDate: createdDate, author: author, major: major, commentCount: commentCount))

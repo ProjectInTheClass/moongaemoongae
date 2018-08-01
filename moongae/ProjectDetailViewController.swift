@@ -9,8 +9,7 @@
 import UIKit
 
 class ProjectDetailViewController: UIViewController {
-    
-    var modelProject:ProjectModel!
+    var project:ProjectInfo?
     var model = CommentModel.CommentModelSingleton
     
     @IBOutlet weak var labelTitle: UILabel!
@@ -24,7 +23,7 @@ class ProjectDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let detailProject = modelProject.arrayList[modelProject.selectedIndex]
+        let detailProject = self.project!
         
         labelTitle.text = detailProject.title
         labelSummary.text = detailProject.summary
