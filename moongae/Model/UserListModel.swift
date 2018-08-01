@@ -146,15 +146,6 @@ class UserListModel {
         return nil
     }
     
-//    // 비밀번호로 회원 정보 찾기
-//    func findUser(userPas: String) -> UserList? {
-//        for user in arrayList {
-//            if user.userName == userName {
-//                return user
-//            }
-//        }
-//        return nil
-//    }
     
 // 회원가입 함수
     func CreateUserAccount(userPhoto: String, userName: String, userMajor: String, userSubmajor: String? , userGrade: String, userEmail: String, userPassword: String) -> Void {
@@ -171,6 +162,7 @@ class UserListModel {
 //        }
 //        return result
 //    }
+    
     // UserName로 user 검색
     // 현재 댓글 등록한 사용자의 email을 알아낼 수 없어서(방법을 몰라서) 이름으로 검색되도록 함.
     func searchForName(email: String) -> UserList {

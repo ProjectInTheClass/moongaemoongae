@@ -10,7 +10,7 @@ import MobileCoreServices
 
 class CreateAccountController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var modelUser = UserListModel.UserListModelSingleton
-    var comment:Array<UserList> = []
+    var comment: Array<UserList> = []
 
     
     @IBOutlet weak var profile: UIImageView!
@@ -29,9 +29,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
     
     
     @IBAction func touchDone( _sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-        
-        
+        self.navigationController?.popViewController(animated: true)    
     }
     
     
