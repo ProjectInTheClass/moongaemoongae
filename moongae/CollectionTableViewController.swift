@@ -47,7 +47,7 @@ class CollectionTableViewController: UITableViewController {
         for i in 0 ..< info.image.count {
             let imageView = UIImageView()
             imageView.image = UIImage(named: info.image[i])
-            // imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
+             imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
             let xPosition = self.view.frame.width * CGFloat(i)
             
             imageView.frame = CGRect(x: xPosition, y: -250,
