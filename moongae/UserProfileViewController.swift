@@ -14,7 +14,7 @@ class UserProfileViewController: UIViewController {
     //    var modelComment = CommentModel()
     var modelComment = CommentModel.CommentModelSingleton
     var userName: String!
-    var user: UserList = UserList(userPhoto: "", userName: "", userMajor:"", userSubmajor: nil, userGrade: "", userEmail:"")
+    var user: UserList = UserList(userPhoto: "", userName: "", userMajor:"", userSubmajor: nil, userGrade: "", userEmail: "", userPassword: "")
     
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelEmail: UILabel!
