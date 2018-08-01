@@ -14,12 +14,11 @@ class ProjectDetailViewController: UIViewController {
     var model = CommentModel.CommentModelSingleton
     
     @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelSummary: UILabel!
+    @IBOutlet weak var labelSummary: UITextView!
     @IBOutlet weak var labelCreatedDate: UILabel!
     @IBOutlet weak var labelMotivation: UITextView!
     @IBOutlet weak var labelEnvironment: UITextView!
     @IBOutlet weak var labelLanguage: UITextView!
-    @IBOutlet weak var labelDetail: UITextView!
     @IBOutlet weak var labelBenefit: UITextView!
     
     override func viewDidLoad() {
@@ -33,7 +32,6 @@ class ProjectDetailViewController: UIViewController {
         labelMotivation.text = detailProject.motivation
         labelEnvironment.text = detailProject.environment
         labelLanguage.text = detailProject.language
-        labelDetail.text = detailProject.detail
         labelBenefit.text = detailProject.benefit
         
         
