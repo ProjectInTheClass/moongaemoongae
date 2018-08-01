@@ -141,7 +141,6 @@ class UserListModel {
 //        }
 //        return result
 //    }
-    
     // UserName로 user 검색
     // 현재 댓글 등록한 사용자의 email을 알아낼 수 없어서(방법을 몰라서) 이름으로 검색되도록 함.
     func searchForName(email:String) -> UserList {

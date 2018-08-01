@@ -13,6 +13,7 @@ import ModernSearchBar
 class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     var modelProject = ProjectModel.ProjectModelSingleton
     
+    @IBOutlet weak var tagShowBtn: UIButton!
     @IBOutlet weak var searchBar: ModernSearchBar!
     @IBOutlet weak var tagView: TagListView!
     @IBOutlet var sphereView: DBSphereView!
@@ -53,6 +54,8 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             return colorRandom[randomNum]
         }
         
+        // Tag view
+        tagView.isHidden = true
         tagView.addTags(tagList)
         tagView.textFont = UIFont.systemFont(ofSize: 18)
         for view in tagView.tagViews {
@@ -95,6 +98,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         sphereView.setCloudTags(array as [AnyObject])
         sphereView.backgroundColor =  UIColor(red: 173/255, green: 227/255, blue: 240/255, alpha: 1)
         self.view.addSubview(sphereView)
+        self.view.bringSubview(toFront: tagShowBtn)
         self.view.bringSubview(toFront: tagView)
         self.view.bringSubview(toFront: searchBar)
         
@@ -160,12 +164,18 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         isClicked = false
     }
     
+    @IBAction func tagShowPressed(_ sender: UIButton) {
+            tagView.isHidden = false
+    }
+    
     // 프로젝트 선택 시
     // 해당 프로젝트로 이동해야함
     @objc func projectPressed(_ btn: UIButton) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Collection", bundle: nil)
-        let nextView = storyboard.instantiateInitialViewController()
-        self.present(nextView!, animated: true, completion: nil)
+        let nextView = storyboard.instantiateViewController(withIdentifier: "ProjectView") as! CollectionTableViewController
+        nextView.modelProject2 = modelProject.searchProjectOfTitle(title: (btn.titleLabel?.text)!)
+        self.navigationController?.pushViewController(nextView, animated: true)
+//        self.present(nextView!, animated: true, completion: nil)
         
         print("\(String(describing: btn.titleLabel!.text))프로젝트 선택됨")
         self.sphereView.isHidden = true

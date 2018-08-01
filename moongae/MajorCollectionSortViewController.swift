@@ -82,7 +82,6 @@ UICollectionViewDelegate, UICollectionViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPjtDetail" {
             if let destination = segue.destination as? CollectionTableViewController {
-                
                 let cell = sender as! UICollectionViewCell
                 let indexPath: IndexPath! =  self.collectionView.indexPath(for: cell)
                 self.modelProject.selectedIndex = indexPath.row

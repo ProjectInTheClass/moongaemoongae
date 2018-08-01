@@ -15,6 +15,10 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var UserMajor: UILabel!
     @IBOutlet weak var User2Major: UILabel!
     @IBOutlet weak var UserGrade: UILabel!
+    @IBOutlet weak var AddMembers: UISwitch!
+   
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

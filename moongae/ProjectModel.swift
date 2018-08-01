@@ -176,6 +176,17 @@ class ProjectModel {
         return num
     }
     
+    // 모든 프로젝트에서, 이름으로 검색하여 프로젝트 가져오기
+    func searchProjectOfTitle(title: String) -> Array<ProjectInfo> {
+        var modelProject: Array<ProjectInfo> = []
+        for i in 0 ..< arrayList.count {
+            if title == arrayList[i].title {
+                modelProject.append(arrayList[i])
+            }
+        }
+        return modelProject
+    }
+    
     // 태그명 중복 없이 가져오기
     func searchProjectTag() -> Array<String> {
         var resultArray: Array<String> = []
