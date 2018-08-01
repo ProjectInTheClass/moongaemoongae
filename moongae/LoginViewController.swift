@@ -44,12 +44,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         
         if modelUser.findUser(userEmail: loginUserid.text!) == nil {
-            loginStatus.text = "아이디를 정확하게 입력해주세요."
+            loginStatus.text = "아이디를 정확하게 입력해주세요"
         }
         else {
             let myUserInfo = modelUser.findUser(userEmail: self.loginUserid.text!)
             if myUserInfo?.userPassword != loginPasswd.text {
-                loginStatus.text = "비밀번호가 틀렸습니다."
+                loginStatus.text = "비밀번호가 틀렸습니다"
             }
             else {
                 //myInfo에 사용자 저장
