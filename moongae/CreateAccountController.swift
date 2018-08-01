@@ -11,6 +11,7 @@ import MobileCoreServices
 class CreateAccountController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var modelUser = UserListModel.UserListModelSingleton
     var comment:Array<UserList> = []
+
     
     @IBOutlet weak var profile: UIImageView!
     @IBOutlet weak var userEmail: UITextField!
@@ -26,6 +27,17 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
     var captureImage: UIImage!
     var flagImageSave = false
     
+    
+    @IBAction func touchDone( _sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
