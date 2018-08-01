@@ -13,6 +13,7 @@ import ModernSearchBar
 class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     var modelProject = ProjectModel.ProjectModelSingleton
     
+    @IBOutlet weak var tagBtnView: UIView!
     @IBOutlet weak var tagShowBtn: UIButton!
     @IBOutlet weak var searchBar: ModernSearchBar!
     @IBOutlet weak var tagView: TagListView!
@@ -25,6 +26,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     
     var isClicked:Bool = false
     var btn: UIButton = UIButton(type: .custom)
+    var isTagBtnClicked:Bool = false
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
@@ -101,6 +103,7 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
         self.view.bringSubview(toFront: tagShowBtn)
         self.view.bringSubview(toFront: tagView)
         self.view.bringSubview(toFront: searchBar)
+        self.view.bringSubview(toFront: tagBtnView)
         
         // 배경 클릭 시 프로젝트 구름 사라짐
         let gesture = UITapGestureRecognizer(target: self, action: #selector(IdeaViewController.someAction(_:)))
@@ -142,8 +145,10 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             self.sphereView.setCloudTags(array as [AnyObject])
 //            self.sphereView.backgroundColor =  UIColor(red:0/255, green: 210/255, blue: 240/255, alpha: 0.2)
             self.view.addSubview(self.sphereView)
+            self.view.bringSubview(toFront: self.tagShowBtn)
             self.view.bringSubview(toFront: self.tagView)
             self.view.bringSubview(toFront: self.searchBar)
+            self.view.bringSubview(toFront: self.tagBtnView)
             
             let gesture = UITapGestureRecognizer(target: self, action: #selector(IdeaViewController.someAction(_:)))
             self.sphereView.addGestureRecognizer(gesture)
@@ -165,7 +170,15 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     }
     
     @IBAction func tagShowPressed(_ sender: UIButton) {
+        if(!isTagBtnClicked) {
             tagView.isHidden = false
+            isTagBtnClicked = true
+        }
+        else {
+            tagView.isHidden = true
+            isTagBtnClicked = false
+        }
+//        tagShowBtn.imageView?.image = UIImage(named: "icon_tag_on")
     }
     
     // 프로젝트 선택 시
