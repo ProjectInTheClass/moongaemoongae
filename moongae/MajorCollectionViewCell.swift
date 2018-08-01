@@ -12,6 +12,7 @@ class MajorCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var project_image: UIImageView!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet var createDate: UILabel!
     @IBOutlet weak var commentCount: UILabel!
 }
 
