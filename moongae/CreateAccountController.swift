@@ -12,21 +12,15 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
     var modelUser = UserListModel.UserListModelSingleton
     var comment:Array<UserList> = []
     
-    //    @IBOutlet var UserListTable: UITableView!
-    //    @IBOutlet weak var UserPhoto: UIImageView!
-    //    @IBOutlet weak var UserName: UILabel!
-    //    @IBOutlet weak var UserGrade: UILabel!
-    //    @IBOutlet weak var UserMajor: UILabel!
+    @IBOutlet weak var profile: UIImageView!
+    @IBOutlet weak var userEmail: UITextField!
+    @IBOutlet weak var userPW: UITextField!
+    @IBOutlet weak var userPWConfirm: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var userMajor: UITextField!
+    @IBOutlet weak var userSubmajor: UITextField?
+    @IBOutlet weak var userGrade: UITextField!
     
-    @IBOutlet weak var Profile: UIImageView!
-    @IBOutlet weak var UserEmail: UITextField!
-    @IBOutlet weak var UserPW: UITextField!
-    @IBOutlet weak var UserPWConfirm: UITextField!
-    @IBOutlet weak var UserName: UITextField!
-    @IBOutlet weak var UserMajor: UITextField!
-    @IBOutlet weak var User2Major: UITextField?
-    @IBOutlet weak var UserMajorSecond: UITextField!
-    @IBOutlet weak var UserGrade: UITextField!
     
     let imagePicker: UIImagePickerController! = UIImagePickerController()
     var captureImage: UIImage!
@@ -75,7 +69,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
                     UIImageWriteToSavedPhotosAlbum(captureImage, self, nil, nil)
                 }
         
-            Profile.image = captureImage
+            profile.image = captureImage
         }
         self.dismiss(animated: true, completion : nil)
     }
@@ -87,7 +81,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
 
     @IBAction func CreateAccount(_ sender: Any) {
         
-        if UserEmail.text?.count == 0  {
+        if userEmail.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "이메일은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -100,7 +94,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
         
         }
         
-        if UserPW.text?.count == 0  {
+        if userPW.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호는 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -112,7 +106,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserPWConfirm.text?.count == 0  {
+        if userPWConfirm.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호 확인은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -124,7 +118,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserName.text?.count == 0  {
+        if userName.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "이름은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -136,7 +130,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserMajor.text?.count == 0  {
+        if userMajor.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "전공은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -148,7 +142,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserGrade.text?.count == 0  {
+        if userGrade.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "학년은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -160,7 +154,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        modelUser.CreateUserAccount(UserPhoto: "", UserName: UserName.text!, UserMajor: UserMajor.text!,User2Major: User2Major?.text, UserGrade: UserGrade.text!, UserEmail: UserEmail.text!)
+        modelUser.CreateUserAccount(userPhoto: "", userName: userName.text!, userMajor: userMajor.text!,userSubmajor: userSubmajor?.text, userGrade: userGrade.text!, userEmail: userEmail.text!)
     }
     
     

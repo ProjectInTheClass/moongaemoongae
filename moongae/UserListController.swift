@@ -2,10 +2,10 @@
 import UIKit
 import Foundation
 
-class UserListViewController : UITableViewController{
-    var vcCreatePRJ : CreateProjectController!
+class UserListViewController : UITableViewController {
+    var vcCreatePRJ: CreateProjectController!
     var modelUserList = UserListModel.UserListModelSingleton
-    var teamMembers:Array? = []
+    var teamMembers: Array? = []
     
     override func numberOfSections(in tableView: UITableView) -> Int {//섹션 수 를 묻고 있음 , override 상속
         return 1 //Zero base 0~999
@@ -41,9 +41,9 @@ class UserListViewController : UITableViewController{
             let selctedCell = check.superview?.superview as! UITableViewCell
             let indexPath:IndexPath! = self.tableView.indexPath(for: selctedCell)
             let info = self.modelUserList.arrayList[indexPath.row]
-            print(info.UserName, info.UserMajor)
-            teamMembers!.append(info.UserName)
-            teamMembers!.append(info.UserMajor)
+            print(info.userName, info.userMajor)
+            teamMembers!.append(info.userName)
+            teamMembers!.append(info.userMajor)
         }
         print(teamMembers ?? "팀원없음")
         
@@ -73,11 +73,11 @@ class UserListViewController : UITableViewController{
    
 //        let imgtitle = info.UserPhoto
         
-        cell.UserPhoto?.image = UIImage(named: info.UserPhoto)
-        cell.UserName?.text = info.UserName
-        cell.UserMajor?.text = info.UserMajor
-        cell.User2Major?.text = info.User2Major
-        cell.UserGrade?.text = info.UserGrade
+        cell.userPhoto?.image = UIImage(named: info.userPhoto)
+        cell.userName?.text = info.userName
+        cell.userMajor?.text = info.userMajor
+        cell.userSubmajor?.text = info.userSubmajor
+        cell.userGrade?.text = info.userGrade
 
         
 //        //이미지 파일이 옵셔널이라면 바인딩을 통해 언래핑

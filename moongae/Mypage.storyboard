@@ -275,7 +275,6 @@
         <!--View Controller-->
         <scene sceneID="F0h-C2-Ma7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BTo-Vb-qRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SAI-lr-nRT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbS-kk-tLd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -447,6 +446,7 @@
                     </view>
                     <size key="freeformSize" width="1000" height="1000"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTo-Vb-qRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1984" y="3290"/>
         </scene>
@@ -493,52 +493,52 @@
         <scene sceneID="hgg-Oa-xwN">
             <objects>
                 <viewController id="iPQ-sa-MGw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JI1-Pe-KRU">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="JI1-Pe-KRU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="38"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bhs-hh-lSe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFY-th-H2R">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFY-th-H2R">
                                         <rect key="frame" x="0.0" y="0.0" width="37" height="20"/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#감성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-VT-csI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#감성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-VT-csI">
                                         <rect key="frame" x="224" y="9" width="40" height="21"/>
                                         <color key="backgroundColor" red="1" green="0.52828410790000002" blue="0.42264491320000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#안드로이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdt-pW-ldf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#안드로이드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdt-pW-ldf">
                                         <rect key="frame" x="290" y="10" width="84" height="21"/>
                                         <color key="backgroundColor" red="0.35485446700000001" green="0.72428908120000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#음악" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-Kv-Ko3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#음악" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-Kv-Ko3">
                                         <rect key="frame" x="160" y="10" width="40" height="21"/>
                                         <color key="backgroundColor" red="0.46313417280000002" green="0.48940381189999999" blue="0.95500872459999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#JAVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQo-hP-K0z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#JAVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQo-hP-K0z">
                                         <rect key="frame" x="84" y="9" width="50" height="21"/>
                                         <color key="backgroundColor" red="1" green="0.27602099930000001" blue="0.56436536010000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#디자인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUY-wA-qSV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#디자인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUY-wA-qSV">
                                         <rect key="frame" x="8" y="10" width="55" height="21"/>
                                         <color key="backgroundColor" red="1" green="0.64060850069999997" blue="0.0174295771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-xa-kHl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkH-xa-kHl">
                                         <rect key="frame" x="396" y="11" width="37" height="20"/>
                                         <color key="backgroundColor" red="1" green="0.52828410790000002" blue="0.42264491320000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -945,12 +945,12 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="AddMembers" destination="bIk-oo-EH1" id="A0b-Vj-Oyj"/>
-                                    <outlet property="User2Major" destination="mPD-LZ-5lZ" id="1Ks-6j-cv8"/>
-                                    <outlet property="UserGrade" destination="0rg-9H-aWg" id="nb9-pT-QbP"/>
-                                    <outlet property="UserMajor" destination="TWq-Qc-Xoy" id="tSd-hq-6hI"/>
-                                    <outlet property="UserName" destination="su0-Ul-ynZ" id="MlA-wT-pwJ"/>
-                                    <outlet property="UserPhoto" destination="doE-Ph-T5V" id="VsR-Bq-yLf"/>
+                                    <outlet property="addMembers" destination="bIk-oo-EH1" id="a5x-Ef-gDc"/>
+                                    <outlet property="userGrade" destination="0rg-9H-aWg" id="K0T-ge-tsQ"/>
+                                    <outlet property="userMajor" destination="TWq-Qc-Xoy" id="GcY-in-y7p"/>
+                                    <outlet property="userName" destination="su0-Ul-ynZ" id="SeF-Ml-7Ae"/>
+                                    <outlet property="userPhoto" destination="doE-Ph-T5V" id="rh1-Ej-hHA"/>
+                                    <outlet property="userSubmajor" destination="mPD-LZ-5lZ" id="6lP-Mi-wHZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -960,11 +960,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="사용자 목록" id="pMl-Jn-rXa">
-                        <barButtonItem key="rightBarButtonItem" title="추가" id="ISv-Rk-cLu">
-                            <connections>
-                                <action selector="AddMembersWithSender:" destination="ovF-a7-KhF" id="bHI-Kf-abT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="추가" id="ISv-Rk-cLu"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="750"/>
                 </tableViewController>

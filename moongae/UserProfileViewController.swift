@@ -13,8 +13,8 @@ class UserProfileViewController: UIViewController {
     var modelUser = UserListModel.UserListModelSingleton
     //    var modelComment = CommentModel()
     var modelComment = CommentModel.CommentModelSingleton
-    var userName:String!
-    var user:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"",User2Major:nil, UserGrade: "",UserEmail:"")
+    var userName: String!
+    var user: UserList = UserList(userPhoto: "", userName: "", userMajor:"", userSubmajor: nil, userGrade: "", userEmail:"")
     
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelEmail: UILabel!
@@ -26,10 +26,10 @@ class UserProfileViewController: UIViewController {
         super.viewDidLoad()
         
         // 선택한 사용자의 프로필 출력
-        labelName.text = user.UserName
-        labelEmail.text = user.UserEmail
-        labelGrade.text = user.UserGrade + "학년"
-        labelMajor.text = user.UserMajor
+        labelName.text = user.userName
+        labelEmail.text = user.userEmail
+        labelGrade.text = user.userGrade + "학년"
+        labelMajor.text = user.userMajor
         // --> 사진 설정하는 코드도 추가해야함.
     }
 
