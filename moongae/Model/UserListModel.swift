@@ -150,8 +150,10 @@ class UserListModel {
 // 회원가입 함수
     func CreateUserAccount(userPhoto: String, userName: String, userMajor: String, userSubmajor: String? , userGrade: String, userEmail: String, userPassword: String) -> Void {
         self.arrayList.append(UserList(userPhoto: userPhoto, userName: userName, userMajor: userMajor, userSubmajor: userSubmajor , userGrade: userGrade, userEmail: userEmail, userPassword: userPassword))
+        print(userName)
     }
     
+
     // email로 user 검색
 //    func searchForEmail(email:String) -> UserList {
 //        var result:UserList = UserList(UserPhoto: "", UserName: "", UserMajor:"", UserGrade: "",UserEmail:"")
