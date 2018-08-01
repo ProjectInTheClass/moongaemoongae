@@ -1,6 +1,5 @@
 //프로젝트에 새로운 파일을 추가한 뒤, 메인 스토리 보드 TableController의 속성에 클래스 값을 추가한 뒤 코딩
 import UIKit
-import Foundation
 
 class UserListViewController : UITableViewController {
     var vcCreatePRJ: CreateProjectController!
@@ -17,45 +16,26 @@ class UserListViewController : UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    //    if segue.identifier == "toComment" {
-//    if let destination = segue.destination as? CommentViewController {
-//
-//    let btn = sender as! UIButton
-//    let cell = btn.superview?.superview?.superview as! UITableViewCell
-//    let indexPath:IndexPath! = self.tableView.indexPath(for: cell)
-//    let info = self.modelProject.arrayList[indexPath.row]
-//
-//    self.modelProject.selectedIndex = tableView.indexPath(for: cell)!.row
-//    destination.modelProject = self.modelProject
-//
-//    var comment: Array<CommentInfo> = modelComment.searchForTitle(title: info.title)
-//    destination.comment = comment
-//    }
     
- 
     
     @IBAction func aaaaa(_ sender: UISwitch) {
         if(sender.isOn) {
             let check = sender
 //            as! UISwitch
             let selctedCell = check.superview?.superview as! UITableViewCell
-            let indexPath:IndexPath! = self.tableView.indexPath(for: selctedCell)
+            let indexPath: IndexPath! = self.tableView.indexPath(for: selctedCell)
             let info = self.modelUserList.arrayList[indexPath.row]
             print(info.userName, info.userMajor)
             teamMembers!.append(info.userName)
             teamMembers!.append(info.userMajor)
         }
         print(teamMembers ?? "팀원없음")
-        
     }
     
     @IBAction func AddMembers(sender : Any) {
         self.vcCreatePRJ.coworker.text = "\(teamMembers!)"
-//       let Members = teamMembers
-//
+
         self.navigationController?.popViewController(animated: true)
-        
-//        performSegue(withIdentifier: "AddMem", sender: Members)
     }
     
     
@@ -64,7 +44,13 @@ class UserListViewController : UITableViewController {
         let info = self.modelUserList.arrayList[indexPath.row]
         
         let cell : UserTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell") as! UserTableViewCell
-        //(선언할 때 느낌표는 옵셔널이지만 값이 항상 있다라고 가정하고 언래핑된 상태로 사용하겠따..)처음에 앱을 실행하면 캐시에 아무것도 없기 때문에 재사용할 셀이 없다... 그래서 옵셔널! 옵셔널은 그냥 쓸 수 없고, 언래핑해야지
+        
+        // 스위치 상태 재사용 막기 고민중
+//        if cell.addMembers.isOn == true {
+//            cell.addMembers.isOn = false
+//        }
+        
+       //(선언할 때 느낌표는 옵셔널이지만 값이 항상 있다라고 가정하고 언래핑된 상태로 사용하겠따..)처음에 앱을 실행하면 캐시에 아무것도 없기 때문에 재사용할 셀이 없다... 그래서 옵셔널! 옵셔널은 그냥 쓸 수 없고, 언래핑해야지
         //       if cell == nil {
         //          cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         //          print("cell created....!")

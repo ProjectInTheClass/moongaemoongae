@@ -61,11 +61,18 @@ class CollectionTableViewController: UITableViewController {
 //        let info = self.modelProject.arrayList[indexPath.row]
         let info = self.modelProject[indexPath.row]
         
-        
+
+
         for i in 0 ..< info.image.count {
             let imageView = UIImageView()
+            
+            // 스크롤 서브뷰 재사용 문제 고민중..
+//            if cell.scrollView?.subviews != nil {
+//                cell.scrollView.willRemoveSubview(imageView)
+//            }
+            
             imageView.image = UIImage(named: info.image[i])
-             imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
+            imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
             let xPosition = self.view.frame.width * CGFloat(i)
             
             imageView.frame = CGRect(x: xPosition, y: -250,
@@ -73,10 +80,10 @@ class CollectionTableViewController: UITableViewController {
                                      height: self.view.frame.height) // 즉 이미지 뷰가 화면 전체를 덮게 됨.
             
             cell.scrollView.contentSize.width =
-                self.view.frame.width * CGFloat(1+i)
+            self.view.frame.width * CGFloat(1+i)
             
             cell.scrollView.addSubview(imageView)
-        }
+            }
         
         cell.title?.text = info.title
         cell.summary?.text = info.summary
