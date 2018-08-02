@@ -42,9 +42,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             loginStatus.text = "비밀번호를 입력하세요";
             return;
         }
-        
         if modelUser.findUser(userEmail: loginUserid.text!) == nil {
             loginStatus.text = "아이디를 정확하게 입력해주세요"
+            print(modelUser.findUser(userEmail: loginUserid.text!))
         }
         else {
             let myUserInfo = modelUser.findUser(userEmail: self.loginUserid.text!)
@@ -53,8 +53,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
             else {
                 //myInfo에 사용자 저장
+                loginStatus.text = "일치"
                  myInfo.mylogInfo = myUserInfo!
-                
+                print(myUserInfo!.userEmail)
                 dismiss(animated: true, completion: nil)
             }
         }

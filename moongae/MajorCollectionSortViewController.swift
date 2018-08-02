@@ -16,6 +16,7 @@ UICollectionViewDelegate, UICollectionViewDataSource {
     var modelCollect: Array<ProjectInfo>!
 
     var modelProject = ProjectModel.ProjectModelSingleton
+    var modelComment = CommentModel.CommentModelSingleton
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -62,7 +63,7 @@ UICollectionViewDelegate, UICollectionViewDataSource {
         cell.project_image?.image = UIImage(named: info.image[0])
         cell.title?.text = info.title
         cell.createDate?.text = info.createdDate
-        cell.commentCount?.text = String(info.commentCount)
+        cell.commentCount.text = String(modelComment.searchCommentCountForTitle(title: info.title))
         
         return cell
     }

@@ -59,6 +59,19 @@ class CommentModel {
         return resultList
     }
     
+    // 댓글 수
+    func searchCommentCountForTitle(title:String) -> Int {
+        var resultList:Array<CommentInfo> = []
+        var count:Int = 0
+        for i in 0 ..< arrayList.count {
+            if(title == arrayList[i].title){
+                resultList.append(arrayList[i])
+                count = count + 1
+            }
+        }
+        return count
+    }
+    
     // 댓글 등록
     func addComment(title:String, userImage:String, userName:String, contents:String, writeDate:String) -> Void {
         self.arrayList.append(CommentInfo(title: title, userImage: userImage, userName: userName, contents: contents, writeDate: writeDate))
