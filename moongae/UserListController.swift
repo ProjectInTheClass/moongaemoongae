@@ -20,16 +20,17 @@ class UserListViewController : UITableViewController {
     
     @IBAction func aaaaa(_ sender: UISwitch) {
         if(sender.isOn) {
-            let check = sender
-//            as! UISwitch
+            let check = sender // as? UISwitch
             let selctedCell = check.superview?.superview as! UITableViewCell
             let indexPath: IndexPath! = self.tableView.indexPath(for: selctedCell)
             let info = self.modelUserList.arrayList[indexPath.row]
-            print(info.userName, info.userMajor)
+            
+            info.isCoworker = true
+            
             teamMembers!.append(info.userName)
             teamMembers!.append(info.userMajor)
         }
-        print(teamMembers ?? "팀원없음")
+        print(teamMembers ?? "팀원 없음")
     }
     
     @IBAction func AddMembers(sender : Any) {
@@ -45,11 +46,7 @@ class UserListViewController : UITableViewController {
         
         let cell : UserTableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell") as! UserTableViewCell
         
-        // 스위치 상태 재사용 막기 고민중
-//        if cell.addMembers.isOn == true {
-//            cell.addMembers.isOn = false
-//        }
-        
+
        //(선언할 때 느낌표는 옵셔널이지만 값이 항상 있다라고 가정하고 언래핑된 상태로 사용하겠따..)처음에 앱을 실행하면 캐시에 아무것도 없기 때문에 재사용할 셀이 없다... 그래서 옵셔널! 옵셔널은 그냥 쓸 수 없고, 언래핑해야지
         //       if cell == nil {
         //          cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
@@ -64,6 +61,7 @@ class UserListViewController : UITableViewController {
         cell.userMajor?.text = info.userMajor
         cell.userSubmajor?.text = info.userSubmajor
         cell.userGrade?.text = info.userGrade
+        cell.addMembers.isOn = info.isCoworker
 
         
 //        //이미지 파일이 옵셔널이라면 바인딩을 통해 언래핑

@@ -162,7 +162,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        modelUser.CreateUserAccount(userPhoto: "", userName: userName.text!, userMajor: userMajor.text!, userSubmajor: userSubmajor?.text, userGrade: userGrade.text!, userEmail: userEmail.text!, userPassword: userPW.text!)
+        modelUser.CreateUserAccount(userPhoto: "", userName: userName.text!, userMajor: userMajor.text!, userSubmajor: userSubmajor?.text, userGrade: userGrade.text!, userEmail: userEmail.text!, userPassword: userPW.text!, isCoworker: false)
         
         self.dismiss(animated: true, completion: nil)
     }
