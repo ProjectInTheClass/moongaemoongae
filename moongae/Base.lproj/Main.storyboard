@@ -83,13 +83,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpL-3d-Z97">
-                                <rect key="frame" x="144" y="554" width="199" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP8-H1-3aa">
                                 <rect key="frame" x="94" y="449" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -119,44 +112,28 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IMC-XL-OR6">
-                                <rect key="frame" x="144" y="656" width="199" height="30"/>
+                                <rect key="frame" x="144" y="605" width="199" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학년" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwU-6q-y6x">
-                                <rect key="frame" x="94" y="661" width="30" height="21"/>
+                                <rect key="frame" x="94" y="610" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnh-jq-bpf">
-                                <rect key="frame" x="171" y="694" width="33" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="완료"/>
-                                <connections>
-                                    <action selector="CreateAccount:" destination="th4-Kc-vEn" eventType="touchUpInside" id="iZH-Pv-hXb"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="선택 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RRD-xx-Let">
-                                <rect key="frame" x="144" y="606" width="199" height="30"/>
+                                <rect key="frame" x="144" y="555" width="199" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="부/복수 전공" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGP-zL-VBF">
-                                <rect key="frame" x="40" y="611" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전공" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-h0-DaM">
-                                <rect key="frame" x="94" y="559" width="30" height="21"/>
+                                <rect key="frame" x="40" y="560" width="84" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -174,6 +151,15 @@
                                 <rect key="frame" x="125" y="110" width="127" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnh-jq-bpf">
+                                <rect key="frame" x="171" y="669" width="33" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="th4-Kc-vEn" eventType="touchUpInside" id="iZH-Pv-hXb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YIS-o8-J7Q"/>
@@ -181,15 +167,14 @@
                     <tabBarItem key="tabBarItem" title="" image="redlike" id="hrX-U7-JA9"/>
                     <navigationItem key="navigationItem" title="회원가입" id="FAs-f0-iAI"/>
                     <connections>
-                        <outlet property="Profile" destination="IY8-WP-vVU" id="jcm-9B-FCa"/>
-                        <outlet property="User2Major" destination="RRD-xx-Let" id="7fT-SD-WLZ"/>
-                        <outlet property="UserEmail" destination="PhU-41-lZR" id="xQ2-iC-7Ol"/>
-                        <outlet property="UserGrade" destination="IMC-XL-OR6" id="97W-kU-0fe"/>
-                        <outlet property="UserMajor" destination="4Vw-WG-79m" id="w87-ds-lLE"/>
-                        <outlet property="UserMajorSecond" destination="ZpL-3d-Z97" id="whh-IF-wtQ"/>
-                        <outlet property="UserName" destination="VKR-1f-Zc2" id="SAY-Zq-nEJ"/>
-                        <outlet property="UserPW" destination="7Uw-2q-40P" id="ZaL-dW-Nq1"/>
-                        <outlet property="UserPWConfirm" destination="dwp-0o-JJh" id="7TV-0V-C9Z"/>
+                        <outlet property="profile" destination="IY8-WP-vVU" id="URr-ja-sNb"/>
+                        <outlet property="userEmail" destination="PhU-41-lZR" id="PNT-6O-chE"/>
+                        <outlet property="userGrade" destination="IMC-XL-OR6" id="iOi-hY-ten"/>
+                        <outlet property="userMajor" destination="4Vw-WG-79m" id="gD7-GH-gPx"/>
+                        <outlet property="userName" destination="VKR-1f-Zc2" id="1C3-0J-E5O"/>
+                        <outlet property="userPW" destination="7Uw-2q-40P" id="nag-6y-M3y"/>
+                        <outlet property="userPWConfirm" destination="dwp-0o-JJh" id="J9l-Jn-tca"/>
+                        <outlet property="userSubmajor" destination="RRD-xx-Let" id="zsR-3p-sHz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWH-9j-US9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,7 +224,7 @@
         <!--로그인-->
         <scene sceneID="qb7-Dk-1DL">
             <objects>
-                <viewController id="B72-0h-yRI" sceneMemberID="viewController">
+                <viewController id="B72-0h-yRI" customClass="LoginViewController" customModule="moongae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qYd-Ox-tFa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +259,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="뭉게구름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDC-Pa-xjZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="졸뽀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDC-Pa-xjZ">
                                         <rect key="frame" x="8" y="58" width="276" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
@@ -296,9 +281,12 @@
                                         <state key="normal" title="LOGIN">
                                             <color key="titleColor" red="0.98156593960000005" green="0.99008544109999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginBtn:" destination="B72-0h-yRI" eventType="touchUpInside" id="6vg-U3-988"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-gC-A2f">
-                                        <rect key="frame" x="32" y="156" width="229" height="30"/>
+                                        <rect key="frame" x="32" y="152" width="229" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="textColor"/>
@@ -314,6 +302,11 @@
                     <navigationItem key="navigationItem" title="로그인" id="sgs-aU-m1t">
                         <barButtonItem key="rightBarButtonItem" title="회원가입" id="KbG-wO-v1M"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loginPasswd" destination="RQc-6d-Mfk" id="tgR-xo-Ew0"/>
+                        <outlet property="loginStatus" destination="6o2-E5-88k" id="eEE-H2-ZMk"/>
+                        <outlet property="loginUserid" destination="Mvc-gC-A2f" id="zad-HG-30C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpK-UH-pc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

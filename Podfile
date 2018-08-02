@@ -7,11 +7,11 @@ target 'moongae' do
 pod "DBSphereTagCloud"
 pod 'DCPathButton', '~> 2.1.3'
 pod 'TagListView', '~> 1.0'
-pod 'ImageSlideshow', '~> 1.6'
-pod 'ImageSlideshow/Alamofire'
-pod "ImageSlideshow/AFURL"
-pod "ImageSlideshow/SDWebImage"
-pod "ImageSlideshow/Kingfisher"
+#pod 'ImageSlideshow', '~> 1.6'
+#pod 'ImageSlideshow/Alamofire'
+#pod "ImageSlideshow/AFURL"
+#pod "ImageSlideshow/SDWebImage"
+#pod "ImageSlideshow/Kingfisher"
 pod 'ModernSearchBar'
 pod "BSImagePicker", "~> 2.7"
 

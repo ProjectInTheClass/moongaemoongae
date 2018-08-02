@@ -8,8 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var loginUserid: UITextField!
+    @IBOutlet weak var loginPasswd: UITextField!
+    @IBOutlet weak var loginStatus: UILabel!
+    
+    var modelUser = UserListModel.UserListModelSingleton
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
     }
@@ -26,15 +32,34 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // 로그인 버튼을 누르면 저장된 사용자정보와 입력정보 비교
+    @IBAction func loginBtn(_ sender: Any) {
+        if loginUserid.text == "" {
+            loginStatus.text = "ID를 입력하세요";
+            return;
+        }
+        if loginPasswd.text == "" {
+            loginStatus.text = "비밀번호를 입력하세요";
+            return;
+        }
+        
+        if modelUser.findUser(userEmail: loginUserid.text!) == nil {
+            loginStatus.text = "아이디를 정확하게 입력해주세요"
+        }
+        else {
+            let myUserInfo = modelUser.findUser(userEmail: self.loginUserid.text!)
+            if myUserInfo?.userPassword != loginPasswd.text {
+                loginStatus.text = "비밀번호가 틀렸습니다"
+            }
+            else {
+                //myInfo에 사용자 저장
+                 myInfo.mylogInfo = myUserInfo!
+                
+                dismiss(animated: true, completion: nil)
+            }
+        }
     }
-    */
-
 }
+        
+
+

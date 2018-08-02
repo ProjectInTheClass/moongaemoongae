@@ -40,7 +40,6 @@
 		B849151820EF4DA200E6AF74 /* 일정정보.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151720EF4DA200E6AF74 /* 일정정보.png */; };
 		B849151A20EF4F7F00E6AF74 /* calendar2.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151920EF4F7E00E6AF74 /* calendar2.png */; };
 		B849151C20EF51E200E6AF74 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = B849151B20EF51E100E6AF74 /* line.png */; };
-		B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8576C6420F4530200E081F4 /* signupViewController.swift */; };
 		B8803C8320EF1E3F009717DF /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C8220EF1E3F009717DF /* calendar.png */; };
 		B8803C8A20EF2F76009717DF /* cloud-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C8420EF2F75009717DF /* cloud-3.png */; };
 		B8803C8B20EF2F76009717DF /* cloud-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B8803C8520EF2F75009717DF /* cloud-2.png */; };
@@ -55,7 +54,6 @@
 		B8B9758820FF127200C1F922 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */; };
 		B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD1E5D2107077000A89577 /* SFPatchView.swift */; };
 		B8BD1E6021070B6700A89577 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD1E5F21070B6700A89577 /* Common.swift */; };
-		B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */; };
 		B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */; };
 		CA80EF8C253CF161D3A903FE /* Pods_moongae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102D6DD2D585064ED527A437 /* Pods_moongae.framework */; };
 		D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008DCF920FF05A900E64E15 /* UserListModel.swift */; };
@@ -109,7 +107,6 @@
 		B849151720EF4DA200E6AF74 /* 일정정보.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "일정정보.png"; sourceTree = "<group>"; };
 		B849151920EF4F7E00E6AF74 /* calendar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar2.png; sourceTree = "<group>"; };
 		B849151B20EF51E100E6AF74 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		B8576C6420F4530200E081F4 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		B8803C8220EF1E3F009717DF /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		B8803C8420EF2F75009717DF /* cloud-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-3.png"; sourceTree = "<group>"; };
 		B8803C8520EF2F75009717DF /* cloud-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-2.png"; sourceTree = "<group>"; };
@@ -125,7 +122,6 @@
 		B8BD1E5C2107071400A89577 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		B8BD1E5D2107077000A89577 /* SFPatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPatchView.swift; sourceTree = "<group>"; };
 		B8BD1E5F21070B6700A89577 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordModel.swift; sourceTree = "<group>"; };
 		B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
 		D008DCF920FF05A900E64E15 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		D008DCFB20FF0B2A00E64E15 /* UserListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListController.swift; sourceTree = "<group>"; };
@@ -150,6 +146,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009071C52112134400951FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B837FABB21006E0F005F4E65 /* MajorModel.swift */,
+				A0888CF820FF017900F70112 /* ProjectModel.swift */,
+				D008DCF920FF05A900E64E15 /* UserListModel.swift */,
+				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		31143A90E025466626D70F89 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +169,10 @@
 		A0888CF720FF011400F70112 /* etc */ = {
 			isa = PBXGroup;
 			children = (
+				B8803C9020EF30B9009717DF /* ui2.png */,
+				1089EB35210F8BC000F7CCE4 /* img_cloud.png */,
+				10FA58072110876A002BAB37 /* icon_info_blue.png */,
+				10FA5809211087FA002BAB37 /* icon_next.png */,
 				A08FFEA1210828CC0024B382 /* icon_dea.png */,
 				A0D52E3C20FC867800DF5A80 /* img_profile_woman_1.png */,
 				A0D52E3B20FC867800DF5A80 /* img_profile_woman_2.png */,
@@ -183,6 +194,7 @@
 				B8803C8820EF2F75009717DF /* comment-white-oval-bubble.png */,
 				B849151B20EF51E100E6AF74 /* line.png */,
 				B8803C8720EF2F75009717DF /* like.png */,
+				B8803C9220EF30BC009717DF /* ui1.png */,
 				B8803C8220EF1E3F009717DF /* calendar.png */,
 			);
 			path = etc;
@@ -210,46 +222,36 @@
 		B810A0B420EDE70400BC80DB /* moongae */ = {
 			isa = PBXGroup;
 			children = (
-				10FA5809211087FA002BAB37 /* icon_next.png */,
-				10FA58072110876A002BAB37 /* icon_info_blue.png */,
-				1089EB35210F8BC000F7CCE4 /* img_cloud.png */,
 				A0888CF720FF011400F70112 /* etc */,
-				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
-				B8803C9220EF30BC009717DF /* ui1.png */,
-				B8803C9020EF30B9009717DF /* ui2.png */,
-				B8576C6420F4530200E081F4 /* signupViewController.swift */,
 				B810A0BE20EDE70600BC80DB /* Assets.xcassets */,
-				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
-				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
-				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
-				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
-				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
 				B810A0C320EDE70600BC80DB /* Info.plist */,
+				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
+				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
+				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
 				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
+				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
+				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
+				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
+				009071C52112134400951FCA /* Model */,
+				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
 				D091AF332109A5B400890929 /* CreateAccountController.swift */,
-				B8B9758120FF05CD00C1F922 /* CommentModel.swift */,
-				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
 				D0DE709B210873DB0045EA22 /* CreateProjectController.swift */,
-				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
-				A0888CF820FF017900F70112 /* ProjectModel.swift */,
+				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
 				A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */,
 				A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */,
-				D008DCF920FF05A900E64E15 /* UserListModel.swift */,
-				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
-				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
+				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
+				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
+				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
+				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
 				B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */,
 				B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */,
-				B837FABB21006E0F005F4E65 /* MajorModel.swift */,
-				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
-				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
-				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
 				A0A6DC972106C16100EBE60F /* MajorCollectionSortViewController.swift */,
-				B8F9CEA72106C69D007B2E1A /* KeywordModel.swift */,
-				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
+				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
+				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
+				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
 				B8BD1E5C2107071400A89577 /* BridgeHeader.h */,
 				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
 				B8BD1E5F21070B6700A89577 /* Common.swift */,
-				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
 				10FA580B21108C4A002BAB37 /* RoundButton.swift */,
 			);
 			path = moongae;
@@ -376,33 +378,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-moongae/Pods-moongae-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloud/DBSphereTagCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/DCPathButton/DCPathButton.framework",
-				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ModernSearchBar/ModernSearchBar.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
 				"${BUILT_PRODUCTS_DIR}/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCPathButton.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModernSearchBar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImageViewModeScaleAspect.framework",
 			);
@@ -439,7 +429,6 @@
 				D008DCFA20FF05A900E64E15 /* UserListModel.swift in Sources */,
 				A0A6DC922100586E00EBE60F /* ProjectDetailViewController.swift in Sources */,
 				A0A6DC982106C16100EBE60F /* MajorCollectionSortViewController.swift in Sources */,
-				B8F9CEA82106C69D007B2E1A /* KeywordModel.swift in Sources */,
 				B837FABC21006E0F005F4E65 /* MajorModel.swift in Sources */,
 				B8B9758620FF0DF100C1F922 /* CommentTableViewController.swift in Sources */,
 				10FA580C21108C4A002BAB37 /* RoundButton.swift in Sources */,
@@ -452,7 +441,6 @@
 				B8BD1E6021070B6700A89577 /* Common.swift in Sources */,
 				B82DD01E211053D8009ED317 /* LoginViewController.swift in Sources */,
 				A0A6DC942100665100EBE60F /* CommentViewController.swift in Sources */,
-				B8576C6520F4530200E081F4 /* signupViewController.swift in Sources */,
 				B8F9CEAA2106C78A007B2E1A /* IdeaViewController.swift in Sources */,
 				B8BD1E5E2107077000A89577 /* SFPatchView.swift in Sources */,
 				D008DD0020FF1A3E00E64E15 /* UserTableViewCell.swift in Sources */,

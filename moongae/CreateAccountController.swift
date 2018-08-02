@@ -10,28 +10,32 @@ import MobileCoreServices
 
 class CreateAccountController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var modelUser = UserListModel.UserListModelSingleton
-    var comment:Array<UserList> = []
+    var comment: Array<UserList> = []
+
     
-    //    @IBOutlet var UserListTable: UITableView!
-    //    @IBOutlet weak var UserPhoto: UIImageView!
-    //    @IBOutlet weak var UserName: UILabel!
-    //    @IBOutlet weak var UserGrade: UILabel!
-    //    @IBOutlet weak var UserMajor: UILabel!
+    @IBOutlet weak var profile: UIImageView!
+    @IBOutlet weak var userEmail: UITextField!
+    @IBOutlet weak var userPW: UITextField!
+    @IBOutlet weak var userPWConfirm: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var userMajor: UITextField!
+    @IBOutlet weak var userSubmajor: UITextField?
+    @IBOutlet weak var userGrade: UITextField!
     
-    @IBOutlet weak var Profile: UIImageView!
-    @IBOutlet weak var UserEmail: UITextField!
-    @IBOutlet weak var UserPW: UITextField!
-    @IBOutlet weak var UserPWConfirm: UITextField!
-    @IBOutlet weak var UserName: UITextField!
-    @IBOutlet weak var UserMajor: UITextField!
-    @IBOutlet weak var User2Major: UITextField?
-    @IBOutlet weak var UserMajorSecond: UITextField!
-    @IBOutlet weak var UserGrade: UITextField!
     
     let imagePicker: UIImagePickerController! = UIImagePickerController()
     var captureImage: UIImage!
     var flagImageSave = false
     
+    
+    @IBAction func touchDone( _sender: Any) {
+        self.navigationController?.popViewController(animated: true)    
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,9 +64,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
-        self.view.endEditing(true)
-    }
+
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let mediaType = info[UIImagePickerControllerMediaType] as! NSString
@@ -75,7 +77,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
                     UIImageWriteToSavedPhotosAlbum(captureImage, self, nil, nil)
                 }
         
-            Profile.image = captureImage
+            profile.image = captureImage
         }
         self.dismiss(animated: true, completion : nil)
     }
@@ -87,7 +89,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
 
     @IBAction func CreateAccount(_ sender: Any) {
         
-        if UserEmail.text?.count == 0  {
+        if userEmail.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "이메일은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -100,7 +102,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
         
         }
         
-        if UserPW.text?.count == 0  {
+        if userPW.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호는 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -112,7 +114,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserPWConfirm.text?.count == 0  {
+        if userPWConfirm.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "비밀번호 확인은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -124,7 +126,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserName.text?.count == 0  {
+        if userName.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "이름은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -136,7 +138,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserMajor.text?.count == 0  {
+        if userMajor.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "전공은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -148,7 +150,7 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        if UserGrade.text?.count == 0  {
+        if userGrade.text?.count == 0  {
             let alertController = UIAlertController(title: "필수 입력 내용",message: "학년은 필수 입력 값입니다.", preferredStyle: UIAlertControllerStyle.alert)
             
             //UIAlertActionStye.destructive 지정 글꼴 색상 변경
@@ -160,65 +162,10 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
             return
         }
         
-        modelUser.CreateUserAccount(UserPhoto: "", UserName: UserName.text!, UserMajor: UserMajor.text!,User2Major: User2Major?.text, UserGrade: UserGrade.text!, UserEmail: UserEmail.text!)
+        modelUser.CreateUserAccount(userPhoto: "", userName: userName.text!, userMajor: userMajor.text!, userSubmajor: userSubmajor?.text, userGrade: userGrade.text!, userEmail: userEmail.text!, userPassword: userPW.text!)
+        
+        self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    /*
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-     
-     // Configure the cell...
-     
-     return cell
-     }
-     */
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 /*//

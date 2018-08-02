@@ -10,12 +10,12 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var UserPhoto: UIImageView!
-    @IBOutlet weak var UserName: UILabel!
-    @IBOutlet weak var UserMajor: UILabel!
-    @IBOutlet weak var User2Major: UILabel!
-    @IBOutlet weak var UserGrade: UILabel!
-    @IBOutlet weak var AddMembers: UISwitch!
+    @IBOutlet weak var userPhoto: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userMajor: UILabel!
+    @IBOutlet weak var userSubmajor: UILabel!
+    @IBOutlet weak var userGrade: UILabel!
+    @IBOutlet weak var addMembers: UISwitch!
    
     
     
