@@ -93,7 +93,7 @@ class ProjectModel {
         
         self.arrayList.append(project7)
         
-        let project8 = ProjectInfo(title: "딥러닝 기반 초·중 SW코딩 교육몰 구축(웹-앱)", image: ["img_project8.jpg","img_project8(2).jpg"], startDate: "2017-06-01", endDate: "2017-10-03", tags: ["교육","웹","앱"], summary: " 초·중 SW코딩교육 의무화 연구·선도교 운영 등 신사업 영역에 대한 사업 및 기술적 개발 접근 ", coworker: ["유연수","고지은"], language: "자바", environment: "인공지능 및 딥러닝", motivation: " 초/중 SW코딩교육컨텐츠 설계와 딥러닝 기반의 맞춤형 교육 제공", benefit: "올해 시작되는 sw코딩의무교육에 대한 프로젝트 관리 경험 및 개발 경험 취득  ", createdDate:"2018-06-20",  author: "기향기", major: "컴퓨터학과")
+        let project8 = ProjectInfo(title: "딥러닝 기반 초·중 SW코딩 교육몰 구축(웹-앱)", image: ["img_project8(2).jpg"], startDate: "2017-06-01", endDate: "2017-10-03", tags: ["교육","웹","앱"], summary: " 초·중 SW코딩교육 의무화 연구·선도교 운영 등 신사업 영역에 대한 사업 및 기술적 개발 접근 ", coworker: ["유연수","고지은"], language: "자바", environment: "인공지능 및 딥러닝", motivation: " 초/중 SW코딩교육컨텐츠 설계와 딥러닝 기반의 맞춤형 교육 제공", benefit: "올해 시작되는 sw코딩의무교육에 대한 프로젝트 관리 경험 및 개발 경험 취득  ", createdDate:"2018-06-20",  author: "기향기", major: "컴퓨터학과")
         
         self.arrayList.append(project8)
         
