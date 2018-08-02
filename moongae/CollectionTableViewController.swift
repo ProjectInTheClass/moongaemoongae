@@ -79,10 +79,7 @@ class CollectionTableViewController: UITableViewController {
         for i in 0 ..< info.image.count {
             let imageView = UIImageView()
             
-            // 스크롤 서브뷰 재사용 문제 고민중..
-
-            
-            imageView.image =  managerImage.loadImage(name:info.image[i]) //UIImage(named: info.image[i])
+            imageView.image =  managerImage.loadImage(name:info.image[i])
             imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
             let xPosition = self.view.frame.width * CGFloat(i)
             
@@ -90,8 +87,7 @@ class CollectionTableViewController: UITableViewController {
                                      width: self.view.frame.width,
                                      height: self.view.frame.height) // 즉 이미지 뷰가 화면 전체를 덮게 됨.
             
-            cell.scrollView.contentSize.width =
-            self.view.frame.width * CGFloat(1+i)
+            cell.scrollView.contentSize.width = self.view.frame.width * CGFloat(1+i)
             
             cell.scrollView.addSubview(imageView)
             }

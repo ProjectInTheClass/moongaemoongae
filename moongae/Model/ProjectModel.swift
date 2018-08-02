@@ -220,8 +220,9 @@ class ProjectModel {
 //        return modelProject
 //    }
     
+
     // 프로젝트 등록
-    func addProject(title: String,  image: Array<String>, startDate: String, endDate: String, tags: Array<String>, summary: String,  coworker: Array<String>, language:String, environment: String, motivation: String, benefit: String, detail:String, createdDate: String, author: String, major: String, likeCount: Int) -> Void {
+    func addProject(title: String,  image: Array<String>, startDate: String, endDate: String, tags: Array<String>, summary: String,  coworker: Array<String>, language:String, environment: String, motivation: String, benefit: String, createdDate: String, author: String, major: String) -> Void {
         self.arrayList.append(ProjectInfo(title: title, image: image, startDate: startDate, endDate: endDate, tags: tags, summary: summary, coworker: coworker, language: language, environment: environment, motivation: motivation, benefit: benefit, createdDate: createdDate, author: author, major: major ))
         print(title)
     }
