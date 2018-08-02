@@ -4,7 +4,7 @@ import UIKit
 class UserListViewController : UITableViewController {
     var vcCreatePRJ: CreateProjectController!
     var modelUserList = UserListModel.UserListModelSingleton
-    var teamMembers: Array? = []
+    var teamMembers: Array<String> = []
     
     override func numberOfSections(in tableView: UITableView) -> Int {//섹션 수 를 묻고 있음 , override 상속
         return 1 //Zero base 0~999
@@ -27,14 +27,22 @@ class UserListViewController : UITableViewController {
             
             info.isCoworker = true
             
-            teamMembers!.append(info.userName)
-            teamMembers!.append(info.userMajor)
+            teamMembers.append(info.userName)
+            teamMembers.append(info.userMajor)
         }
         print(teamMembers ?? "팀원 없음")
     }
     
     @IBAction func AddMembers(sender : Any) {
-        self.vcCreatePRJ.coworker.text = "\(teamMembers!)"
+//        self.vcCreatePRJ.coworker.text = "\(teamMembers!)"
+        
+        for i in 0 ..< teamMembers.count {
+            if(i%2 == 0) {
+                self.vcCreatePRJ.coworker.text = self.vcCreatePRJ.coworker.text! + teamMembers[i] + " "
+                //                self.vcCreatePRJ.TeamMembers?.append(teamMembers![i])
+//                self.vcCreatePRJ.TeamMembers = teamMembers
+            }
+        }
 
         self.navigationController?.popViewController(animated: true)
     }
