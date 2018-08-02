@@ -10,6 +10,13 @@ import UIKit
 
 class MypageTableViewController: UITableViewController {
 
+    @IBOutlet var userName: UILabel!
+    @IBOutlet var userEmail: UILabel!
+    @IBOutlet var userGrade: UILabel!
+    @IBOutlet var userMajor: UILabel!
+    @IBOutlet var userSubmajor: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +25,12 @@ class MypageTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        userName.text = myInfo.mylogInfo?.userName
+        userEmail.text = myInfo.mylogInfo?.userEmail
+        userGrade.text = "\(myInfo.mylogInfo!.userGrade)학년"
+        userMajor.text = myInfo.mylogInfo?.userMajor
+        userSubmajor.text = myInfo.mylogInfo?.userSubmajor
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,7 +54,11 @@ class MypageTableViewController: UITableViewController {
         return 4
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 2{
+        if indexPath.row == 2 {
+            myInfo.logout()
+            myInfo.checkAndShowLogin()
+        }
+        if indexPath.row == 3 {
             myInfo.logout()
             myInfo.checkAndShowLogin()
         }

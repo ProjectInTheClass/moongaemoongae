@@ -475,8 +475,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="나의 게시물  수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40V-Ml-YHX">
-                                                    <rect key="frame" x="16" y="12" width="117" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="나의 게시물 수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40V-Ml-YHX">
+                                                    <rect key="frame" x="16" y="12" width="112" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -535,6 +535,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="765"/>
+                    <connections>
+                        <outlet property="userEmail" destination="Nw6-DU-kYG" id="cKn-rg-DiB"/>
+                        <outlet property="userGrade" destination="ODA-7k-Z7c" id="1ww-Wd-bSo"/>
+                        <outlet property="userMajor" destination="lpL-gq-iYG" id="fct-8h-jqX"/>
+                        <outlet property="userName" destination="1uC-y7-ZSF" id="rk7-Me-e3O"/>
+                        <outlet property="userSubmajor" destination="xfw-Xi-Sp7" id="AdB-ZM-0s5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDN-xf-NYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
