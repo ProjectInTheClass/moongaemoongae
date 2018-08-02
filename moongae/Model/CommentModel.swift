@@ -45,7 +45,7 @@ class CommentModel {
         self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
         self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
         self.arrayList.append(CommentInfo(title: "클라우드 데이터 관리 시스템", userImage: "img_profile_woman_2.png", userName: "박예빈", contents: "혹시 서버 사용하셨나요? 쪽지 드려도 될까요?", writeDate: "07-13"))
-        self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_3.png", userName: "이재은", contents: "디자인이 너무 예쁘네요", writeDate: "07-17"))
+        self.arrayList.append(CommentInfo(title: "공간캡슐", userImage: "img_profile_woman_3.png", userName: "박예빈", contents: "디자인이 너무 예쁘네요", writeDate: "07-17"))
     }
     
     // title에 대한 댓글 검색.
@@ -73,7 +73,7 @@ class CommentModel {
     }
     
     // 댓글 등록
-    func addComment(title:String, userImage:String, userName:String, contents:String, writeDate:String) -> Void {
+    func addComment(title:String, userImage: String, userName: String, contents: String, writeDate: String) -> Void {
         self.arrayList.append(CommentInfo(title: title, userImage: userImage, userName: userName, contents: contents, writeDate: writeDate))
     }
     
