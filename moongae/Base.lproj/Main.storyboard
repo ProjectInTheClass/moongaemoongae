@@ -26,7 +26,7 @@
                         <segue destination="gN8-hY-d9m" kind="relationship" relationship="viewControllers" id="slr-6p-UBB"/>
                         <segue destination="rfP-kj-Vy7" kind="relationship" relationship="viewControllers" id="a8O-N0-5xM"/>
                         <segue destination="UVe-dj-5F0" kind="relationship" relationship="viewControllers" id="DK7-ZF-Egg"/>
-                        <segue destination="lLr-jc-67j" kind="presentation" identifier="Login" id="8GU-aM-Ym2"/>
+                        <segue destination="lLr-jc-67j" kind="presentation" identifier="toLogin" id="8GU-aM-Ym2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

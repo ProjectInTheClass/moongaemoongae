@@ -1,10 +1,26 @@
 //Model class
 import Foundation
+import UIKit
 
 var myInfo = MyInfo()
 
 struct MyInfo {
+
     var mylogInfo: UserList?
+    
+    func checkAndShowLogin() {
+        if mylogInfo == nil {
+            // let sb = UIStoryboard(name: "Main", bundle: nil) // 리소스의 묶음
+            
+            // main.storyboard
+            let w = UIApplication.shared.delegate?.window as! UIWindow
+            w.rootViewController?.performSegue(withIdentifier: "toLogin", sender: nil) // tabbarcontroller
+        }
+    }
+    
+    mutating func logout() {
+        self.mylogInfo = nil
+    }
 }
 
 class UserList {
