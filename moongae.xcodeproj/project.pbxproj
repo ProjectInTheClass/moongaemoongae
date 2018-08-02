@@ -11,6 +11,7 @@
 		10FA58082110876C002BAB37 /* icon_info_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FA58072110876A002BAB37 /* icon_info_blue.png */; };
 		10FA580A211087FC002BAB37 /* icon_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 10FA5809211087FA002BAB37 /* icon_next.png */; };
 		10FA580C21108C4A002BAB37 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FA580B21108C4A002BAB37 /* RoundButton.swift */; };
+		12C7B1EE2113293E00945E62 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7B1ED2113293E00945E62 /* ImageManager.swift */; };
 		A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CF820FF017900F70112 /* ProjectModel.swift */; };
 		A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */; };
 		A0888CFF20FF1CE800F70112 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */; };
@@ -74,6 +75,7 @@
 		10FA58072110876A002BAB37 /* icon_info_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info_blue.png; sourceTree = "<group>"; };
 		10FA5809211087FA002BAB37 /* icon_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_next.png; sourceTree = "<group>"; };
 		10FA580B21108C4A002BAB37 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		12C7B1ED2113293E00945E62 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		1F0FAB2A8D7FE4B7784A8DD8 /* Pods-moongae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.release.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.release.xcconfig"; sourceTree = "<group>"; };
 		4B76B9BE106E69759C089A91 /* Pods-moongae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moongae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moongae/Pods-moongae.debug.xcconfig"; sourceTree = "<group>"; };
 		A0888CF820FF017900F70112 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				B8BD1E5F21070B6700A89577 /* Common.swift */,
 				10FA580B21108C4A002BAB37 /* RoundButton.swift */,
 				B88476CD2112E3C2009C3ECF /* MypageTableViewController.swift */,
+				12C7B1ED2113293E00945E62 /* ImageManager.swift */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				D008DCFC20FF0B2A00E64E15 /* UserListController.swift in Sources */,
 				A0888CF920FF017900F70112 /* ProjectModel.swift in Sources */,
 				A0888CFD20FF118700F70112 /* CollectionTableViewCell.swift in Sources */,
+				12C7B1EE2113293E00945E62 /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

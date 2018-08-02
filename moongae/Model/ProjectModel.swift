@@ -20,7 +20,7 @@ enum major : String {
 //class ProjectInfo {
 struct ProjectInfo: Codable {
     let title: String
-    let image: Array<String>
+    var image: Array<String>
 //    let video:Array<String>
     let startDate: String
     let endDate: String

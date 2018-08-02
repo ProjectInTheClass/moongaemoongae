@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProjectDetailViewController: UIViewController {
+class ProjectDetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var project:ProjectInfo?
     var model = CommentModel.CommentModelSingleton
     
@@ -19,6 +19,31 @@ class ProjectDetailViewController: UIViewController {
     @IBOutlet weak var labelEnvironment: UITextView!
     @IBOutlet weak var labelLanguage: UITextView!
     @IBOutlet weak var labelBenefit: UITextView!
+    
+    @IBAction func touchPhotoAdd(_ sender: Any) {
+        let vcPicker = UIImagePickerController()
+        
+        vcPicker.allowsEditing = true
+        vcPicker.sourceType = .photoLibrary
+        vcPicker.delegate = self
+        
+        self.present(vcPicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        let image = info[UIImagePickerControllerEditedImage] as! UIImage
+        
+        let fileName = managerImage.saveImageToDocument(sourceImage: image)
+        
+        project?.image.append(fileName)
+        
+        let index = ProjectModel.ProjectModelSingleton.selectedIndex
+        ProjectModel.ProjectModelSingleton.arrayList[index] = project!
+ 
+        print(ProjectModel.ProjectModelSingleton.arrayList[0])
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

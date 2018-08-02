@@ -76,6 +76,9 @@ class CreateProjectController: UIViewController, UIImagePickerControllerDelegate
                 })
                 let data = UIImageJPEGRepresentation(thumbnail, 0.7)
                 let newImage = UIImage(data: data!)
+                
+                managerImage.saveImageToDocument(sourceImage: newImage!)
+                
                 self.PhotoArray.append(newImage! as UIImage)
             }
             self.imageView.animationImages = self.PhotoArray

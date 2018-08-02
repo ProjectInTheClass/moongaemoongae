@@ -570,6 +570,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="n49-BO-mbl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PP2-MR-YFV">
+                        <barButtonItem key="rightBarButtonItem" title="사진 추가" id="JuK-ET-QRH">
+                            <connections>
+                                <action selector="touchPhotoAdd:" destination="u0h-PD-fhW" id="Crv-S9-koH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="812"/>
                     <connections>
                         <outlet property="labelBenefit" destination="6i5-BT-XEp" id="ViU-0U-Qv9"/>

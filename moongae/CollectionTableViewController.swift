@@ -18,16 +18,12 @@ class CollectionTableViewController: UITableViewController {
 //    var modelProject2 : Array<ProjectInfo>!
     var modelProject3 = ProjectModel.ProjectModelSingleton
     var modelProject2 : Array<ProjectInfo>!
-    var modelProject : Array<ProjectInfo>!
+    var modelProject : Array<ProjectInfo> = []
     var projectSingle = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
     
     override func viewDidAppear(_ animated: Bool) {
         myInfo.checkAndShowLogin()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         if(modelProject2 == nil) {
             modelProject = modelProject3.arrayList
@@ -35,6 +31,14 @@ class CollectionTableViewController: UITableViewController {
         else {
             modelProject = modelProject2
         }
+
+        
+        self.tableView.reloadData()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -78,7 +82,7 @@ class CollectionTableViewController: UITableViewController {
             // 스크롤 서브뷰 재사용 문제 고민중..
 
             
-            imageView.image = UIImage(named: info.image[i])
+            imageView.image =  managerImage.loadImage(name:info.image[i]) //UIImage(named: info.image[i])
             imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.
             let xPosition = self.view.frame.width * CGFloat(i)
             
