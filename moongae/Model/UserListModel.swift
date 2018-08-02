@@ -150,6 +150,8 @@ class UserListModel {
         
         
         self.arrayList.append(UserList(userPhoto: "img_profile_Default.png", userName: "한주연", userMajor: "정보보호학과", userSubmajor: "컴퓨터학과", userGrade: "4", userEmail: "aaaa@naver.com", userPassword: "1234"))
+        
+        self.arrayList.append(UserList(userPhoto: "img_profile_Default3.png", userName: "박수현", userMajor: "정보보호학과", userSubmajor: "컴퓨터학과", userGrade: "4", userEmail: "11", userPassword: "11"))
     }
     
     // 이메일로 회원 정보 찾기
