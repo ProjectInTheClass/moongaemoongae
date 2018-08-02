@@ -62,14 +62,17 @@ class CollectionTableViewController: UITableViewController {
         let info = self.modelProject[indexPath.row]
         
 
-
+        if cell.scrollView?.subviews != nil {
+            for v in cell.scrollView.subviews {
+                v.removeFromSuperview()
+            }
+        }
+        
         for i in 0 ..< info.image.count {
             let imageView = UIImageView()
             
             // 스크롤 서브뷰 재사용 문제 고민중..
-//            if cell.scrollView?.subviews != nil {
-//                cell.scrollView.willRemoveSubview(imageView)
-//            }
+
             
             imageView.image = UIImage(named: info.image[i])
             imageView.contentMode = .scaleAspectFit //  사진의 비율을 맞춤.

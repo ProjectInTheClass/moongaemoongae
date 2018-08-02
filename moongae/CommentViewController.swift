@@ -15,6 +15,7 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     var modelProject : ProjectInfo?
     var modelUser = UserListModel.UserListModelSingleton
     var comment:Array<CommentInfo>!
+    // var myInfo = MyInfo()
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -68,10 +69,25 @@ class CommentViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // 댓글 등록 버튼 클릭
     @IBAction func CommetAddPressed(_ sender: Any) {
-        var commentContent:String = ""
+        var commentContent: String = ""
         commentContent = TextCommentAdd.text!
         
-        modelComment.addComment(title: labelTitle.text!, userImage: "", userName: "테스트", contents: commentContent, writeDate: "99-99")
+//        myInfo.mylogInfo?.userName = "김소연"
+//        myInfo.mylogInfo?.userEmail = "ese2003@naver.com"
+        
+//        modelComment.addComment(
+//            title: labelTitle.text ?? "",
+//            userImage: " ",
+//            userName: myInfo.mylogInfo?.userName ?? "",
+//            contents: commentContent,
+//            writeDate: "08-02")
+        
+        modelComment.addComment(
+            title: labelTitle.text ?? "",
+            userImage: "img_profile_Default",
+            userName: "이재은",
+            contents: commentContent,
+            writeDate: "08-02")
         self.comment = self.modelComment.searchForTitle(title: labelTitle.text!)
         tableView.reloadData()
     }
