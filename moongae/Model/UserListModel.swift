@@ -39,7 +39,7 @@ class UserList {
         self.userPhoto = userPhoto
         self.userName = userName
         self.userMajor = userMajor
-        // self.userSubmajor = userSubmajor
+        self.userSubmajor = userSubmajor
         self.userGrade = userGrade
         self.userEmail = userEmail
         self.userPassword = userPassword
