@@ -23,13 +23,16 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
     
     var tagList: Array<String> = []
     var projectList: Array<String> = []
-    
     var isClicked:Bool = false
     var btn: UIButton = UIButton(type: .custom)
     var isTagBtnClicked:Bool = false
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myInfo.checkAndShowLogin()
     }
     
     override func viewDidLoad() {
@@ -49,7 +52,6 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             colorRandom.append(UIColor(red: 8.0/255, green: 86/255, blue: 195/255, alpha: 1))
             colorRandom.append(UIColor(red: 21/255, green: 123/255, blue: 208/255, alpha: 1))
             colorRandom.append(UIColor(red: 0/255, green: 174/255, blue: 214/255, alpha: 1))
-//            colorRandom.append(UIColor(red: 173/255, green: 227/255, blue: 240/255, alpha: 1))
             
             let randomNo: UInt32 = arc4random_uniform(3);
             let randomNum:Int = Int(randomNo)
@@ -129,13 +131,13 @@ class IdeaViewController: UIViewController, ModernSearchBarDelegate {
             for i in 0 ..< self.projectList.count {
                 let btn: UIButton = UIButton(type: UIButtonType.system)
                 btn.setTitle(self.projectList[i], for: UIControlState())
-                btn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+                btn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
                 btn.titleLabel?.sizeToFit()
                 btn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: -10, right: 0)
                 btn.layer.masksToBounds = true
                 btn.setBackgroundImage(UIImage(named: "img_cloud"), for: UIControlState())
                 btn.contentMode = UIViewContentMode.scaleAspectFit
-                btn.frame = CGRect(x: 0, y: 0, width: 80, height: 50)
+                btn.frame = CGRect(x: 0, y: 0, width: 120, height: 70)
                 btn.layer.cornerRadius = 0
             
                 btn.addTarget(self, action: #selector(IdeaViewController.projectPressed(_:)), for: UIControlEvents.touchUpInside)

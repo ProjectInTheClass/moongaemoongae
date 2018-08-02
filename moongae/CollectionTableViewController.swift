@@ -21,6 +21,10 @@ class CollectionTableViewController: UITableViewController {
     var modelProject : Array<ProjectInfo>!
     var projectSingle = ProjectModel.ProjectModelSingleton
     var modelComment = CommentModel.CommentModelSingleton
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myInfo.checkAndShowLogin()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
