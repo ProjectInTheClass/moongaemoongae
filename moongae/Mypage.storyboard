@@ -623,7 +623,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="사용자 목록" id="pMl-Jn-rXa">
-                        <barButtonItem key="rightBarButtonItem" title="추가" id="ISv-Rk-cLu"/>
+                        <barButtonItem key="rightBarButtonItem" title="추가" id="ISv-Rk-cLu">
+                            <connections>
+                                <action selector="AddMembersWithSender:" destination="ovF-a7-KhF" id="Hqa-1b-BCl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="750"/>
                 </tableViewController>
