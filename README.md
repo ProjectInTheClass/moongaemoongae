@@ -15,3 +15,7 @@
 >학과별로 나누어진 프로젝트를 보고 싶을 땐? 카테고리에서 확인하세요!
 
 >댓글을 통해 다른 학생과 질문을 주고 받고, 이메일로 소통하며 조언을 구하세요!
+
+# GURU2 최우수상 수상
+![image](https://user-images.githubusercontent.com/24476756/43715449-802356da-99bb-11e8-8ba0-f55f0dd5b7ce.png)
+![image](https://user-images.githubusercontent.com/24476756/43715457-83823cd8-99bb-11e8-9fad-4a30b8817b6a.png)
