@@ -1,5 +1,5 @@
 # 졸뽀 (zolBBo)
-## https://projectintheclass.github.io/moongaemoongae/
+### https://projectintheclass.github.io/moongaemoongae/
 졸뽀 서울여자대학교 IT관련 전공 학생들을 위한 졸업 프로젝트 서포팅 앱
 
 대학교 고학년들의 가장 큰 부담, 졸업 프로젝트! 다른 학생들은 어떻게 아이디어를 떠올릴까?
