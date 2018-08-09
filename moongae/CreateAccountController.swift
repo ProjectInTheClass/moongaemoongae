@@ -28,6 +28,10 @@ class CreateAccountController: UIViewController, UIImagePickerControllerDelegate
     var flagImageSave = false
     
     
+    @IBAction func bottomPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func touchDone( _sender: Any) {
         self.navigationController?.popViewController(animated: true)    
     }
