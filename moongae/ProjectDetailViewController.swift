@@ -58,6 +58,9 @@ class ProjectDetailViewController: UIViewController, UIImagePickerControllerDele
         labelLanguage.text = detailProject.language
         labelBenefit.text = detailProject.benefit
         
+        labelTitle.numberOfLines = 0
+        labelTitle.lineBreakMode = .byWordWrapping
+        
         
         // Do any additional setup after loading the view.
     }
