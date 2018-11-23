@@ -150,6 +150,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0000B8C821A86BFA0026A613 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
+				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
+				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		0000B8C921A86C0A0026A613 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
+				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
+				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
+				B88476CD2112E3C2009C3ECF /* MypageTableViewController.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		0000B8CA21A86CAB0026A613 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B810A0BE20EDE70600BC80DB /* Assets.xcassets */,
+				B810A0C320EDE70600BC80DB /* Info.plist */,
+				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
+				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0000B8CB21A86D790026A613 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
+				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
+				D091AF332109A5B400890929 /* CreateAccountController.swift */,
+				D0DE709B210873DB0045EA22 /* CreateProjectController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0000B8CC21A86DD80026A613 /* Idea */ = {
+			isa = PBXGroup;
+			children = (
+				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
+				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
+			);
+			path = Idea;
+			sourceTree = "<group>";
+		};
+		0000B8CD21A86DE70026A613 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
+				A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */,
+				A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */,
+				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
+				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		0000B8CE21A86DED0026A613 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
+				B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */,
+				B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */,
+				A0A6DC972106C16100EBE60F /* MajorCollectionSortViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		009071C52112134400951FCA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +248,10 @@
 		A0888CF720FF011400F70112 /* etc */ = {
 			isa = PBXGroup;
 			children = (
+				B8BD1E5C2107071400A89577 /* BridgeHeader.h */,
+				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
+				B8BD1E5F21070B6700A89577 /* Common.swift */,
+				10FA580B21108C4A002BAB37 /* RoundButton.swift */,
 				B8803C9020EF30B9009717DF /* ui2.png */,
 				1089EB35210F8BC000F7CCE4 /* img_cloud.png */,
 				10FA58072110876A002BAB37 /* icon_info_blue.png */,
@@ -226,39 +305,16 @@
 		B810A0B420EDE70400BC80DB /* moongae */ = {
 			isa = PBXGroup;
 			children = (
-				A0888CF720FF011400F70112 /* etc */,
-				B810A0BE20EDE70600BC80DB /* Assets.xcassets */,
-				B810A0C320EDE70600BC80DB /* Info.plist */,
-				B810A0B520EDE70400BC80DB /* AppDelegate.swift */,
-				B810A0C020EDE70600BC80DB /* LaunchScreen.storyboard */,
-				B810A0BB20EDE70400BC80DB /* Main.storyboard */,
-				D0AC2AE820FC798A003A9DE0 /* Idea.storyboard */,
-				D0AC2AE620FC76C8003A9DE0 /* Collection.storyboard */,
-				D0AC2AE420FC7656003A9DE0 /* Category.storyboard */,
-				D0AC2AE220FC7442003A9DE0 /* Mypage.storyboard */,
 				009071C52112134400951FCA /* Model */,
-				B82DD01D211053D8009ED317 /* LoginViewController.swift */,
-				D091AF332109A5B400890929 /* CreateAccountController.swift */,
-				D0DE709B210873DB0045EA22 /* CreateProjectController.swift */,
-				B8F9CEA92106C78A007B2E1A /* IdeaViewController.swift */,
-				A0888CFC20FF118700F70112 /* CollectionTableViewCell.swift */,
-				A0888CFE20FF1CE800F70112 /* CollectionTableViewController.swift */,
-				A0A6DC912100586E00EBE60F /* ProjectDetailViewController.swift */,
-				B8B9758720FF127100C1F922 /* CommentTableViewCell.swift */,
-				B8B9758520FF0DF100C1F922 /* CommentTableViewController.swift */,
-				A0A6DC932100665100EBE60F /* CommentViewController.swift */,
-				B837FAB521005BA4005F4E65 /* MajorCollectionViewCell.swift */,
-				B837FAB921006DEB005F4E65 /* MajorTableViewController.swift */,
-				A0A6DC972106C16100EBE60F /* MajorCollectionSortViewController.swift */,
-				D008DCFF20FF1A3E00E64E15 /* UserTableViewCell.swift */,
-				D008DCFB20FF0B2A00E64E15 /* UserListController.swift */,
-				A0A6DC952101A9EE00EBE60F /* UserProfileViewController.swift */,
-				B8BD1E5C2107071400A89577 /* BridgeHeader.h */,
-				B8BD1E5D2107077000A89577 /* SFPatchView.swift */,
-				B8BD1E5F21070B6700A89577 /* Common.swift */,
-				10FA580B21108C4A002BAB37 /* RoundButton.swift */,
-				B88476CD2112E3C2009C3ECF /* MypageTableViewController.swift */,
+				0000B8CB21A86D790026A613 /* Main */,
+				0000B8CC21A86DD80026A613 /* Idea */,
+				0000B8CE21A86DED0026A613 /* Category */,
+				0000B8CD21A86DE70026A613 /* Collection */,
+				0000B8C821A86BFA0026A613 /* Comment */,
+				0000B8C921A86C0A0026A613 /* Mypage */,
+				A0888CF720FF011400F70112 /* etc */,
 				12C7B1ED2113293E00945E62 /* ImageManager.swift */,
+				0000B8CA21A86CAB0026A613 /* Supporting Files */,
 			);
 			path = moongae;
 			sourceTree = "<group>";
