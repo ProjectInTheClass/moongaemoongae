@@ -22,4 +22,4 @@
 ![image](https://user-images.githubusercontent.com/24476756/43715457-83823cd8-99bb-11e8-9fad-4a30b8817b6a.png)
 
 
-프로젝트 소개 웹 페이지는 [돌고래가계부](https://projectintheclass.github.io/DolphinBook/) 참고하였습니다.
+###### 프로젝트 소개 웹 페이지는 [돌고래가계부](https://projectintheclass.github.io/DolphinBook/) 참고하였습니다.
