@@ -20,3 +20,6 @@
 # GURU2 최우수상 수상
 ![image](https://user-images.githubusercontent.com/24476756/43715449-802356da-99bb-11e8-8ba0-f55f0dd5b7ce.png)
 ![image](https://user-images.githubusercontent.com/24476756/43715457-83823cd8-99bb-11e8-9fad-4a30b8817b6a.png)
+
+
+프로젝트 소개 웹 페이지는 [돌고래가계부](https://projectintheclass.github.io/DolphinBook/) 참고하였습니다.
